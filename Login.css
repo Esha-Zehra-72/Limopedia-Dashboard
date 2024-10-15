@@ -3,9 +3,11 @@
     text-rendering: optimizeLegibility;
   }
   :root {
-    --primary-color: #3b008b;
+    /* --primary-color: #3b008b; */
+    --primary-color: #2b0068;
     --secondary-color: #a66216;
-    --tersary-color: #870083;
+    /* --tersary-color: #870083; */
+    --tersary-color: #660163;
   }
   html, body {
     height: 100%;
@@ -82,7 +84,7 @@
   .lf--input:focus {
     outline: none;
     transition: transform 0.15s ease;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
   }
   
   .lf--submit {
@@ -102,7 +104,7 @@
   .lf--submit:focus {
     outline: none;
     transition: transform 0.15s ease;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
   }
   
   .lf--forgot {
