@@ -1,0 +1,15 @@
+:root{
+--files-btn : rgb(113, 228, 47);
+--help-btn : rgb(255, 178, 36);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.files-btn{
+    background-color:  var(--files-btn);
+}
+.help{
+    background-color: var(--help-btn);
+}
