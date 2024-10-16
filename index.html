@@ -111,40 +111,179 @@
             </nav>
         </div>
         <div class="row w-100 nav3 m-auto">
-            <dic class="col nav3-btn ps-0">
-                <button><a href="#">New Reservations</a></button>
-                <button><a href="#">Online & eFarm-in</a></button>
-                <button><a href="#">DA Not Trips</a></button>
-                <button><a href="#">Unfinalized</a></button>
-                <button><a href="#">Deleted Reservations</a></button>
-                <button><a href="#">New Res...</a></button>
-                <button><a href="#">Import Res...</a></button>
-            </dic>
+            <div class="col nav3-btn ps-0">
+                <button onclick="clickedBtn(this)"><a href="#reservations">New Reservations</a></button>
+                <button onclick="clickedBtn(this)"><a href="#">Online & eFarm-in</a></button>
+                <button onclick="clickedBtn(this)"><a href="#">DA Not Trips</a></button>
+                <button onclick="clickedBtn(this)"><a href="#">Unfinalized</a></button>
+                <button onclick="clickedBtn(this)"><a href="#">Deleted Reservations</a></button>
+                <button onclick="clickedBtn(this)"><a href="#">New Res...</a></button>
+                <button onclick="clickedBtn(this)"><a href="#">Import Res...</a></button>
+            </div>
         </div>
     </header>
     <!-- Alert -->
-    <!-- <div class="alert alert-warning py-1 text-center text-danger mt-1" role="alert">
+    <!-- <div class="alert alert-warning py-1 text-center text-danger mt-1 mb-0" role="alert">
         A simple primary alert—check it out!
       </div> -->
-    <div class="conf-section ">
-        <div class="row w-100 bg-danger">
-            <form action="" class="col conf bg-success">
-           <div class="row w-50">
-            <label class="col-1 bg-danger text-center p-1 px-0">Conf#</label>
-            <div class="col-1">
-                <input type="text" class="form-control px-2" placeholder="" aria-label="City">
-            </div>
-            <div class="col-1">
-                <input type="text" class="form-control px-2" placeholder="" aria-label="State">
-            </div>
-            <div class="col-1">
-                <input type="text" class="form-control px-2" placeholder="" aria-label="Zip">
-            </div>
-           </div>
+    <div class="conf-section">
+        <div class="row w-100 m-auto">
+            <form action="" class="col-xs-12 col-sm-12 col-lg-6 conf">
+                <div class="row w-50 ms-1 gap-0 ms-0 me-0 ps-0 pe-0">
+                    <label class="col p-1 px-0 fw-bold">Conf#</label>
+                    <div class="col  ps-0 pe-0">
+                        <input type="text" class="form-control conf-input" placeholder="" aria-label="City">
+                    </div>
+                    <div class="col  ps-0 pe-0">
+                        <input type="text" class="form-control conf-input" placeholder="22052" aria-label="State">
+                    </div>
+                    <div class="col  ps-0 pe-0">
+                        <input type="text" class="form-control conf-input" placeholder="" aria-label="Zip">
+                    </div>
+                </div>
             </form>
-            <div class="col-1 save-btn">
+            <div class="col save-btn text-end py-1 col-xs-12 col-sm-12 col-lg-6">
                 <button>Save</button>
+                <button>Payments</button>
+                <button>Copy</button>
+                <button>Round Trip</button>
+                <button>Email/Fax</button>
+                <button>Print</button>
+                <button>Link</button>
             </div>
+        </div>
+    </div>
+    <!-- Forms -->
+    <div id="reservations">
+        <div class="container mt-4">
+
+            <div class="row">
+                <!-- Left Section: Bill To & Pax -->
+                <div class="col-md-4">
+                    <div class="form-section">
+                        <div class="form-header">Bill To & Pax</div>
+                        <form>
+                            <div class="mb-2">
+                                <label for="accountNumber" class="form-label">Account</label>
+                                <input type="text" class="form-control" id="accountNumber">
+                            </div>
+                            <div class="mb-2">
+                                <label for="companyName" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="companyName">
+                            </div>
+                            <div class="mb-2">
+                                <label for="passengerFirstName" class="form-label">Passenger First Name</label>
+                                <input type="text" class="form-control" id="passengerFirstName">
+                            </div>
+                            <div class="mb-2">
+                                <label for="passengerLastName" class="form-label">Passenger Last Name</label>
+                                <input type="text" class="form-control" id="passengerLastName">
+                            </div>
+                            <div class="mb-2">
+                                <label for="contactPhone" class="form-label">Contact Phone</label>
+                                <input type="text" class="form-control" id="contactPhone">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Middle Section: Pickup & Dropoff -->
+                <div class="col-md-4">
+                    <div class="form-section">
+                        <div class="form-header">Pickup & Dropoff</div>
+                        <form>
+                            <div class="mb-2">
+                                <label for="pickupDate" class="form-label">Pick Up Date</label>
+                                <input type="date" class="form-control" id="pickupDate">
+                            </div>
+                            <div class="mb-2">
+                                <label for="pickupTime" class="form-label">Pick Up Time</label>
+                                <input type="time" class="form-control" id="pickupTime">
+                            </div>
+                            <div class="mb-2">
+                                <label for="dropoffTime" class="form-label">Drop Off Time</label>
+                                <input type="time" class="form-control" id="dropoffTime">
+                            </div>
+                            <div class="mb-2">
+                                <label for="locationName" class="form-label">Location Description</label>
+                                <input type="text" class="form-control" id="locationName">
+                            </div>
+                            <div class="mb-2">
+                                <label for="state" class="form-label">State</label>
+                                <select class="form-select" id="state">
+                                    <option selected>Select State</option>
+                                    <option value="TX">TX</option>
+                                    <option value="CA">CA</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Right Section: Trip Details -->
+                <div class="col-md-4">
+                    <div class="form-section">
+                        <div class="form-header">Trip Details</div>
+                        <form>
+                            <div class="mb-2">
+                                <label for="tripDate" class="form-label">Trip Date</label>
+                                <input type="date" class="form-control" id="tripDate">
+                            </div>
+                            <div class="mb-2">
+                                <label for="duration" class="form-label">Duration</label>
+                                <input type="text" class="form-control" id="duration">
+                            </div>
+                            <div class="mb-2">
+                                <label for="luggage" class="form-label">Luggage</label>
+                                <select class="form-select" id="luggage">
+                                    <option selected>None</option>
+                                    <option value="1">1 Bag</option>
+                                    <option value="2">2 Bags</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <label for="tripNotes" class="form-label">Trip Notes</label>
+                                <textarea class="form-control" id="tripNotes" rows="2"></textarea>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Bottom Section: Additional Information -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-section">
+                        <div class="form-header">Additional Information</div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">Info</th>
+                                <th scope="col">Details</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Status</td>
+                                <td>Unassigned</td>
+                            </tr>
+                            <tr>
+                                <td>Price Code</td>
+                                <td>NOT ASSIGNED</td>
+                            </tr>
+                            <tr>
+                                <td>Reference</td>
+                                <td>Manual</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
