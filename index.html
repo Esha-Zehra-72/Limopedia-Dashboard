@@ -131,7 +131,7 @@
             <form action="" class="col-xs-12 col-sm-12 col-lg-6 conf">
                 <div class="row w-50 ms-1 gap-0 ms-0 me-0 ps-0 pe-0">
                     <label class="col p-1 px-0 fw-bold">Conf#</label>
-                    <div class="col  ps-0 pe-0">
+                    <div class="col ps-0 pe-0">
                         <input type="text" class="form-control conf-input" placeholder="" aria-label="City">
                     </div>
                     <div class="col  ps-0 pe-0">
@@ -155,34 +155,67 @@
     </div>
     <!-- Forms -->
     <div id="reservations">
-        <div class="container mt-4">
+        <div class=" mt-4">
 
-            <div class="row">
+            <div class="row w-100">
                 <!-- Left Section: Bill To & Pax -->
                 <div class="col-md-4">
-                    <div class="form-section">
-                        <div class="form-header">Bill To & Pax</div>
-                        <form>
-                            <div class="mb-2">
-                                <label for="accountNumber" class="form-label">Account</label>
+                    <div class="form-section ms-2">
+                       <div class="row w-50 m-auto">
+                         <button class="col form-header account-btn mx-1">Bill To & Pax</button>
+                        <button class="col form-header account-btn mx-1">Pickup & Dropoff</button>
+                       </div>
+                        <form class="row bill-pay" style="border: 1px solid gray;">
+                            <div class="mb-2 mt-2">
+                                <label for="accountNumber" class="form-label d-flex justify-content-between align-items-center">Account <button class="account-btn">Create New Account</button></label>
+                          
                                 <input type="text" class="form-control" id="accountNumber">
                             </div>
-                            <div class="mb-2">
+                            <div class="mb-2 col-6">
+                                <label for="companyName" class="form-label">Billing Contact</label>
+                                <input type="text" class="form-control" id="companyName">
+                            </div>
+                            <div class="mb-2 col-6">
                                 <label for="companyName" class="form-label">Company Name</label>
                                 <input type="text" class="form-control" id="companyName">
                             </div>
-                            <div class="mb-2">
+                            <div class="mb-2 col-6">
                                 <label for="passengerFirstName" class="form-label">Passenger First Name</label>
                                 <input type="text" class="form-control" id="passengerFirstName">
                             </div>
-                            <div class="mb-2">
+                            <div class="mb-2 col-6">
                                 <label for="passengerLastName" class="form-label">Passenger Last Name</label>
                                 <input type="text" class="form-control" id="passengerLastName">
                             </div>
-                            <div class="mb-2">
-                                <label for="contactPhone" class="form-label">Contact Phone</label>
-                                <input type="text" class="form-control" id="contactPhone">
+                            <div class="mb-2 col-6">
+                                <label for="contactPhone" class="form-label">Pessanger Phone</label>
+                                <input type="number" class="form-control" id="contactPhone">
                             </div>
+                            <div class="mb-2 col-6">
+                                <label for="contactPhone" class="form-label">Pessanger email</label>
+                                <input type="email" class="form-control" id="contactemail">
+                            </div>
+                            <div class="mb-2 col-6">
+                                <label for="contactPhone" class="form-label">Alternate Contact</label>
+                                <input type="email" class="form-control" id="contactemail">
+                            </div>
+                            <div class="mb-2 col-6">
+                                <label for="contactPhone" class="form-label">Alt. Contact Phone #</label>
+                                <input type="email" class="form-control" id="contactemail">
+                            </div>
+                            <div class="mb-2 col-6">
+                                <label for="contactPhone" class="form-label">PO/Client Ref#</label>
+                                <input type="email" class="form-control" id="contactemail">
+                            </div>
+                            <div class="mb-2 col-6">
+                                <label for="contactPhone" class="form-label">Booker IATA</label>
+                                <input type="email" class="form-control" id="contactemail">
+                            </div>
+                            <div class="mb-2">
+                                <label for="contactPhone" class="form-label">Voucher #</label>
+                                <input type="text" class="form-control" id="contactemail">
+                            </div>
+                            <a href="">Additional Pessangers</a>
                         </form>
                     </div>
                 </div>
@@ -190,18 +223,30 @@
                 <!-- Middle Section: Pickup & Dropoff -->
                 <div class="col-md-4">
                     <div class="form-section">
-                        <div class="form-header">Pickup & Dropoff</div>
-                        <form>
-                            <div class="mb-2">
-                                <label for="pickupDate" class="form-label">Pick Up Date</label>
+                
+                        <form class="row">
+                            <div class="mb-2 col-4">
+                                <label for="pickupDate" class="form-label">PU Date</label>
                                 <input type="date" class="form-control" id="pickupDate">
                             </div>
-                            <div class="mb-2">
-                                <label for="pickupTime" class="form-label">Pick Up Time</label>
+                            <div class="mb-2 col-4">
+                                <label for="pickupTime" class="form-label">PU Time</label>
                                 <input type="time" class="form-control" id="pickupTime">
                             </div>
-                            <div class="mb-2">
-                                <label for="dropoffTime" class="form-label">Drop Off Time</label>
+                            <div class="mb-2 col-4">
+                                <label for="dropoffTime" class="form-label">DO Time</label>
+                                <input type="time" class="form-control" id="dropoffTime">
+                            </div>
+                            <div class="mb-2 col-4">
+                                <label for="dropoffTime" class="form-label">Spotty Time</label>
+                                <input type="time" class="form-control" id="dropoffTime">
+                            </div>
+                            <div class="mb-2 col-4">
+                                <label for="dropoffTime" class="form-label">DO Time</label>
+                                <input type="time" class="form-control" id="dropoffTime">
+                            </div>
+                            <div class="mb-2 col-4">
+                                <label for="dropoffTime" class="form-label">DO Time</label>
                                 <input type="time" class="form-control" id="dropoffTime">
                             </div>
                             <div class="mb-2">
@@ -254,7 +299,7 @@
             </div>
         
             <!-- Bottom Section: Additional Information -->
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-md-12">
                     <div class="form-section">
                         <div class="form-header">Additional Information</div>
@@ -289,5 +334,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
-
 </html>

@@ -3,175 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-size: 14px;
-        }
-        .form-section {
-            padding: 15px;
-            border: 1px solid #dee2e6;
-            background-color: #f8f9fa;
-            margin-bottom: 10px;
-        }
-        .form-header {
-            background-color: #ddd;
-            font-weight: bold;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
-        .form-section input, .form-section select, .form-section textarea {
-            font-size: 14px;
-        }
-        .button-group {
-            text-align: right;
-        }
-        .btn {
-            background-color: #dc3545;
-            color: #fff;
-        }
-        .btn:hover {
-            background-color: #c82333;
-        }
-        .table td, .table th {
-            padding: 5px;
-        }
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.billing-info, .trip-info, .payment-info {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Billing Info Section -->
+        <section class="billing-info">
+            <h2>Bill To & Pax</h2>
+            <form>
+                <div class="form-group">
+                    <label for="account">Account</label>
+                    <input type="text" id="account" value="30001">
+                </div>
+                <div class="form-group">
+                    <label for="contact-name">Billing Contact</label>
+                    <input type="text" id="contact-name" value="George Steinbrenner, Jr.">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" value="New York Yankees Baseball Club">
+                </div>
+                <div class="form-group">
+                    <label for="passenger-name">Passenger Name</label>
+                    <input type="text" id="passenger-name" value="Alex Rodriguez">
+                </div>
+                <!-- Add other form fields similar to the image -->
+            </form>
+        </section>
 
-<div class="container mt-4">
+        <!-- Trip Info Section -->
+        <section class="trip-info">
+            <h2>Trip Info</h2>
+            <form>
+                <div class="form-group">
+                    <label for="airport">Airport</label>
+                    <input type="text" id="airport" value="Dallas/Fort Worth International Airport">
+                </div>
+                <div class="form-group">
+                    <label for="flight">Flight</label>
+                    <input type="text" id="flight" value="American Airlines - AA 670">
+                </div>
+                <!-- Add more fields based on the form from the image -->
+            </form>
+        </section>
 
-    <div class="row">
-        <!-- Left Section: Bill To & Pax -->
-        <div class="col-md-4">
-            <div class="form-section">
-                <div class="form-header">Bill To & Pax</div>
-                <form>
-                    <div class="mb-2">
-                        <label for="accountNumber" class="form-label">Account</label>
-                        <input type="text" class="form-control" id="accountNumber">
-                    </div>
-                    <div class="mb-2">
-                        <label for="companyName" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="companyName">
-                    </div>
-                    <div class="mb-2">
-                        <label for="passengerFirstName" class="form-label">Passenger First Name</label>
-                        <input type="text" class="form-control" id="passengerFirstName">
-                    </div>
-                    <div class="mb-2">
-                        <label for="passengerLastName" class="form-label">Passenger Last Name</label>
-                        <input type="text" class="form-control" id="passengerLastName">
-                    </div>
-                    <div class="mb-2">
-                        <label for="contactPhone" class="form-label">Contact Phone</label>
-                        <input type="text" class="form-control" id="contactPhone">
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Middle Section: Pickup & Dropoff -->
-        <div class="col-md-4">
-            <div class="form-section">
-                <div class="form-header">Pickup & Dropoff</div>
-                <form>
-                    <div class="mb-2">
-                        <label for="pickupDate" class="form-label">Pick Up Date</label>
-                        <input type="date" class="form-control" id="pickupDate">
-                    </div>
-                    <div class="mb-2">
-                        <label for="pickupTime" class="form-label">Pick Up Time</label>
-                        <input type="time" class="form-control" id="pickupTime">
-                    </div>
-                    <div class="mb-2">
-                        <label for="dropoffTime" class="form-label">Drop Off Time</label>
-                        <input type="time" class="form-control" id="dropoffTime">
-                    </div>
-                    <div class="mb-2">
-                        <label for="locationName" class="form-label">Location Description</label>
-                        <input type="text" class="form-control" id="locationName">
-                    </div>
-                    <div class="mb-2">
-                        <label for="state" class="form-label">State</label>
-                        <select class="form-select" id="state">
-                            <option selected>Select State</option>
-                            <option value="TX">TX</option>
-                            <option value="CA">CA</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Right Section: Trip Details -->
-        <div class="col-md-4">
-            <div class="form-section">
-                <div class="form-header">Trip Details</div>
-                <form>
-                    <div class="mb-2">
-                        <label for="tripDate" class="form-label">Trip Date</label>
-                        <input type="date" class="form-control" id="tripDate">
-                    </div>
-                    <div class="mb-2">
-                        <label for="duration" class="form-label">Duration</label>
-                        <input type="text" class="form-control" id="duration">
-                    </div>
-                    <div class="mb-2">
-                        <label for="luggage" class="form-label">Luggage</label>
-                        <select class="form-select" id="luggage">
-                            <option selected>None</option>
-                            <option value="1">1 Bag</option>
-                            <option value="2">2 Bags</option>
-                        </select>
-                    </div>
-                    <div class="mb-2">
-                        <label for="tripNotes" class="form-label">Trip Notes</label>
-                        <textarea class="form-control" id="tripNotes" rows="2"></textarea>
-                    </div>
-                    <div class="button-group">
-                        <button type="submit" class="btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <!-- Payment Info Section -->
+        <section class="payment-info">
+            <h2>Payment Info</h2>
+            <form>
+                <div class="form-group">
+                    <label for="rate">Rate</label>
+                    <input type="text" id="rate" value="55.00">
+                </div>
+                <!-- Additional payment fields -->
+            </form>
+        </section>
     </div>
-
-    <!-- Bottom Section: Additional Information -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-section">
-                <div class="form-header">Additional Information</div>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th scope="col">Info</th>
-                        <th scope="col">Details</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Status</td>
-                        <td>Unassigned</td>
-                    </tr>
-                    <tr>
-                        <td>Price Code</td>
-                        <td>NOT ASSIGNED</td>
-                    </tr>
-                    <tr>
-                        <td>Reference</td>
-                        <td>Manual</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
