@@ -1,9 +1,13 @@
 :root {
   /* --primary-color: #3b008b; */
   --primary-color: #5f517496;
+  --primary-color: rgb(66, 66, 66);
+  --secondary-color: #a38f61;
+  --secondary-color:  rgb(44, 44, 44);
   /* --primary-color: #2b0068; */
-  --secondary-color: #a66216;
-  --tersary-color: #660163;
+  /* --secondary-color: #a66216; */
+  /* --tersary-color: #660163; */
+  --tersary-color: #2e2e2e;
   /* --tersary-color: #870083; */
 }
 * {
@@ -11,19 +15,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* First Nav */
 header {
   width: 100%;
   /* background: linear-gradient(10deg, rgba(166,98,22,1) 0%, rgba(137,65,154,1) 29%, rgba(131,58,180,1) 57%, rgba(135,63,161,1) 72%); */
   /* background: linear-gradient( #4b334a, rgba(151, 59, 184, 0.863)); */
+  /* background-color: #a38f61; */
+  background-color: #dbdbdb;
+  /* background-color: white; */
+
 }
 .header {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px 20px;
+  padding: 2px 20px;
 }
-
+.header img{
+  object-fit: cover;
+  width:172px; 
+  padding: 5px 0px;
+}
 .links a {
   text-decoration: none;
   color: var(--primary-color);
@@ -33,22 +46,21 @@ header {
   background-color: transparent;
 }
 .links i {
-  /* background-color: var(--tersary-color); */
-  background-color: var(--secondary-color);
-  font-size: 16px;
+  background-color: white;
+  font-size: 14px;
   margin: 0 0px;
-  height: 22px;
-  width: 22px;
-  padding: 20px;
+  height: 18px;
+  width: 18px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: white;
+  color: var(--secondary-color);
 }
 .search-bar {
   position: relative;
-  width: 100px;
+  width: 70px;
 }
 .fa-magnifying-glass {
   color: white;
@@ -72,14 +84,16 @@ header {
 .search-form .form-control {
   border: transparent;
 }
+/* Second Nav */
 .nav-images {
   background-color: var(--secondary-color);
+  background-color: rgb(44, 44, 44);
   padding: 0px 5px 0px 5px;
   height: 60px;
 }
 .nav-images img {
-  width: 32px;
-  margin: 5px 2px 0px 2px;
+  width: 30px;
+  margin: 8px 2px 0px 2px;
   transition: all .5s ease;
 }
 nav p {
@@ -100,17 +114,15 @@ nav {
 }
 .nav-images a{
   text-decoration: none;
-  color: rgb(231, 231, 231);
+  color: rgb(201, 201, 201);
   font-family: Arial, Helvetica, sans-serif;
   transition: all .5s ease;
 }
-/* .nav-images a:hover img{
-  transform: scale(1.2);
-  transition: all .5s ease;
-} */
 .nav-images a:hover p{
   transition: all .5s ease;
 }
+
+/* Third Nav */
 .nav3-btn{
   background-color:#29062825;
   border: 1px solid #66016323;
@@ -127,12 +139,14 @@ nav {
   text-decoration: none;
   font-weight: 600;
 }
+/* Fourth Nav */
 .conf-section{
-  background-color: #4412427c;
+  background-color: #dbdbdb;
 }
 .save-btn button{
 border: none;
-background-color: #4412427c;
+/* background-color: var(--secondary-color); */
+background-color: #4b4b4b;
 padding: 2px 8px;
 color: white;
 font-size: 12px;
@@ -140,7 +154,7 @@ margin: 0px;
 transition: all .5s ease;
 }
 .save-btn button:hover{
-  background-color: #4412424f;
+  background-color: var(--secondary-color);
 }
 .conf-input{
   padding: 2px 8px;
@@ -158,6 +172,76 @@ transition: all .5s ease;
 .bill-pay input{
 padding: 1px;
 }
+/* Swiper Css */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Hides the navigation buttons by default */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+/* Media query for screen sizes 800px or less */
+@media (max-width: 800px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+      display: block;
+      transform:translateY(10px);
+      color: white;
+  }
+  nav {
+      width: 100%;
+      display: flex;
+      /* background-color: #660163; */
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+    gap: 10px;
+  }
+  .card-item {
+    margin-top: 8px;
+    font-size: 10px;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    font-size: 20px;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    font-size: 20px;
+}
+}
+
+/* For larger screens, disable swiper and show all images in a grid */
+@media (min-width: 801px) {
+  .swiper-wrapper {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+  }
+  .card-item {
+      width: 10%; /* Adjust this based on how many images you want to show in a row */
+      text-align: center;
+      margin-top: 6px;
+  }
+}
 @media screen and (max-width:700px){
   nav {
     width: 100%;
@@ -170,26 +254,62 @@ padding: 1px;
   .header {
     padding: 10px 0px;
   }
-  .nav-images img {
+  /* .nav-images img {
     width: 25px;
-  }
-  nav p{
+  } */
+  /* nav p{
     font-size: 5px !important;
-  }
-  .nav-images{
+  } */
+  /* .nav-images{
     padding: 0px;
-  }
+  } */
   .nav3-btn button{
     padding: 4px;
   }
   .nav3-btn a{
-    font-size: 5px !important;
+    font-size: 10px !important;
   }
   .save-btn{
     text-align: left !important;
+    font-size: 10px;
   }
   .save-btn button{
+    margin-top: 8px;
     padding: 2px 4px;
-    font-size: 6px;
+    font-size: 10px;
+    margin: auto 3px;
+  }
+}
+/* Side bsr */
+.offcanvas-body {
+  padding: 20px;
+}
+
+.d-lg-none {
+  display: none !important;
+}
+
+.nav3-btn {
+  background-color: #29062825;
+  border: 1px solid #66016323;
+}
+
+.nav3-btn button {
+  border: none;
+  background-color: var(--primary-color);
+  padding: 2px 10px;
+}
+
+.nav3-btn a {
+  position: relative;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.856);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .d-lg-none {
+      display: block !important;
   }
 }

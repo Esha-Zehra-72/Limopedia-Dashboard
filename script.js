@@ -9,3 +9,52 @@ var button = document.getElementsByTagName("button")
 function clickedBtn(button){
 button.style.backgroundColor = "red"
 }
+
+
+// Swiper Js
+let swiperInstance = null;
+
+function initSwiper() {
+    // If the screen is 800px or less, initialize Swiper
+    if (window.innerWidth <= 800) {
+        swiperInstance = new Swiper('.swiper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 2,
+            slidesPerView: 5,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+}
+
+function destroySwiper() {
+    // If a swiper instance exists, destroy it
+    if (swiperInstance !== null) {
+        swiperInstance.destroy(true, true);
+        swiperInstance = null;
+    }
+}
+
+function handleResize() {
+    if (window.innerWidth <= 800) {
+        if (!swiperInstance) {
+            initSwiper();
+        }
+    } else {
+        destroySwiper(); // Destroy Swiper on larger screens
+    }
+}
+
+// Initialize or destroy swiper on load
+window.addEventListener('load', handleResize);
+
+// Add resize event listener to dynamically handle screen size changes
+window.addEventListener('resize', handleResize);
+
+// Side bar 
+function clickedBtn(btn) {
+    console.log("Button clicked:", btn.innerText);
+}

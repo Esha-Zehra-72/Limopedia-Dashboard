@@ -7,31 +7,28 @@
     <title>Limo Anywhere</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header class="w-100">
         <div class="header row">
             <div class="col img-fluid ms-2">
-                <img src="./Assets/logo.png" style="width:168px;">
+                <img src="./Assets/logo-Black.png">
             </div>
             <div class="col search-bar">
                 <form class="d-flex search-form" role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control bg-transparent" type="search" placeholder="Search" aria-label="Search">
                     <span class="search-icon"><i class="fa fa-magnifying-glass"></i></span>
 
                 </form>
             </div>
             <div class="links col text-end">
-                <!-- <button><a href=""><i class="fa fa-gear"></i></a></button> -->
-                <!-- <button><a href="" ><i class="fa fa-car"></i></a></button>
-                <button><a href=""><i class="fa fa-ellipsis-vertical"></i></a></button>
-                <button><a href=""><i class="fa fa-user"></i></a></button> -->
-                <!-- <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Settings"><i class="fa fa-gear"></i></a></button> -->
                 <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reservations"><i
                             class="fa fa-car"></i></a></button>
                 <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="More"><i
@@ -40,75 +37,78 @@
                             class="fa fa-user"></i></a></button>
             </div>
         </div>
-        <div class="bg-color nav-images">
-            <nav class="row text-white gap-0 p-0 pe-0 ps-0">
-                <div class="col pe-0 ps-0 text-center">
+        <div class="bg-color nav-images slider-wrapper swiper ">
+            <nav class="row text-white gap-0 p-0 pe-0 ps-0 card-list swiper-wrapper">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/skyscraper.png" alt="">
                         <p>office</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/accounting-book_6439007.png" alt="">
                         <p>Account</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/dollar_12254418.png" alt="">
                         <p>Quotes</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/calendar_14316759.png" alt="">
                         <p>Calender</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/contract_975384.png" alt="">
                         <p>Reserveins</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/car_13300807.png" alt="">
                         <p>Dispatch</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/social-network_12665069.png" alt="">
                         <p>Network</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/yen_12097384.png" alt="">
                         <p>Settle</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/income_5812859.png" alt="">
                         <p>Receiveable</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/data_14962024.png" alt="">
                         <p>Reports</p>
                     </a>
                 </div>
-                <div class="col pe-0 ps-0 text-center">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
                     <a href="#">
                         <img src="./Assets/folder_3767084.png" alt="">
                         <p>Files</p>
                     </a>
                 </div>
             </nav>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <div class="row w-100 nav3 m-auto">
             <div class="col nav3-btn ps-0">
@@ -129,7 +129,7 @@
     <div class="conf-section">
         <div class="row w-100 m-auto">
             <form action="" class="col-xs-12 col-sm-12 col-lg-6 conf">
-                <div class="row w-50 ms-1 gap-0 ms-0 me-0 ps-0 pe-0">
+                <div class="row w-50 w-sm-100 ms-1 gap-0 ms-0 me-0 ps-0 pe-0">
                     <label class="col p-1 px-0 fw-bold">Conf#</label>
                     <div class="col ps-0 pe-0">
                         <input type="text" class="form-control conf-input" placeholder="" aria-label="City">
@@ -155,75 +155,122 @@
     </div>
     <!-- Forms -->
     <div id="reservations">
-        <div class=" mt-4">
+        <div class=" mt-4 m-1" style="border: 1px solid silver;">
 
             <div class="row w-100">
                 <!-- Left Section: Bill To & Pax -->
                 <div class="col-md-4">
                     <div class="form-section ms-2">
-                       <div class="row w-50 m-auto">
-                         <button class="col form-header account-btn mx-1">Bill To & Pax</button>
-                        <button class="col form-header account-btn mx-1">Pickup & Dropoff</button>
-                       </div>
-                        <form class="row bill-pay" style="border: 1px solid gray;">
-                            <div class="mb-2 mt-2">
-                                <label for="accountNumber" class="form-label d-flex justify-content-between align-items-center">Account <button class="account-btn">Create New Account</button></label>
-                          
-                                <input type="text" class="form-control" id="accountNumber">
+                        <div class="row w-100 mt-5">
+                            <!-- Tab Navigation -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="bill-tab" data-bs-toggle="tab"
+                                        data-bs-target="#bill-tab-pane" type="button" role="tab"
+                                        aria-controls="bill-tab-pane" aria-selected="true">Bill To & Pax</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pickup-tab" data-bs-toggle="tab"
+                                        data-bs-target="#pickup-tab-pane" type="button" role="tab"
+                                        aria-controls="pickup-tab-pane" aria-selected="false">Pickup & Dropoff</button>
+                                </li>
+                            </ul>
+
+                            <!-- Tab Content -->
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Bill To & Pax Tab -->
+                                <div class="tab-pane fade show active" id="bill-tab-pane" role="tabpanel"
+                                    aria-labelledby="bill-tab">
+                                    <form class="row bill-pay" style="border: 1px solid gray; margin-left: 5px;">
+                                        <div class="mb-2 mt-2">
+                                            <label for="accountNumber"
+                                                class="form-label d-flex justify-content-between align-items-center">Account
+                                                <button class="account-btn btn" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop" type="button">Create New
+                                                    Account
+                                                </button>
+                                                    
+                                            </label>
+
+                                            <input type="text" class="form-control" id="accountNumber">
+                                            
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="companyName" class="form-label">Billing Contact</label>
+                                            <input type="text" class="form-control" id="companyName">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="companyName" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" id="companyName">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="passengerFirstName" class="form-label">Passenger First
+                                                Name</label>
+                                            <input type="text" class="form-control" id="passengerFirstName">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="passengerLastName" class="form-label">Passenger Last
+                                                Name</label>
+                                            <input type="text" class="form-control" id="passengerLastName">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="contactPhone" class="form-label">Pessanger Phone</label>
+                                            <input type="number" class="form-control" id="contactPhone">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="contactPhone" class="form-label">Pessanger email</label>
+                                            <input type="email" class="form-control" id="contactemail">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="contactPhone" class="form-label">Alternate Contact</label>
+                                            <input type="email" class="form-control" id="contactemail">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="contactPhone" class="form-label">Alt. Contact Phone #</label>
+                                            <input type="email" class="form-control" id="contactemail">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="contactPhone" class="form-label">PO/Client Ref#</label>
+                                            <input type="email" class="form-control" id="contactemail">
+                                        </div>
+                                        <div class="mb-2 col-6">
+                                            <label for="contactPhone" class="form-label">Booker IATA</label>
+                                            <input type="email" class="form-control" id="contactemail">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="contactPhone" class="form-label">Voucher #</label>
+                                            <input type="text" class="form-control" id="contactemail">
+                                        </div>
+                                        <a href="">Additional Pessangers</a>
+                                    </form>
+                                </div>
+
+                                <!-- Pickup & Dropoff Tab -->
+                                <div class="tab-pane fade" id="pickup-tab-pane" role="tabpanel"
+                                    aria-labelledby="pickup-tab">
+                                    <form class="row pickup-dropoff mt-3"
+                                        style="border: 1px solid gray; padding: 15px;">
+                                        <!-- Pickup & Dropoff Form Fields -->
+                                        <div class="mb-2">
+                                            <label for="pickupLocation" class="form-label">Pickup Location</label>
+                                            <input type="text" class="form-control" id="pickupLocation">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="dropoffLocation" class="form-label">Dropoff Location</label>
+                                            <input type="text" class="form-control" id="dropoffLocation">
+                                        </div>
+                                        <!-- Add other fields here -->
+                                    </form>
+                                </div>
                             </div>
-                            <div class="mb-2 col-6">
-                                <label for="companyName" class="form-label">Billing Contact</label>
-                                <input type="text" class="form-control" id="companyName">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="companyName" class="form-label">Company Name</label>
-                                <input type="text" class="form-control" id="companyName">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="passengerFirstName" class="form-label">Passenger First Name</label>
-                                <input type="text" class="form-control" id="passengerFirstName">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="passengerLastName" class="form-label">Passenger Last Name</label>
-                                <input type="text" class="form-control" id="passengerLastName">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="contactPhone" class="form-label">Pessanger Phone</label>
-                                <input type="number" class="form-control" id="contactPhone">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="contactPhone" class="form-label">Pessanger email</label>
-                                <input type="email" class="form-control" id="contactemail">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="contactPhone" class="form-label">Alternate Contact</label>
-                                <input type="email" class="form-control" id="contactemail">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="contactPhone" class="form-label">Alt. Contact Phone #</label>
-                                <input type="email" class="form-control" id="contactemail">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="contactPhone" class="form-label">PO/Client Ref#</label>
-                                <input type="email" class="form-control" id="contactemail">
-                            </div>
-                            <div class="mb-2 col-6">
-                                <label for="contactPhone" class="form-label">Booker IATA</label>
-                                <input type="email" class="form-control" id="contactemail">
-                            </div>
-                            <div class="mb-2">
-                                <label for="contactPhone" class="form-label">Voucher #</label>
-                                <input type="text" class="form-control" id="contactemail">
-                            </div>
-                            <a href="">Additional Pessangers</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
-        
+
                 <!-- Middle Section: Pickup & Dropoff -->
                 <div class="col-md-4">
-                    <div class="form-section">
-                
+                    <div class="form-section" style="border: 1px solid rgb(240, 240, 240); margin-top: 10px;">
+
                         <form class="row">
                             <div class="mb-2 col-4">
                                 <label for="pickupDate" class="form-label">PU Date</label>
@@ -242,12 +289,20 @@
                                 <input type="time" class="form-control" id="dropoffTime">
                             </div>
                             <div class="mb-2 col-4">
-                                <label for="dropoffTime" class="form-label">DO Time</label>
+                                <label for="dropoffTime" class="form-label">On the way</label>
                                 <input type="time" class="form-control" id="dropoffTime">
                             </div>
                             <div class="mb-2 col-4">
-                                <label for="dropoffTime" class="form-label">DO Time</label>
+                                <label for="dropoffTime" class="form-label">Gar-In Time</label>
                                 <input type="time" class="form-control" id="dropoffTime">
+                            </div>
+                            <div class="mb-2 col-6">
+                                <label for="dropoffTime" class="form-label">Driver Should Arrive</label>
+                                <select class="form-select" id="state">
+                                    <option selected>Select State</option>
+                                    <option value="TX">TX</option>
+                                    <option value="CA">CA</option>
+                                </select>
                             </div>
                             <div class="mb-2">
                                 <label for="locationName" class="form-label">Location Description</label>
@@ -264,7 +319,7 @@
                         </form>
                     </div>
                 </div>
-        
+
                 <!-- Right Section: Trip Details -->
                 <div class="col-md-4">
                     <div class="form-section">
@@ -297,7 +352,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- Bottom Section: Additional Information -->
             <div class="row w-100">
                 <div class="col-md-12">
@@ -305,33 +360,72 @@
                         <div class="form-header">Additional Information</div>
                         <table class="table table-bordered">
                             <thead>
-                            <tr>
-                                <th scope="col">Info</th>
-                                <th scope="col">Details</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col">Info</th>
+                                    <th scope="col">Details</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Status</td>
-                                <td>Unassigned</td>
-                            </tr>
-                            <tr>
-                                <td>Price Code</td>
-                                <td>NOT ASSIGNED</td>
-                            </tr>
-                            <tr>
-                                <td>Reference</td>
-                                <td>Manual</td>
-                            </tr>
+                                <tr>
+                                    <td>Status</td>
+                                    <td>Unassigned</td>
+                                </tr>
+                                <tr>
+                                    <td>Price Code</td>
+                                    <td>NOT ASSIGNED</td>
+                                </tr>
+                                <tr>
+                                    <td>Reference</td>
+                                    <td>Manual</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <form class="row pickup-dropoff mt-3">
+                    <!-- Pickup & Dropoff Form Fields -->
+                    <div class="mb-2">
+                        <label for="pickupLocation" class="form-label">Pickup Location</label>
+                        <input type="text" class="form-control" id="pickupLocation">
+                    </div>
+                    <div class="mb-2">
+                        <label for="dropoffLocation" class="form-label">Dropoff Location</label>
+                        <input type="text" class="form-control" id="dropoffLocation">
+                    </div>
+                    <div class="mb-2">
+                        <label for="pickupLocation" class="form-label">Pickup Location</label>
+                        <input type="text" class="form-control" id="pickupLocation">
+                    </div>
+                    <div class="mb-2">
+                        <label for="dropoffLocation" class="form-label">Dropoff Location</label>
+                        <input type="text" class="form-control" id="dropoffLocation">
+                    </div>
+                    <!-- Add other fields here -->
+                </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
+    <!-- SWiper Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 </html>

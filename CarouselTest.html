@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Swiper Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        .nav-images {
+            background-color: var(--secondary-color);
+            padding: 0px 5px;
+            height: auto; /* Adjust height for better layout */
+        }
+        .nav-images img {
+            width: 30px;
+            margin: 5px 2px;
+            transition: all .5s ease;
+        }
+        nav p {
+            padding-top: 8px;
+            font-size: 9px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: .3px;
+            transition: all .5s ease;
+        }
+        nav {
+            width: 100%;
+            margin: auto;
+            justify-content: space-around;
+            display: flex;
+            /* flex-wrap: wrap; Ensure the items wrap on large screens */
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Hides the navigation buttons by default */
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+
+        /* Media query for screen sizes 800px or less */
+        @media (max-width: 800px) {
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: block;
+            }
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start; /* Ensure the slider behaves correctly */
+            }
+        }
+
+        /* For larger screens, disable swiper and show all images in a grid */
+        @media (min-width: 801px) {
+            .card-item {
+                width: 10%; /* Adjust this based on how many images you want to show in a row */
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-color nav-images slider-wrapper swiper">
+        <nav class="row text-white gap-0 p-0 pe-0 ps-0 card-list swiper-wrapper">
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/skyscraper.png" alt="">
+                    <p>Office</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/accounting-book_6439007.png" alt="">
+                    <p>Account</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/dollar_12254418.png" alt="">
+                    <p>Quotes</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/calendar_14316759.png" alt="">
+                    <p>Calendar</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/contract_975384.png" alt="">
+                    <p>Reservations</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/car_13300807.png" alt="">
+                    <p>Dispatch</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/social-network_12665069.png" alt="">
+                    <p>Network</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/social-network_12665069.png" alt="">
+                    <p>Network</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/social-network_12665069.png" alt="">
+                    <p>Network</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/social-network_12665069.png" alt="">
+                    <p>Network</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/social-network_12665069.png" alt="">
+                    <p>Network</p>
+                </a>
+            </div>
+            <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                <a href="#">
+                    <img src="./Assets/social-network_12665069.png" alt="">
+                    <p>Network</p>
+                </a>
+            </div>
+            <!-- Add more card items as needed -->
+        </nav>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let swiperInstance = null;
+
+        function initSwiper() {
+            // If the screen is 800px or less, initialize Swiper
+            if (window.innerWidth <= 800) {
+                swiperInstance = new Swiper('.swiper', {
+                    loop: true,
+                    grabCursor: true,
+                    spaceBetween: 2,
+                    slidesPerView: 5,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
+        }
+
+        function destroySwiper() {
+            // If a swiper instance exists, destroy it
+            if (swiperInstance !== null) {
+                swiperInstance.destroy(true, true);
+                swiperInstance = null;
+            }
+        }
+
+        function handleResize() {
+            if (window.innerWidth <= 800) {
+                if (!swiperInstance) {
+                    initSwiper();
+                }
+            } else {
+                destroySwiper(); // Destroy Swiper on larger screens
+            }
+        }
+
+        // Initialize or destroy swiper on load
+        window.addEventListener('load', handleResize);
+
+        // Add resize event listener to dynamically handle screen size changes
+        window.addEventListener('resize', handleResize);
+    </script>
+</body>
+</html>

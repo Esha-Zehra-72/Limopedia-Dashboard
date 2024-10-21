@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Carousel.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider-wrapper swiper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/accounting-book_6439007.png" alt="">
+                    <p>Account</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/calendar_14316759.png" alt="">
+                    <p>Calendar</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/car_13300807.png" alt="">
+                    <p>Car</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/contract_975384.png" alt="">
+                    <p>Contract</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/accounting-book_6439007.png" alt="">
+                    <p>Account</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/accounting-book_6439007.png" alt="">
+                    <p>Account</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./Assets/accounting-book_6439007.png" alt="">
+                    <p>Account</p>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 2,  // Space between the slides
+            slidesPerView: 5,  // Display 3 slides/cards at a time
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // breakpoints: {
+            //     // Adjust the number of cards on smaller screens
+            //     640: {
+            //         slidesPerView: 1,  // Show 1 slide on small screens (e.g., mobile)
+            //         spaceBetween: 20,
+            //     },
+            //     768: {
+            //         slidesPerView: 2,  // Show 2 slides on medium screens (e.g., tablets)
+            //         spaceBetween: 30,
+            //     },
+            //     1024: {
+            //         slidesPerView: 3,  // Show 3 slides on larger screens (e.g., desktops)
+            //         spaceBetween: 40,
+            //     },
+            // },
+        });
+    </script>
+</body>
+
+</html>
