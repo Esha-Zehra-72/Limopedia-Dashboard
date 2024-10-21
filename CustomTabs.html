@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab1,
+        .tab2,
+        .tab3 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab ">
+        <ul style="display: flex; justify-content: space-between;">
+            <div class="li"><a href="" class="btn1">Hoem</a></div>
+            <div class="li"><a href="" class="btn2">ABout</a></div>
+            <div class="li"><a href="" class="btn3">Contact</a></div>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="tab1">tab1</div>
+        <div class="tab2">tab2</div>
+        <div class="tab3">tab3</div>
+    </div>
+    <script>
+        const tab1 = document.querySelector(".tab1")
+        const tab2 = document.querySelector(".tab2")
+        const tab3 = document.querySelector(".tab3")
+        const btn1 = document.querySelector(".btn1")
+        const btn2 = document.querySelector(".btn2")
+        const btn3 = document.querySelector(".btn3")
+        const closeTabs = () => {
+            tab1.style.display = 'none'
+            tab2.style.display = 'none'
+            tab3.style.display = 'none'
+        }
+        btn1.addEventListener('click', function (event) {
+            event.preventDefault()
+            closeTabs()
+            tab1.style.display = 'block'
+        })
+        btn2.addEventListener('click', function () {
+            event.preventDefault()
+            closeTabs()
+            tab2.style.display = 'block'
+
+        })
+        btn3.addEventListener('click', function () {
+            event.preventDefault()
+            closeTabs()
+            tab3.style.display = 'block'
+
+        })
+        tab1.style.display = "block"
+    </script>
+</body>
+
+</html>
