@@ -170,13 +170,13 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="bill-tab" data-bs-toggle="tab"
                                         data-bs-target="#bill-tab-pane" type="button" role="tab"
-                                        aria-controls="bill-tab-pane" aria-selected="true" style="background-color: black; color: white;   font-size: 12px;
+                                        aria-controls="bill-tab-pane" aria-selected="true" style="background-color: rgb(44, 44, 44); color: white;   font-size: 12px;
                                          padding: 8px;">Bill To & Pax</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pickup-tab" data-bs-toggle="tab"
                                         data-bs-target="#pickup-tab-pane" type="button" role="tab"
-                                        aria-controls="pickup-tab-pane" aria-selected="false" style="background-color: black; color: white; margin-left: 0px;   font-size: 12px;
+                                        aria-controls="pickup-tab-pane" aria-selected="false" style="background-color: rgb(44, 44, 44); color: white; margin-left: 0px;   font-size: 12px;
                                         padding: 8px;">Pickup & Dropoff</button>
                                 </li>
                             </ul>
@@ -205,7 +205,7 @@
                                             <div class="d-flex align-items-center justify-content-between"
                                                 style="border: 1px solid gray;"> <i class="fa-solid fa-user"
                                                     style="background-color: black; height: 100%; padding: 6px; color: white;"></i><input
-                                                    type="text" class="form-control" id="companyName" placeholder="">
+                                                    type="text" class="form-control" id="companyName">
                                             </div>
                                         </div>
                                         <div class="mb-2 col-6">
@@ -218,7 +218,7 @@
                                             <div class="d-flex align-items-center justify-content-between"
                                                 style="border: 1px solid gray;"> <i class="fa-solid fa-user"
                                                     style="background-color: rgb(0, 0, 0); height: 100%; padding: 6px; color: white;"></i><input
-                                                    type="text" class="form-control" id="companyName" placeholder="">
+                                                    type="text" class="form-control" id="companyName">
                                             </div>
 
                                         </div>
@@ -260,8 +260,43 @@
                                             <input type="text" class="form-control" id="contactemail">
                                         </div>
                                         <a href="" class="fw-bold pb-2" style="font-size: 14px;">Additional
-                                            Pessangers</a>
+                                            Pessangers
+                                        </a>
+
                                     </form>
+                                    <div class="row bill-pay mt-1" style="border: 1px soid rgb(194, 128, 128);">
+                                        <div class="col-md-6 ">
+                                            <label for="inputEmail4" class="form-label">Group Name</label>
+                                            <select id="state" class="form-control p-1 "
+                                                style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                                <option value="TX"></option>
+                                                <option value="NY">NY</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6  me-0 ">
+                                            <label for="inputPassword4" class="form-label">Occasion</label>
+                                            <select id="state" class="form-control p-1 "
+                                                style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                                <option value="TX"></option>
+                                                <option value="NY">NY</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <label for="inputEmail4" class="form-label">Greeting Sign</label>
+                                            <select id="state" class="form-control p-1 "
+                                                style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                                <option value="TX"></option>
+                                                <option value="NY">NY</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-8  me-0 ">
+                                            <label for="notes" class="" style="font-size: 12px;">Greeting Sign
+                                                Notes</label>
+                                            <textarea class="form-control" id="notes"
+                                                placeholder="Enter your notes here"
+                                                style="background-color: #ffffe0;  border: 1px solid black; "></textarea>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <!-- Pickup & Dropoff Tab -->
@@ -285,7 +320,205 @@
                         </div>
                     </div>
                 </div>
+                <!-- Right Section -->
+                <div class="col-md-4 me-0 pe-1 ps-0">
+                    <div class="form-section ms-1 me-0">
+                        <form class="bill-pay row me-1">
+                            <div class="ms-1 p-1 row">
+                                <div class="mb-2 col-6">
+                                    <label for="tripDate" class="form-label">Trip Date</label>
+                                    <input type="date" class="form-control" id="tripDate">
+                                </div>
+                                <div class="mb-2 col-6">
+                                    <label for="duration" class="form-label">Res. By:</label>
+                                    <input type="text" class="form-control" id="duration">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="state" class="col-sm-5  m-0 ps-md-0 col-form-label py-0">Status</label>
+                                    <select id="state" class="form-control p-1"
+                                        style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                        <option value="TX">Unassigned</option>
+                                        <option value="NY">NY</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="m-1 row-12">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="inputCity" class="form-label">Duration:</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
 
+                                    <div class="col-md-3">
+                                        <label for="inputZip" class="form-label">Est Drive Time:</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="inputZip" class="form-label">#Of Pac</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="inputZip" class="form-label">Luggage:</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mx-0 ">
+                                        <label for="inputState" class="form-label">Accessible:</label>
+                                        <select id="inputState" class="form-select p-1"
+                                            style="font-size: 12px; border: 1px solid black; border-radius: 0px;">
+                                            <option selected>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mx-0 px-md-0">
+                                        <label for="inputState" class="form-label">Child Seat Required</label>
+                                        <select id="inputState" class="form-select p-1"
+                                            style="font-size: 12px; border: 1px solid black; border-radius: 0px;">
+                                            <option selected>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mx-0 ">
+                                        <label for="inputState" class="form-label">Child Seat Count</label>
+                                        <input type="number" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <a href="" class="fw-bold pb-2 col-6" style="font-size: 14px;">Additional
+                                        Pessangers
+                                    </a>
+                                    <div class="col-6 text-end">
+                                        <span class="total-seats">Total Seats</span>
+                                        <span class="seat-count">(0)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-1 m-auto " style="border: 1px solid rgb(211, 211, 211);">
+
+                                <div class="row mb-1 mt-1">
+                                    <label for="inputEmail3"
+                                        class="col-sm-5 col-form-label text-success fw-bold pe-md-0">Service
+                                        Type</label>
+                                    <div class="col-sm-7">
+                                        <select id="state" class="form-control p-1 "
+                                            style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                            <option value="TX">--NOT ASSIGNED--</option>
+                                            <option value="NY">NY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <label for="inputPassword3"
+                                        class="col-sm-5 col-form-label text-success fw-bold pe-md-0">Vehicle
+                                        Type</label>
+                                    <div class="col-sm-7">
+                                        <select id="state" class="form-control p-1"
+                                            style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                            <option value="TX">--NOT ASSIGNED--</option>
+                                            <option value="NY">NY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <label for="inputPassword3"
+                                        class="col-sm-5 col-form-label text-success fw-bold pe-md-0">Preferred Vehicle
+                                        Type</label>
+                                    <div class="col-sm-7">
+                                        <select id="state" class="form-control p-1 "
+                                            style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                            <option value="TX">--NOT ASSIGNED--</option>
+                                            <option value="NY">NY</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mt-1 m-auto " style="border: 1px solid rgb(211, 211, 211);">
+
+                                <div class="row mb-1 mt-1">
+                                    <label for="inputEmail3"
+                                        class="col-sm-5 col-form-label text-success fw-bold pe-md-0">Promo Code</label>
+                                    <div class="col-sm-7">
+                                        <select id="state" class="form-control p-1 "
+                                            style="font-size: 12px; border: 1px solid black; border-radius: 0px; appearance: revert !important;">
+                                            <option value="TX">--NOT ASSIGNED--</option>
+                                            <option value="NY">NY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-11 col-md-12 m-auto mt-1"
+                                style="border: 1px solid rgb(211, 211, 211); background-color: #e4e4be;">
+                                <div class="form-check form-check-inline ">
+                                    <input class="form-check-input ms-md-1" type="radio" name="action" id="dropOff"
+                                        value="drop-off">
+                                    <label class="form-check-label text-danger ms-1" for="dropOff">In-House</label>
+                                </div>
+                                <div class="form-check form-check-inline text-center">
+                                    <input class="form-check-input ms-md-1" type="radio" name="action" id="stop"
+                                        value="stop">
+                                    <label class="form-check-label text-danger ms-md-1" for="stop">Farm-In</label>
+                                </div>
+                                <div class="form-check form-check-inline text-center">
+                                    <input class="form-check-input ms-md-1" type="radio" name="action" id="wait"
+                                        value="wait">
+                                    <label class="form-check-labe text-danger ms-md-1" for="wait">Farm-Out</label>
+                                </div>
+                            </div>
+
+                            <div class="mt-1 m-auto"
+                                style="border: 1px solid rgb(211, 211, 211); background-color: #e4e4be;">
+                                <div class="row mb-1 mt-1">
+                                    <label for="inputEmail3" class="col-sm-3 col-form-label">e-Farm-Out:</label>
+                                    <div class="col-sm-3 mt-sm-1 mt-md-auto">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                    <div class="col-sm-3 mt-sm-1 mt-md-auto">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                    <div class="col-sm-3 mt-sm-1 mt-md-auto">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="row mb-1 mt-1">
+                                    <label for="inputEmail3" class="col-sm-3 col-form-label">e-Farm-Status:</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="inputEmail3"
+                                            placeholder="Not Farmed Cut">
+                                    </div>
+                                </div>
+                                <div class="row mb-1 mt-1">
+                                    <label for="inputEmail3" class="col-sm-3 col-form-label">Affiliate:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputEmail3"
+                                            placeholder="Not Farmed Cut">
+                                    </div>
+                                </div>
+                                <div class="row mb-1 mt-1">
+                                    <label for="inputEmail3" class="col-sm-3 col-form-label">Reference #:</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <a href="" class="fw-bold pb-2 col-6" style="font-size: 14px;">Additional
+                                        Pessangers
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-1 m-auto row py-1 ps-md-5" style="border: 1px solid rgb(211, 211, 211);">
+                                <div class="col-5 mx-1" style="border: 1px solid rgb(211, 211, 211);">
+                                    Apply Table Rate
+                                </div>
+                                <div class="col-5 mx-1" style="border: 1px solid rgb(211, 211, 211);">
+                                    Log Wait Time (s)
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <!-- Middle Section: Pickup & Dropoff -->
                 <div class="col-md-4">
                     <div class="form-section ms-0 me-1">
@@ -317,40 +550,46 @@
                                 </div>
                             </div>
                             <div class="mb-2 col-12">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
                                     <li class="nav-item col text-center ">
-                                        <a class="nav-link active py-1 bg-dark text-light" id="address-tab"
+                                        <a class="nav-link active p-0 bg-dark text-light" id="address-tab"
                                             data-bs-toggle="tab" href="#address" role="tab" aria-controls="address"
-                                            aria-selected="true" style="font-size: 13px;">
-                                            <i class="fa-solid fa-house"></i> Address
+                                            aria-selected="true" style="font-size: 11px;">
+                                            <div>
+                                                <i class="fa-solid fa-house"></i>
+                                            </div> Address
                                         </a>
                                     </li>
                                     <li class="nav-item col text-center">
-                                        <a class="nav-link py-1 bg-dark text-light" id="airport-tab"
+                                        <a class="nav-link p-0 bg-dark text-light" id="airport-tab"
                                             data-bs-toggle="tab" href="#airport" role="tab" aria-controls="airport"
-                                            aria-selected="false" style="font-size: 13px;">
-                                            <i class="fa-solid fa-plane"></i> Airport
+                                            aria-selected="false" style="font-size: 11px;">
+                                            <div>
+                                                <i class="fa-solid fa-plane"></i>
+                                            </div> Airport
                                         </a>
                                     </li>
                                     <li class="nav-item col text-center">
-                                        <a class="nav-link py-1 bg-dark text-light" id="seaport-tab"
+                                        <a class="nav-link p-0 bg-dark text-light" id="seaport-tab"
                                             data-bs-toggle="tab" href="#seaport" role="tab" aria-controls="seaport"
-                                            aria-selected="false" style="font-size: 13px;">
-                                            <i class="fa-solid fa-building"></i> Seaport
+                                            aria-selected="false" style="font-size: 11px;">
+                                            <div><i class="fa-solid fa-building"></i></div> Seaport
                                         </a>
                                     </li>
                                     <li class="nav-item col text-center ">
-                                        <a class="nav-link py-1 bg-dark text-light" id="fbo-tab" data-toggle="tab"
+                                        <a class="nav-link p-0 bg-dark text-light" id="fbo-tab" data-bs-toggle="tab"
                                             href="#fbo" role="tab" aria-controls="fbo" aria-selected="false"
-                                            style="font-size: 13px;"><i class="fa-solid fa-globe"></i>
-                                            <div>FBO</div>
+                                            style="font-size: 11px;">
+                                            <div><i class="fa-solid fa-globe"></i></div>
+                                            FBO
                                         </a>
                                     </li>
                                     <li class="nav-item col text-center ">
-                                        <a class="nav-link py-1 bg-dark text-light" id="poi-tab" data-toggle="tab"
+                                        <a class="nav-link p-0 bg-dark text-light" id="poi-tab" data-bs-toggle="tab"
                                             href="#poi" role="tab" aria-controls="poi" aria-selected="false"
-                                            style="font-size: 13px;"><i class="fa-solid fa-earth-asia"></i>
-                                            <div>POI</div>
+                                            style="font-size: 11px;">
+                                            <div><i class="fa-solid fa-earth-asia"></i></div>
+                                            POI
                                         </a>
                                     </li>
                                 </ul>
@@ -490,9 +729,14 @@
                                                     style="font-size: 14px; border: 1px solid gainsboro; padding:2px 4px; background-color: rgb(72, 93, 110); color: white;">
                                                     Create</div>
                                             </div>
+                                        </div>
                                     </form>
                                 </div>
-                                <!-- Airport Tab Content -->
+
+                            </div>
+
+                            <!-- Airport Tab Content -->
+                            <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade" id="airport" role="tabpanel" aria-labelledby="airport-tab">
                                     <div class="col-12 fw-bold">Airport Information</div>
                                     <div class="form-group col">
@@ -513,7 +757,10 @@
                                     </div>
                                 </div>
 
-                                <!-- Seaport Tab Content -->
+                            </div>
+
+                            <!-- Seaport Tab Content -->
+                            <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade" id="seaport" role="tabpanel" aria-labelledby="seaport-tab">
                                     <div class="col-12 fw-bold">Seaport Information</div>
                                     <div class="form-group col">
@@ -525,8 +772,10 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <!-- FBO Tab Content -->
+                            <!-- FBO Tab Content -->
+                            <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade" id="fbo" role="tabpanel" aria-labelledby="fbo-tab">
                                     <div class="col-12 fw-bold">FBO Information</div>
                                     <div class="form-group col">
@@ -538,7 +787,9 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
+                            <div class="tab-content" id="myTabContent">
                                 <!-- POI Tab Content -->
                                 <div class="tab-pane fade" id="poi" role="tabpanel" aria-labelledby="poi-tab">
                                     <div class="col-12 fw-bold">POI Information</div>
@@ -552,7 +803,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                 </div>
