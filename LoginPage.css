@@ -1,4 +1,219 @@
 
-.input-container input{
+  *,
+  *:before,
+  *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #080710;
+  }
+  .background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+  }
+
+  form {
+    height: 570px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .form-container {
+    height: 90vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-container {
+    height: 570px;
+    width: 350px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
     outline: none;
-}
+    border: none;
+  }
+
+  form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  input:hover {
+    border: 1px solid gainsboro;
+    transition: all .5s ease;
+  }
+
+  ::placeholder {
+    color: #e5e5e5;
+  }
+
+  button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .img-container .para {
+    width: 85%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-family: "Dongle", sans-serif;
+  }
+
+  .img-parent {
+    margin-left: -25px;
+  }
+
+  .rememberMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rememberMe input {
+    width: 12px;
+    margin-right: 5px;
+  }
+
+  .rememberMe div {
+    margin-top: -13px;
+  }
+
+  .rememberAndForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .forgotPassword a {
+    font-size: 15px;
+  }
+
+  .button {
+    position: relative;
+    padding: 16px 64px;
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+    border: solid 1px rgba(250, 250, 250, 0.5);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+
+    .button-text {
+      position: relative;
+      font-size: 18px;
+      z-index: 2;
+      color: #000000;
+      transition: color 0.4s ease-in-out;
+    }
+
+    .fill-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 8px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: -100%;
+        /* Start from the left */
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+    }
+
+    &:hover {
+      border-color: rgba(243, 243, 243, 0.8);
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+
+      .button-text {
+        color: white !important;
+      }
+
+      .fill-container::after {
+        transform: translateX(100%);
+        /* Move black background out to the right */
+      }
+    }
+
+    /* When hover ends, white color (default) fills in from the left */
+    &:not(:hover) .fill-container::after {
+      transform: translateX(-100%);
+      /* Smoothly transition back from the left */
+    }
+  }
+
+  /* @media screen and (max-width:800px) {
+    .img-container{
+        display: none !important;
+    } 
+  } */
+
+  @media screen and (max-width : 900px) {
+    .img-container{
+     display: none !important;
+     background-color: red;
+    }
+    .form-container {
+      width: 100vh;
+    }
+  }
