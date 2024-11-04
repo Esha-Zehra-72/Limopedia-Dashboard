@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Office</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Intel country link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <!-- Inter Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="w-100">
+        <div class="header row">
+            <div class="col img-fluid ms-md-0 ms-2">
+                <img src="./Assets/logo-Black.png">
+            </div>
+            <div class="col search-bar">
+                <form class="d-flex search-form" role="search">
+                    <input class="form-control bg-transparent" type="search" placeholder="Search" aria-label="Search">
+                    <span class="search-icon"><i class="fa fa-magnifying-glass"></i></span>
+
+                </form>
+            </div>
+            <div class="links col text-end">
+                <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reservations"><i
+                            class="fa fa-car"></i></a></button>
+                <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="More"><i
+                            class="fa fa-ellipsis-vertical"></i></a></button>
+                <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="User Profile"><i
+                            class="fa fa-user"></i></a></button>
+            </div>
+        </div>
+        <div class="bg-color nav-images slider-wrapper swiper ">
+            <nav class="row text-white gap-0 p-0 pe-0 ps-0 card-list swiper-wrapper">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="./MyOffice.html">
+                        <img src="./Assets/skyscraper.png" alt="">
+                        <p>office</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/accounting-book_6439007.png" alt="">
+                        <p>Account</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/dollar_12254418.png" alt="">
+                        <p>Quotes</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/calendar_14316759.png" alt="">
+                        <p>Calender</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/contract_975384.png" alt="">
+                        <p>Reserveins</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/car_13300807.png" alt="">
+                        <p>Dispatch</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/social-network_12665069.png" alt="">
+                        <p>Network</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/yen_12097384.png" alt="">
+                        <p>Settle</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/income_5812859.png" alt="">
+                        <p>Receiveable</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/data_14962024.png" alt="">
+                        <p>Reports</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/folder_3767084.png" alt="">
+                        <p>Files</p>
+                    </a>
+                </div>
+            </nav>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </header>
+
+    <div class="row w-100">
+        <div class="col-12">
+            <div>
+                <ul class="nav nav-tabs ms-2">
+                    <li class="nav-item">
+                        <a href="#company-settings" class="nav-link company-parent-tabs active"
+                            data-bs-toggle="tab">Company Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company-settings1" class="nav-link company-parent-tabs" data-bs-toggle="tab">Company
+                            Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company-settings2" class="nav-link company-parent-tabs" data-bs-toggle="tab">Rate
+                            Managment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company-settings3" class="nav-link company-parent-tabs" data-bs-toggle="tab">List
+                            Managment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company-settings4" class="nav-link company-parent-tabs" data-bs-toggle="tab">Custom
+                            Forms</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="active fade all show tab-pane " id="company-settings">
+                        <div class="row">
+                            <div class="col-3">
+                                <div>
+                                    <ul class="nav nav-links mt-1 ms-2">
+                                        <li class="nav-item col-7">
+                                            <a href="#contact-information"
+                                                class="nav-link active contact-information-child-tabs"
+                                                data-bs-toggle="tab">Contact Information</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="#company-preferences"
+                                                class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Company Preferences</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">System Users</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Policies</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">ReadBack Script Templates</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Messaging % Templates Settings</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">iCalender Settings</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Online Reservations</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Payment Gateway</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Third-party Plug-in</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">System Settings</a>
+                                        </li>
+                                        <li class="nav-item col-7">
+                                            <a href="" class="nav-link contact-information-child-tabs"
+                                                data-bs-toggle="tab">Lime Anywhere PAY</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content position-absolute" style="top: 170px; left: 20%;">
+                                        <div class="tab-pane fade on show active row w-100" id="contact-information">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="col-4 ms-5 mt-4" style="font-size: 14px;">
+                                                    <h6>Company Information:</h6>
+                                                    <a href="">Manage Company Aliases</a>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">Company Name</label>
+                                                        <input type="text" name="" id="" class="col-8">
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">Street Address</label>
+                                                        <input type="text" name="" id="" class="col-8">
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">Street Address 2</label>
+                                                        <input type="text" name="" id="" class="col-8">
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">City/Town</label>
+                                                        <input type="text" name="" id="" class="col-8">
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">State/Province/Territory</label>
+                                                        <select id="inputState" class="col-8">
+                                                            <option selected>Choose...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">Zip/Postal Code</label>
+                                                        <input type="number" name="" id="" class="col-8">
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col-4">EIN/Bussiness Number</label>
+                                                        <!-- <div class="d-flex"> -->
+                                                        <input type="number" name="" id="" class="col-4">
+                                                        <input type="checkbox" name="" id=""
+                                                            class="col-1 p-0 m-0 ms-4 d-flex me-0" style="width: 14px;">
+                                                        <span class="col mt-1"
+                                                            style="font-size: 12px; font-weight: 500;">Show on Trip Tkts
+                                                            & Inv</span>
+                                                        <!-- </div> -->
+                                                    </div>
+                                                    <div class="row contact-information-form">
+                                                        <label for="" class="col">Country</label>
+                                                        <select id="inputState" class="col-8">
+                                                            <option selected>Choose...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="contact-information-form d-flex mt-1">
+                                                        <label for="" class="col-3 form-label"
+                                                            style="padding: auto ; margin-left: 5px;">Primary Phone
+                                                            Number</label>
+                                                        <div class="col-9 ms-5 ps-1">
+                                                            <input id="phone" type="tel" class="ps-5 pe-0"
+                                                                style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="contact-information-form d-flex mt-1">
+                                                        <label for="" class="col-3 form-label"
+                                                            style="padding: auto ; margin-left: 5px;">Secondary Phone
+                                                            Number</label>
+                                                        <div class="col-9 ms-5 ps-1">
+                                                            <input id="phone" type="tel" class="ps-5 pe-0"
+                                                                style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="contact-information-form d-flex mt-1">
+                                                        <label for="" class="col-3 form-label"
+                                                            style="padding: auto ; margin-left: 5px;">Fax Number</label>
+                                                        <div class="col-9 ms-5 ps-1">
+                                                            <input id="phone" type="fax" class="ps-5 pe-0"
+                                                                style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row contact-information-form ">
+                                                        <label for="" class="col">General email Address</label>
+                                                        <input type="email" name="" id="" class="col-8 ps-0 ms-0">
+                                                    </div>
+                                                    <div class="row contact-information-form ">
+                                                        <label for="" class="col">Reservation email Address</label>
+                                                        <input type="email" name="" id="" class="col-8 ps-0 ms-0">
+                                                    </div>
+                                                    <div class="row contact-information-form ">
+                                                        <label for="" class="col">Quote email Address</label>
+                                                        <input type="email" name="" id="" class="col-8 ps-0 ms-0">
+                                                    </div>
+                                                    <div class="row contact-information-form ">
+                                                        <label for="" class="col">Billing email Address</label>
+                                                        <input type="email" name="" id="" class="col-8 ps-0 ms-0">
+                                                    </div>
+                                                    <div class="row contact-information-form ">
+                                                        <label for="" class="col">Company Website URL</label>
+                                                        <input type="url" name="" id="" class="col-8 ps-0 ms-0">
+                                                    </div>
+                                                    <div class="contact-information-form d-flex gap-5">
+                                                        <label for="" class="col-3 mt-2">
+                                                            <h6>Company Logo</h6>
+                                                            <div>
+                                                                Image will be scaled into 1800px wide by 1800px high,or
+                                                                smaller,
+                                                                <div>Formats: GIF, PNG, JPEG</div>
+                                                            </div>
+                                                        </label>
+                                                        <div class="col-9 ms-2 position-relative w-75">
+                                                            <input type="file" id="imageUpload" class="ps-0 ms-0"
+                                                                onchange="showImagePreview(event)"
+                                                                style="height: 30px;">
+                                                            <div class="text-center mt-1" id="img-preview-container"
+                                                                style="padding: 5px; border: none;">
+                                                                <img id="imagePreview" src="#" alt="Image Preview"
+                                                                    class="img-fluid w-50 text-center "
+                                                                    style="display: none; margin: auto;">
+                                                                <a href="javascript:void(0);" id="dlt-logo"
+                                                                    onclick="deleteImage()"
+                                                                    style="display: none; color: rgb(0, 153, 255); text-decoration: none; text-align: center;">&gt;&gt;Delete
+                                                                    Logo&lt;&lt;</a>
+                                                            </div>
+
+                                                            <button class="update-company-info">Update My Company
+                                                                Contact Information</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="company-preferences">
+                                            <div class="d-flex justify-content-between w-100 ms-5" >
+                                                <ul class="nav nav-tabs d-flex flex-column col-3">
+                                                    <li class="nav-item">
+                                                        <a href="#general" class="nav-link  contact-information-child-tabs mt-2 ms-0" data-bs-toggle='tab' >General</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Forms, Reports</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Accounts, Calender, Quotes</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Reservations</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Slttle, Receivable, Payable</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">DriverAnywhere</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content col-8 w-100 ms-5" >
+                                                    <div id="general" class="fade active show on tab-pane w-100 p-3" style="border: 1px solid gray;">
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">My Time Zone</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>Eastern (US/Canada) (EST)</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">My Start Zone</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>Calander</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Default Date Formate (Back-Office):</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>MM/DD/YYYY</option>
+                                                                <option>DD/MM/YYYY</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Default Time Format (Back-office):</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>HH:MM AM/PM</option>
+                                                                <option>24 Hou</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Default Reservation Type</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>In-House</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Default Currency</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>$ (US Dollar)</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Master Delete Password</label>
+                                                            <input type="text" name="" id="" class="col-8">
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">"Passenger" Label - Singular (?):</label>
+                                                            <input type="text" name="" id="" class="col-8" value="Passengers">
+                                                            
+                                                        </div>
+                                                        <div class="row contact-information-form ">
+                                                            <label for="" class="col">Time Labels</label>
+                                                           <div class="col-6 ms-0">
+                                                            <button type="button" class="btn btn-orange text-light py-1 my-2" style="background-color: rgb(212, 148, 28); font-size: 12px;">Launch Time Label Manager</button>
+                                                           </div>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Sort order in Global Search By:</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>Pick-up Date & Time</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Raise alert for new Online & E-farm-in reservations:</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Default page size for rate zone lists:</label>
+                                                            <input type="text" name="" id="" class="col-8" value="50">
+                                                        </div>
+                                                        <div class="row contact-information-form">
+                                                            <label for="" class="col">Include the following date range in LALocal export:</label>
+                                                            <select id="inputState" class="col-8">
+                                                                <option selected>Current Date</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div class="col-12 text-center">
+                                                                <button type="submit" class="btn btn-primary">Save Settings</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div id="general" class="fade active show on tab-pane">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, rerum.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+
+                                            
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" fade tab-pane" id="company-settings1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat.
+                    </div>
+                    <div class=" fade tab-pane" id="company-settings2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit 2
+                    </div>
+                    <div class=" fade tab-pane" id="company-settings3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 3
+                    </div>
+                    <div class=" fade tab-pane" id="company-settings4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- SWiper Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

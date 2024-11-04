@@ -1,13 +1,13 @@
 // Tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
+    return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 // nav3 Buttons
 
 var button = document.getElementsByTagName("button")
-function clickedBtn(button){
-button.style.backgroundColor = "red"
+function clickedBtn(button) {
+    button.style.backgroundColor = "red"
 }
 
 
@@ -74,3 +74,55 @@ document.querySelectorAll('.iti__country-list .iti__country').forEach(country =>
         countryName.style.display = 'none';  // Hide the country name
     }
 });
+
+// Contact Information Tab 
+document.querySelectorAll('.company-parent-tabs').forEach((tabs) => {
+    tabs.addEventListener('click', function () {
+        document.querySelectorAll('.company-parent-tabs').forEach((t) => {
+            t.classList.remove('active')
+        })
+        this.classList.add('active')
+    })
+})
+
+
+const imgPreviewContainer = document.getElementById('img-preview-container');
+const deleteLogo = document.getElementById('dlt-logo');
+
+// Function to toggle border and delete link
+function borderShows() {
+    const image = document.getElementById('imagePreview');
+    if (image.style.display === 'block') {
+        imgPreviewContainer.style.border = '2px solid black';
+        deleteLogo.style.display = 'block';  // Show delete link
+    } else {
+        imgPreviewContainer.style.border = 'none';
+        deleteLogo.style.display = 'none';   // Hide delete link
+    }
+}
+
+// Preview Image Function
+function showImagePreview(event) {
+    const image = document.getElementById('imagePreview');
+    const file = event.target.files[0];
+    
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            image.src = e.target.result;
+            image.style.display = 'block';  // Show the image
+            borderShows(); // Update border and delete link visibility
+        }
+        reader.readAsDataURL(file);  // Convert file to base64 string
+    } else {
+        deleteImage(); // Clear preview if no file is selected
+    }
+}
+
+// Delete Image Function
+function deleteImage() {
+    const image = document.getElementById('imagePreview');
+    image.src = "#";
+    image.style.display = 'none';  // Hide the image
+    borderShows(); // Hide border and delete option
+}
