@@ -198,10 +198,12 @@
                                                 data-bs-toggle="tab">Lime Anywhere PAY</a>
                                         </li>
                                     </ul>
-                                    <div class="tab-content position-absolute" style="top: 170px; left: 20%;">
+
+                                    <div class="tab-content position-absolute" style="top: 170px; left: 15%;">
                                         <div class="tab-pane fade on show active row w-100" id="contact-information">
-                                            <div class="d-flex justify-content-center">
-                                                <div class="col-4 ms-5 mt-4" style="font-size: 14px;">
+                                            <!-- Company Information -->
+                                            <div class="d-flex justify-content-center ms-5">
+                                                <div class="col-4 ms-5 text-center mt-4" style="font-size: 14px;">
                                                     <h6>Company Information:</h6>
                                                     <a href="">Manage Company Aliases</a>
                                                 </div>
@@ -328,30 +330,46 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <!-- company-preferences -->
                                         <div class="tab-pane fade" id="company-preferences">
-                                            <div class="d-flex justify-content-between w-100 ms-5" >
+                                            <div class="d-flex justify-content-between w-100 ms-3">
                                                 <ul class="nav nav-tabs d-flex flex-column col-3">
                                                     <li class="nav-item">
-                                                        <a href="#general" class="nav-link  contact-information-child-tabs mt-2 ms-0" data-bs-toggle='tab' >General</a>
+                                                        <a href="#general"
+                                                            class="nav-link  contact-information-child-tabs mt-2 ms-0"
+                                                            data-bs-toggle='tab'>General</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Forms, Reports</a>
+                                                        <a href="#FormReport"
+                                                            class="nav-link contact-information-child-tabs mt-2 ms-0"
+                                                            data-bs-toggle="tab">Forms, Reports</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Accounts, Calender, Quotes</a>
+                                                        <a href="#AccountCalenderQuotes"
+                                                            class="nav-link contact-information-child-tabs mt-2 ms-0  "
+                                                            data-bs-toggle="tab">Accounts, Calender, Quotes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Reservations</a>
+                                                        <a href="#Reservations"
+                                                            class="nav-link contact-information-child-tabs mt-2 ms-0"
+                                                            data-bs-toggle="tab">Reservations</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">Slttle, Receivable, Payable</a>
+                                                        <a href="#SettleReceiveablePayables"
+                                                            class="nav-link contact-information-child-tabs mt-2 ms-0"
+                                                            data-bs-toggle="tab">Settle, Receivable, Payable</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" class="nav-link contact-information-child-tabs mt-2 ms-0" data-bs-toggle="tab">DriverAnywhere</a>
+                                                        <a href="#DriverAnywhere"
+                                                            class="nav-link contact-information-child-tabs mt-2 ms-0  active"
+                                                            data-bs-toggle="tab">DriverAnywhere</a>
                                                     </li>
                                                 </ul>
-                                                <div class="tab-content col-8 w-100 ms-5" >
-                                                    <div id="general" class="fade active show on tab-pane w-100 p-3" style="border: 1px solid gray;">
+                                                <div class="tab-content col-8 w-75 ms-3">
+                                                    <!-- General -->
+                                                    <div id="general" class="fade tab-pane w-100 p-3 ms-5 ps-5"
+                                                        style="border: 1px solid gray;">
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">My Time Zone</label>
                                                             <select id="inputState" class="col-8">
@@ -367,14 +385,16 @@
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">Default Date Formate (Back-Office):</label>
+                                                            <label for="" class="col">Default Date Formate
+                                                                (Back-Office):</label>
                                                             <select id="inputState" class="col-8">
                                                                 <option selected>MM/DD/YYYY</option>
                                                                 <option>DD/MM/YYYY</option>
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">Default Time Format (Back-office):</label>
+                                                            <label for="" class="col">Default Time Format
+                                                                (Back-office):</label>
                                                             <select id="inputState" class="col-8">
                                                                 <option selected>HH:MM AM/PM</option>
                                                                 <option>24 Hou</option>
@@ -399,36 +419,45 @@
                                                             <input type="text" name="" id="" class="col-8">
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">"Passenger" Label - Singular (?):</label>
-                                                            <input type="text" name="" id="" class="col-8" value="Passengers">
-                                                            
+                                                            <label for="" class="col">"Passenger" Label - Singular
+                                                                (?):</label>
+                                                            <input type="text" name="" id="" class="col-8"
+                                                                value="Passengers">
+
                                                         </div>
                                                         <div class="row contact-information-form ">
                                                             <label for="" class="col">Time Labels</label>
-                                                           <div class="col-6 ms-0">
-                                                            <button type="button" class="btn btn-orange text-light py-1 my-2" style="background-color: rgb(212, 148, 28); font-size: 12px;">Launch Time Label Manager</button>
-                                                           </div>
+                                                            <div class="col-6 ms-0">
+                                                                <button type="button"
+                                                                    class="btn btn-orange text-light py-1 my-2"
+                                                                    style="background-color: rgb(212, 148, 28); font-size: 12px;">Launch
+                                                                    Time Label Manager</button>
+                                                            </div>
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">Sort order in Global Search By:</label>
+                                                            <label for="" class="col">Sort order in Global Search
+                                                                By:</label>
                                                             <select id="inputState" class="col-8">
                                                                 <option selected>Pick-up Date & Time</option>
                                                                 <option>...</option>
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">Raise alert for new Online & E-farm-in reservations:</label>
+                                                            <label for="" class="col">Raise alert for new Online &
+                                                                E-farm-in reservations:</label>
                                                             <select id="inputState" class="col-8">
                                                                 <option selected>Yes</option>
                                                                 <option>No</option>
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">Default page size for rate zone lists:</label>
+                                                            <label for="" class="col">Default page size for rate zone
+                                                                lists:</label>
                                                             <input type="text" name="" id="" class="col-8" value="50">
                                                         </div>
                                                         <div class="row contact-information-form">
-                                                            <label for="" class="col">Include the following date range in LALocal export:</label>
+                                                            <label for="" class="col">Include the following date range
+                                                                in LALocal export:</label>
                                                             <select id="inputState" class="col-8">
                                                                 <option selected>Current Date</option>
                                                                 <option>No</option>
@@ -436,18 +465,867 @@
                                                         </div>
                                                         <div class="row mt-4">
                                                             <div class="col-12 text-center">
-                                                                <button type="submit" class="btn btn-primary">Save Settings</button>
+                                                                <button type="submit" class="btn btn-primary">Save
+                                                                    Settings</button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- <div id="general" class="fade active show on tab-pane">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, rerum.
-                                                    </div> -->
+                                                    <!-- FormReport -->
+                                                    <div id="FormReport" class="fade tab-pane w-100 p-3 ms-5"
+                                                        style="border: 1px solid gray;">
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Time Format - Customer
+                                                                Forms:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>HH:MM AM/PM</option>
+                                                                <option>24-Hour</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Time Format - Driver
+                                                                Forms:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>HH:MM AM/PM</option>
+                                                                <option>24-Hour</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Time Format - Affiliate
+                                                                Forms:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>HH:MM AM/PM</option>
+                                                                <option>24-Hour</option>
+                                                            </select>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Trip Sheet Font Style &
+                                                                Size:</label>
+                                                            <div class="d-flex gap-2" style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Arial</option>
+                                                                    <option>Times New Roman</option>
+                                                                    <option>Verdana</option>
+                                                                </select>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>8pt</option>
+                                                                    <option>10pt</option>
+                                                                    <option>12pt</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Rate Data on Trip Sheets -
+                                                                Driver:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Rate Data on Trip Sheets -
+                                                                Customer:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Bill to Information on Trip
+                                                                Sheets - Customer</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Bill to Information on Trip
+                                                                Sheets - Driver</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form w-100 align-items-center">
+                                                            <label for="" class="col-5">Show Signature Line on Trip
+                                                                Sheets (Driver & Customer):</label></label>
+                                                            <div class="d-flex gap-2 justify-content-center align-items-center"
+                                                                style="margin-left: 15px;">
+                                                                <select class=" col-3" id="inputState">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                                <span class="col-5"
+                                                                    style="font-size: 12px; width: 200px; margin-right: -40px;">If
+                                                                    Yes, show extra gratuity field? </span>
+                                                                <select class=" col-3" id="inputState">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Pessangers Contact Info on
+                                                                Trip Sheets - Affiliate</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option selected>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Affiliate Agreements on
+                                                                Affiliate Trip Sheets ?</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option selected>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Trip Total on Confirmations
+                                                                and Payment Receipts:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes, show totals</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Itemize Charges on Standard
+                                                                Confirmations and Payment Receipts:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show Drop-off Time On Standard
+                                                                Email Confirmations:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Highlight Notes on Driver Trip
+                                                                Sheets:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Highlight Notes on Customer Trip
+                                                                Sheets:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Hide Rental Agreement on Driver
+                                                                Trip Sheets:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Include Trip Notes on Trip
+                                                                Sheets by default:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Hide Trip Notes from customer on
+                                                                Trip Sheets by default:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="d-flex contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Manifest Font Style &
+                                                                Size:</label>
+                                                            <div class="d-flex gap-2" style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Arial</option>
+                                                                    <option>Times New Roman</option>
+                                                                    <option>Verdana</option>
+                                                                </select>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>8pt</option>
+                                                                    <option>10pt</option>
+                                                                    <option>12pt</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Blank out dates on Reports
+                                                                screen:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Display Bill To Phone Number on
+                                                                Invoices:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Exclude Passenger Name on Driver
+                                                                Payroll Logs/Reports:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form mt-1 ">
+                                                            <a href="#" style="font-size: 14px;">Default Greeting Sign
+                                                                Settings</a>
+                                                        </div>
+                                                        <div class="row contact-information-form mt-1">
+                                                            <label for="" class="col-5 mt-2">Show Dashboard
+                                                                Reports:</label>
+                                                            <select id="inputState" class="col-4">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row mt-4 p-3 w-50 text-center"
+                                                            style="font-size: 13px;">
+                                                            <button class="update-company-info">Update My Company
+                                                                Contact Information</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Account Calender Quotes -->
+                                                    <div id="AccountCalenderQuotes" class="fade tab-pane w-100 ms-5 p-3"
+                                                        style="border: 1px solid gray;">
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Customer Account
+                                                                Numbers:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>System Generated</option>
+                                                                <option>....</option>
+                                                            </select>
+                                                            <input type="number" class="col-3 ms-2"
+                                                                placeholder="Starts With: 30000">
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Allow duplicate account
+                                                                numbers:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form w-100 align-items-center">
+                                                            <label for="" class="col-5">Auto Generate Passwords?
+                                                                (Back-office Only):</label>
+                                                            <div class="d-flex gap-2 justify-content-center align-items-center"
+                                                                style="margin-left: -9px">
+                                                                <select class=" col-3" id="inputState">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                                <label for="" class="col-3"
+                                                                    style="font-size: 12px; width: 200px;">"If
+                                                                    Yes, show extra gratuity field?"</label>
+                                                                <input type="number" class="col-3"
+                                                                    style="margin-left: -30px;">
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="row contact-information-form align-items-center my-2">
+                                                            <a href="#">Required Account Fields</a>
+                                                        </div>
+                                                        <hr>
+
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Default Calendar View:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Month</option>
+                                                                <option selected>Week</option>
+                                                                <option>Day</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Show estimated drop-off time on
+                                                                Calendar:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Start Monthly & Weekly Calendar
+                                                                on:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Monday</option>
+                                                                <option selected>Sunday</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Display Unfinalized Reservations
+                                                                on Calendar?</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row mt-4 p-3 py-4 text-center"
+                                                            style="font-size: 13px; width:300px;">
+                                                            <button class="update-company-info"
+                                                                style="font-size: 12px;">Update My Company
+                                                                Contact Information</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Reservations -->
+                                                    <div id="Reservations"
+                                                        class="fade tab-pane w-100 p-3 ms-0"
+                                                        style="border: 1px solid gray;">
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Open Reservation Screen
+                                                                as</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Modal dialog</option>
+                                                                <option>Full screen</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Use auto complete on reservation
+                                                                screen:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Exclude non-account data from
+                                                                auto complete:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Hide Booked By field on
+                                                                reservation screen:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Update PickUp Time Based on the
+                                                                Arrival flight's ETA and flight offset: (?)</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Auto Populate DO Time based on
+                                                                Duration value:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Perform Country Lookup When
+                                                                Saving Routing Information:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Produce Readback script on First
+                                                                save:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Produce Readback script on all
+                                                                save:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Auto Populate No. of Hrs into
+                                                                Rate Multiplier:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Per Hour - (Base Rate)</option>
+                                                                    <option>Per Pass - (Base Rate)</option>
+                                                                </select>
+                                                                <span for="" class="col ms-2"
+                                                                    style="font-size: 12px; width: 70px;">Applies
+                                                                    To:</span>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>For Airport, To Airport</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Auto Populate No. of Pax into
+                                                                Rate Multiplier:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Per Hour - (Base Rate)</option>
+                                                                    <option>Per Pass - (Base Rate)</option>
+                                                                </select>
+                                                                <span for="" class="col ms-2"
+                                                                    style="font-size: 12px; width: 70px;">Applies
+                                                                    To:</span>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>For Airport, To Airport</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Auto Populate No. of Stopes into
+                                                                Rate Multiplier:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Per Hour - (Base Rate)</option>
+                                                                    <option>Per Pass - (Base Rate)</option>
+                                                                </select>
+                                                                <span for="" class="col ms-2"
+                                                                    style="font-size: 12px; width: 70px;">Applies
+                                                                    To:</span>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>For Airport, To Airport</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Auto Populate No. of Child Seats
+                                                                into Rate Multiplier:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Per Hour - (Base Rate)</option>
+                                                                    <option>Per Pass - (Base Rate)</option>
+                                                                </select>
+                                                                <span for="" class="col ms-2"
+                                                                    style="font-size: 12px; width: 70px;">Applies
+                                                                    To:</span>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>For Airport, To Airport</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Auto Populate Distance
+                                                                Total:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>To One Fixed Rate</option>
+                                                                    <option>Per Pass - (Base Rate)</option>
+                                                                </select>
+                                                                <span for="" class="col ms-2"
+                                                                    style="font-size: 12px; width: 70px;">Applies
+                                                                    To:</span>
+                                                                <select class=" col" id="inputState">
+                                                                    <option>For Airport, To Airport</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Miles to Kilometers:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Miles</option>
+                                                                    <option>...</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Avoid:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Not Selected</option>
+                                                                    <option>...</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center">
+                                                            <label for="" class="col-5">Optimize By:
+                                                            </label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <select class=" col" id="inputState">
+                                                                    <option>Not Selected</option>
+                                                                    <option>...</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center w-100">
+                                                            <label for="" class="col-3">Airport: Curbside Pickup
+                                                                Fee:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <input type="number" class="col-2">
+                                                                <span for="" class="col-2 ms-1 me-1"
+                                                                    style="font-size: 12px; width: 30px;">Label: </span>
+                                                                <input type="text" class="col-2">
+                                                                <span for="" class="col-1 ms-1 me-0"
+                                                                    style="font-size: 12px; width: 90px;">Associated
+                                                                    with:</span>
+                                                                <select class=" col-4" id="inputState">
+                                                                    <option>Misc Free 1 - (Miscellaneous)</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form align-items-center align-items-center w-100">
+                                                            <label for="" class="col-3">Airport: Inside Pickup
+                                                                Fee:</label>
+                                                            <div class="d-flex align-items-center"
+                                                                style="margin-left: -1px;">
+                                                                <input type="number" class="col-2">
+                                                                <span for="" class="col-2 ms-1 me-1"
+                                                                    style="font-size: 12px; width: 30px;">Label: </span>
+                                                                <input type="text" class="col-2">
+                                                                <span for="" class="col-1 ms-1 me-0"
+                                                                    style="font-size: 12px; width: 90px;">Associated
+                                                                    with:</span>
+                                                                <select class=" col-4" id="inputState">
+                                                                    <option>Misc Free 1 - (Miscellaneous)</option>
+                                                                    <option>For Airport, To Airport</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Do not allow to save
+                                                                reservations without CC info on Credit Card
+                                                                reservations:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Default List Size on
+                                                                Reservations Screens:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>15</option>
+                                                                <option selected>01</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Greeting Sign Default
+                                                                Setting:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Greeting Sign is not Required</option>
+                                                                <option selected>01</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Action on "Save
+                                                                Reservation.":</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Save & Stay on the Same Screen</option>
+                                                                <option selected>01</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Auto-assign Linked Drivers and
+                                                                Cars:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Filter rates on the FIXED rate
+                                                                tab of the Apply Rate Table dialog based on reservation
+                                                                criteria:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Blank out Vehicle Type, Service
+                                                                Type, Car and Driver drop-downs when copying
+                                                                reservations:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Blank out PU Date and Time when
+                                                                copying reservations:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Blank out Vehicle Type, Car,
+                                                                Driver and Status drop-downs when creating round
+                                                                trips:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Blank out PU Date and Time when
+                                                                creating round trips:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Prompt user to verify Payment
+                                                                Information of reservation on first save:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Layout of Trip Notes and Bill To
+                                                                & Pax Notes on the reservation screen:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Stacked</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Warn user if Car assigned does
+                                                                not match Vehicle Type assigned:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Stacked</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">When farming out, sort
+                                                                affiliates by:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Location, then Name</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Validate credit card numbers on
+                                                                entry:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Location, then Name</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Hide "Preferred" Drop Down Boxes
+                                                                on reservation/dispatch sections:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Auto Apply Vehicle Type when
+                                                                rate selected from Apply Rate Table:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Settle Receiveable, Payables -->
+                                                    <div id="SettleReceiveablePayables"
+                                                        class="fade tab-pane w-100 ms-5 p-3"
+                                                        style="border: 1px solid gray;">
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Open Settle Window as:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Modal dialog</option>
+                                                                <option>....</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">Allow Unsettled Trips To Be
+                                                                Invoiced:</label>
+                                                            <select id="inputState" class="col-3">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex contact-information-form w-100 align-items-center">
+                                                            <label for="" class="col-5">Raise Alert if Completed Trips
+                                                                Have Not Been Settled After:</label>
+                                                            <div class="d-flex gap-2 justify-content-center align-items-center"
+                                                                style="margin-left: -72px; width: 50%;">
+                                                                <select id="inputState" class="col-6">
+                                                                    <option>Yes</option>
+                                                                    <option selected>No</option>
+                                                                </select>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-5">By default, calculate agent commissions on:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Base Charges</option>
+                                                                <option selected>Base Charges</option>
+                                                            </select>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-6">Auto-populate Trip Duration value into Driver Payroll Hours field:</label>
+                                                            <input type="checkbox" name="" id="" class="col-2">
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-6">Auto Populate Driver Payroll Hours field with time based on Garage Out & Garage In times:</label>
+                                                            <input type="checkbox" name="" id="" class="col-2">
+                                                        </div>
+                                                        <div class="row contact-information-form align-items-center">
+                                                            <label for="" class="col-6">Calculate Driver Hourly Pay Based On:</label>
+                                                            <select id="inputState" class="col-5">
+                                                                <option>Trip Payroll Data</option>
+                                                                <option selected>....</option>
+                                                            </select>
+
+                                                        </div>
+                                                    
+                                                        <hr>
+                                                        <div class="row m-auto text-center align-items-center"
+                                                            style="font-size: 13px; width:200px;">
+                                                            <button class="update-company-info"
+                                                                style="font-size: 12px;">Update My Company Preferences</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Driver Anywhere -->
+                                                    <div id="DriverAnywhere"
+                                                    class="fade tab-pane show on active w-100 ms-5 p-3"
+                                                    style="border: 1px solid gray;">
+                                                    <div class="row contact-information-form align-items-center">
+                                                        <label for="" class="col-5">Open Settle Window as:</label>
+                                                        <select id="inputState" class="col-3">
+                                                            <option>Modal dialog</option>
+                                                            <option>....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="row contact-information-form align-items-center">
+                                                        <label for="" class="col-5">Allow Unsettled Trips To Be
+                                                            Invoiced:</label>
+                                                        <select id="inputState" class="col-3">
+                                                            <option>Yes</option>
+                                                            <option selected>No</option>
+                                                        </select>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex contact-information-form w-100 align-items-center">
+                                                        <label for="" class="col-5">Raise Alert if Completed Trips
+                                                            Have Not Been Settled After:</label>
+                                                        <div class="d-flex gap-2 justify-content-center align-items-center"
+                                                            style="margin-left: -72px; width: 50%;">
+                                                            <select id="inputState" class="col-6">
+                                                                <option>Yes</option>
+                                                                <option selected>No</option>
+                                                            </select>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+
+                                                    <div class="row contact-information-form align-items-center">
+                                                        <label for="" class="col-5">By default, calculate agent commissions on:</label>
+                                                        <select id="inputState" class="col-5">
+                                                            <option>Base Charges</option>
+                                                            <option selected>Base Charges</option>
+                                                        </select>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row contact-information-form align-items-center">
+                                                        <label for="" class="col-6">Auto-populate Trip Duration value into Driver Payroll Hours field:</label>
+                                                        <input type="checkbox" name="" id="" class="col-2">
+                                                    </div>
+                                                    <div class="row contact-information-form align-items-center">
+                                                        <label for="" class="col-6">Auto Populate Driver Payroll Hours field with time based on Garage Out & Garage In times:</label>
+                                                        <input type="checkbox" name="" id="" class="col-2">
+                                                    </div>
+                                                    <div class="row contact-information-form align-items-center">
+                                                        <label for="" class="col-6">Calculate Driver Hourly Pay Based On:</label>
+                                                        <select id="inputState" class="col-5">
+                                                            <option>Trip Payroll Data</option>
+                                                            <option selected>....</option>
+                                                        </select>
+
+                                                    </div>
+                                                
+                                                    <hr>
+                                                    <div class="row m-auto text-center align-items-center"
+                                                        style="font-size: 13px; width:200px;">
+                                                        <button class="update-company-info"
+                                                            style="font-size: 12px;">Update My Company Preferences</button>
+                                                    </div>
+                                                </div>
                                                 </div>
                                             </div>
 
-                                            
-                                        
                                         </div>
                                     </div>
                                 </div>
