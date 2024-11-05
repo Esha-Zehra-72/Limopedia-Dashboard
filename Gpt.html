@@ -1,126 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation Form</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.billing-info, .trip-info, .payment-info {
-    background-color: #eaeaea;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-}
-
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Billing Info Section -->
-        <section class="billing-info">
-            <h2>Bill To & Pax</h2>
-            <form>
-                <div class="form-group">
-                    <label for="account">Account</label>
-                    <input type="text" id="account" value="30001">
-                </div>
-                <div class="form-group">
-                    <label for="contact-name">Billing Contact</label>
-                    <input type="text" id="contact-name" value="George Steinbrenner, Jr.">
-                </div>
-                <div class="form-group">
-                    <label for="company">Company Name</label>
-                    <input type="text" id="company" value="New York Yankees Baseball Club">
-                </div>
-                <div class="form-group">
-                    <label for="passenger-name">Passenger Name</label>
-                    <input type="text" id="passenger-name" value="Alex Rodriguez">
-                </div>
-                <!-- Add other form fields similar to the image -->
-            </form>
-        </section>
-
-        <!-- Trip Info Section -->
-        <section class="trip-info">
-            <h2>Trip Info</h2>
-            <form>
-                <div class="form-group">
-                    <label for="airport">Airport</label>
-                    <input type="text" id="airport" value="Dallas/Fort Worth International Airport">
-                </div>
-                <div class="form-group">
-                    <label for="flight">Flight</label>
-                    <input type="text" id="flight" value="American Airlines - AA 670">
-                </div>
-                <!-- Add more fields based on the form from the image -->
-            </form>
-        </section>
-
-        <!-- Payment Info Section -->
-        <section class="payment-info">
-            <h2>Payment Info</h2>
-            <form>
-                <div class="form-group">
-                    <label for="rate">Rate</label>
-                    <input type="text" id="rate" value="55.00">
-                </div>
-                <!-- Additional payment fields -->
-            </form>
-        </section>
+<div class="row contact-information-form align-items-center">
+    <label for="" class="col-5">Tolls:</label>
+    <select id="inputState" class="col-6">
+        <option>Mapped to Tolls - (Miscellaneous)</option>
+        <option>....</option>
+    </select>
+</div>
+<div class="row contact-information-form align-items-center">
+    <label for="" class="col-5">Parking:</label>
+    <select id="inputState" class="col-6">
+        <option>Mapped to Parking - (Miscellaneous)</option>
+        <option>...</option>
+    </select>
+</div>
+<div
+    class="d-flex contact-information-form w-100 align-items-center">
+    <label for="" class="col-5">Raise Alert if Completed Trips
+        Have Not Been Settled After:</label>
+    <div class="d-flex gap-2 justify-content-center align-items-center"
+        style="margin-left: -72px; width: 50%;">
+        <select id="inputState" class="col-6">
+            <option>Yes</option>
+            <option selected>No</option>
+        </select>
+        
     </div>
-</body>
-</html>
+</div>
+
+
+<!-- heading -->
+<div class="drivers-page-heading d-flex justify-content-between align-items-center  py-1 px-2" style="background-color: rgb(158, 158, 158);">
+    <div class="head-1 text-light"><h5 class="mt-1" style="font-size: 12px; font-weight: 700;;">Rate In DA</h5></div>
+    <div class="vertical-line" style="width: 1px; height: 25px; background-color: rgb(75, 75, 75);"></div>
+    <div class="head-2 text-light"><h5 class="mt-1" style="font-size: 12px; font-weight: 700;;">Map To Rate</h5></div>
+    <div class="vertical-line" style="width: 1px; height: 25px; background-color: rgb(75, 75, 75);"></div>
+    <div class="head-3 text-light"><h5 class="mt-1" style="font-size: 12px; font-weight: 700;;">Standard Rate</h5></div>
+ </div>
