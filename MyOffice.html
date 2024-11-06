@@ -149,7 +149,7 @@
                                     <ul class="nav nav-links mt-1 ms-2">
                                         <li class="nav-item col-7">
                                             <a href="#contact-information"
-                                                class="nav-link active contact-information-child-tabs"
+                                                class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Contact Information</a>
                                         </li>
                                         <li class="nav-item col-7">
@@ -158,7 +158,8 @@
                                                 data-bs-toggle="tab">Company Preferences</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="" class="nav-link contact-information-child-tabs"
+                                            <a href="#SystemUsers"
+                                                class="nav-link contact-information-child-tabs active"
                                                 data-bs-toggle="tab">System Users</a>
                                         </li>
                                         <li class="nav-item col-7">
@@ -199,8 +200,8 @@
                                         </li>
                                     </ul>
 
-                                    <div class="tab-content position-absolute" style="top: 170px; left: 14%;">
-                                        <div class="tab-pane fade on show active row w-100" id="contact-information">
+                                    <div class="tab-content position-absolute w-75" style="top: 170px; left: 14%;">
+                                        <div class="tab-pane fade row w-75" id="contact-information">
                                             <!-- Company Information -->
                                             <div class="d-flex justify-content-center ms-5">
                                                 <div class="col-4 ms-5 text-center mt-4" style="font-size: 14px;">
@@ -330,14 +331,13 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <!-- company-preferences -->
                                         <div class="tab-pane fade" id="company-preferences">
                                             <div class="d-flex justify-content-between w-100 ms-3">
                                                 <ul class="nav nav-tabs d-flex flex-column col-3">
                                                     <li class="nav-item">
                                                         <a href="#general"
-                                                            class="nav-link  contact-information-child-tabs mt-2 ms-0"
+                                                            class="nav-link  contact-information-child-tabs mt-2 ms-0 active"
                                                             data-bs-toggle='tab'>General</a>
                                                     </li>
                                                     <li class="nav-item">
@@ -362,13 +362,14 @@
                                                     </li>
                                                     <li class="nav-item">
                                                         <a href="#DriverAnywhere"
-                                                            class="nav-link contact-information-child-tabs mt-2 ms-0  active"
+                                                            class="nav-link contact-information-child-tabs mt-2 ms-0"
                                                             data-bs-toggle="tab">DriverAnywhere</a>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content col-8 w-75 ms-3">
                                                     <!-- General -->
-                                                    <div id="general" class="fade tab-pane w-100 p-3 ms-5 ps-5"
+                                                    <div id="general"
+                                                        class="fade tab-pane w-100 p-3 ms-5 ps-5 pe-5 show on active"
                                                         style="border: 1px solid gray;">
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">My Time Zone</label>
@@ -1263,9 +1264,7 @@
                                                         </div>
                                                     </div>
                                                     <!-- Driver Anywhere -->
-                                                    <div id="DriverAnywhere"
-                                                        class="fade tab-pane show on active "
-                                                        style="border: 1px solid rgb(202, 202, 202);">
+                                                    <div id="DriverAnywhere" class="fade tab-pane w-100">
                                                         <div class="position-relative p-3"
                                                             style="border: 1px solid rgb(194, 194, 194);">
                                                             <span
@@ -1287,7 +1286,8 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><label for="" class="col-5" style="font-size: 13px; font-weight: 500;">Tolls:</label>
+                                                                        <td><label for="" class="col-5"
+                                                                                style="font-size: 13px; font-weight: 500;">Tolls:</label>
                                                                         </td>
                                                                         <td class="text-center"> <select id="inputState"
                                                                                 class="col-12" style="font-size: 12px;">
@@ -1298,9 +1298,11 @@
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><label for="" style="font-size: 13px; font-weight: 500">Parking:</label></td>
+                                                                        <td><label for=""
+                                                                                style="font-size: 13px; font-weight: 500">Parking:</label>
+                                                                        </td>
                                                                         <td class="text-center"> <select id="inputState"
-                                                                            class="col-12" style="font-size: 12px;">
+                                                                                class="col-12" style="font-size: 12px;">
                                                                                 <option>Mapped to Parking -
                                                                                     (Miscellaneous)</option>
                                                                                 <option>...</option>
@@ -1308,48 +1310,68 @@
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><label for="" style="font-size: 13px; font-weight: 500;">Extra Gratuity:</label></td>
+                                                                        <td><label for=""
+                                                                                style="font-size: 13px; font-weight: 500;">Extra
+                                                                                Gratuity:</label></td>
                                                                         <td class="text-center"> <select id="inputState"
-                                                                            class="col-12" style="font-size: 12px;">
-                                                                                <option>Mapped to Extra Gratuity - (Gratuities)</option>
+                                                                                class="col-12" style="font-size: 12px;">
+                                                                                <option>Mapped to Extra Gratuity -
+                                                                                    (Gratuities)</option>
                                                                                 <option>...</option>
                                                                             </select></td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><label for="" style="font-size: 13px; font-weight: 500;">Miscellaneous 1:</label></td>
+                                                                        <td><label for=""
+                                                                                style="font-size: 13px; font-weight: 500;">Miscellaneous
+                                                                                1:</label></td>
                                                                         <td class="text-center"> <select id="inputState"
-                                                                            class="col-12" style="font-size: 12px;">
-                                                                                <option>Mapped to Misc Fee 1 - (Miscellaneous)</option>
+                                                                                class="col-12" style="font-size: 12px;">
+                                                                                <option>Mapped to Misc Fee 1 -
+                                                                                    (Miscellaneous)</option>
                                                                                 <option>...</option>
                                                                             </select></td>
                                                                         <td></td>
                                                                     </tr>
-                                                                 
+
                                                                     <tr>
-                                                                        <td><label for="" style="font-size: 13px; font-weight: 500;">Miscellaneous 2:</label></td>
+                                                                        <td><label for=""
+                                                                                style="font-size: 13px; font-weight: 500;">Miscellaneous
+                                                                                2:</label></td>
                                                                         <td class="text-center"> <select id="inputState"
-                                                                            class="col-12" style="font-size: 12px;">
-                                                                                <option>Mapped to Misc Fee 2 - (Miscellaneous)</option>
+                                                                                class="col-12" style="font-size: 12px;">
+                                                                                <option>Mapped to Misc Fee 2 -
+                                                                                    (Miscellaneous)</option>
                                                                                 <option>...</option>
                                                                             </select></td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><label for="" style="font-size: 13px; font-weight: 500;">Extra Stops <a href="#">Help</a>: </label></td>
+                                                                        <td><label for=""
+                                                                                style="font-size: 13px; font-weight: 500;">Extra
+                                                                                Stops <a href="#">Help</a>: </label>
+                                                                        </td>
                                                                         <td class="text-center"> <select id="inputState"
-                                                                            class="col-12" style="font-size: 12px;">
-                                                                                <option>Mapped to Extra Stops - (Base Rate)
+                                                                                class="col-12" style="font-size: 12px;">
+                                                                                <option>Mapped to Extra Stops - (Base
+                                                                                    Rate)
                                                                                 </option>
                                                                                 <option>...</option>
                                                                             </select></td>
-                                                                        <td> <input type="number" value="" class="col-3"> <span style="font-size: 13px; font-weight: 500;">per stop</span></td>
+                                                                        <td> <input type="number" value=""
+                                                                                class="col-3"> <span
+                                                                                style="font-size: 13px; font-weight: 500;">per
+                                                                                stop</span></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td class="border-0"><label for="" style="font-size: 13px; font-weight: 500;" >Wait Time:</label></td>
-                                                                        <td class="text-center border-0"> <select id="inputState"
-                                                                            class="col-12 " style="font-size: 12px;">
-                                                                                <option>Mapped to OT/Wait Time - (Base Rate)
+                                                                        <td class="border-0"><label for=""
+                                                                                style="font-size: 13px; font-weight: 500;">Wait
+                                                                                Time:</label></td>
+                                                                        <td class="text-center border-0"> <select
+                                                                                id="inputState" class="col-12 "
+                                                                                style="font-size: 12px;">
+                                                                                <option>Mapped to OT/Wait Time - (Base
+                                                                                    Rate)
                                                                                 </option>
                                                                                 <option>...</option>
                                                                             </select></td>
@@ -1359,265 +1381,392 @@
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" col="col-4" style="font-size: 13px; width: 100px;">BCR2STRETCH10:</label>
-                                                                            <input col="col-4" type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span col="col-4" style="font-size: 13px;">0 per minute</span>
+                                                                            <label for="" col="col-4"
+                                                                                style="font-size: 13px; width: 100px;">BCR2STRETCH10:</label>
+                                                                            <input col="col-4" type="number" name=""
+                                                                                id="" placeholder="0" class="col-3">
+                                                                            <span col="col-4" style="font-size: 13px;">0
+                                                                                per minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px;width: 100px;">WCSTRETCH10:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px;width: 100px;">WCSTRETCH10:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCR2PRIVABUS:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCR2PRIVABUS:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WC2PRIVABUS:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WC2PRIVABUS:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WC2SUV10:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WC2SUV10:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCR2SUV10:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCR2SUV10:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
-                                                                 
+
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">37PASS-KO:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="border-0"></td>
-                                                                        <td class="border-0" class="text-center"></td>
-                                                                        <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WCBUSPASS:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                 
-                                                                    <tr>
-                                                                        <td class="border-0"></td>
-                                                                        <td class="border-0" class="text-center"></td>
-                                                                        <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCRBUSPASS:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">37PASS-KO:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">56PASS-KO:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WCBUSPASS:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td class="border-0"></td>
+                                                                        <td class="border-0" class="text-center"></td>
+                                                                        <td class="border-0">
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCRBUSPASS:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WCSPRIVLIMO:</label>
-                                                                            <input type="number" name="" id="" placeholder="0" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">56PASS-KO:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">SED:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WCSPRIVLIMO:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WCSEDSEDO:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">SED:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WCLUXSED:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WCSEDSEDO:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WCEXESED:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WCLUXSED:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCEXESED:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WCEXESED:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
-                                                                        <td class="border-0" ></td>
+                                                                        <td class="border-0" class="text-center"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCRLUXSED:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="border-0"></td>
-                                                                        <td class="border-0"></td>
-                                                                        <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">LUX:</label>
-                                                                            <input type="number" name="" id="" placeholder="0.83" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCEXESED:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">SUV:</label>
-                                                                            <input type="number" name="" id="" placeholder="1.25" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCRLUXSED:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCR2WOMAN:</label>
-                                                                            <input type="number" name="" id="" placeholder="1.25" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">LUX:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="0.83" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WC2WOMAN:</label>
-                                                                            <input type="number" name="" id="" placeholder="1.25" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">SUV:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="1.25" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WOMANSED:</label>
-                                                                            <input type="number" name="" id="" placeholder="1.25" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCR2WOMAN:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="1.25" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">BCRPREMSUV:</label>
-                                                                            <input type="number" name="" id="" placeholder="1.25" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WC2WOMAN:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="1.25" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0"></td>
                                                                         <td class="border-0">
-                                                                            <label for="" style="font-size: 13px; width: 100px;">WCPREMSUV: </label>
-                                                                            <input type="number" name="" id="" placeholder="1.25" class="col-3">
-                                                                            <span style="font-size: 13px;">0 per minute</span>
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WOMANSED:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="1.25" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
                                                                         </td>
                                                                     </tr>
-                                                                 
+                                                                    <tr>
+                                                                        <td class="border-0"></td>
+                                                                        <td class="border-0"></td>
+                                                                        <td class="border-0">
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">BCRPREMSUV:</label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="1.25" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="border-0"></td>
+                                                                        <td class="border-0"></td>
+                                                                        <td class="border-0">
+                                                                            <label for=""
+                                                                                style="font-size: 13px; width: 100px;">WCPREMSUV:
+                                                                            </label>
+                                                                            <input type="number" name="" id=""
+                                                                                placeholder="1.25" class="col-3">
+                                                                            <span style="font-size: 13px;">0 per
+                                                                                minute</span>
+                                                                        </td>
+                                                                    </tr>
+
                                                                 </tbody>
                                                             </table>
                                                         </div>
 
 
                                                         <div class="position-relative p-3 mt-3"
-                                                        style="border: 1px solid rgb(194, 194, 194);">
-                                                        <span
-                                                            style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Wait Time Grace Periods</span>
+                                                            style="border: 1px solid rgb(194, 194, 194);">
+                                                            <span
+                                                                style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Wait
+                                                                Time Grace Periods</span>
 
-                                                            <h6 class="col-12 p-2" style="font-size: 12px; font-size: 600; background-color: bisque; border: 1px solid rgb(230, 202, 168);">The grace period the amount of time after the sheduled pick-up time during which driver is not allowed to start wait time.</h6>
-                                                        </div>
-                                                        <div class="row contact-information-form align-items-center">
-                                                            <label for="" class="col-5">By default, calculate agent
-                                                                commissions on:</label>
-                                                            <select id="inputState" class="col-5">
-                                                                <option>Base Charges</option>
-                                                                <option selected>Base Charges</option>
-                                                            </select>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row contact-information-form align-items-center">
-                                                            <label for="" class="col-6">Auto-populate Trip Duration
-                                                                value into Driver Payroll Hours field:</label>
-                                                            <input type="checkbox" name="" id="" class="col-2">
-                                                        </div>
-                                                        <div class="row contact-information-form align-items-center">
-                                                            <label for="" class="col-6">Auto Populate Driver Payroll
-                                                                Hours field with time based on Garage Out & Garage In
-                                                                times:</label>
-                                                            <input type="checkbox" name="" id="" class="col-2">
-                                                        </div>
-                                                        <div class="row contact-information-form align-items-center">
-                                                            <label for="" class="col-6">Calculate Driver Hourly Pay
-                                                                Based On:</label>
-                                                            <select id="inputState" class="col-5">
-                                                                <option>Trip Payroll Data</option>
-                                                                <option selected>....</option>
-                                                            </select>
+                                                            <h6 class="col-12 p-2"
+                                                                style="font-size: 12px; font-size: 600; background-color: bisque; border: 1px solid rgb(230, 202, 168);">
+                                                                The grace period the amount of time after the sheduled
+                                                                pick-up time during which driver is not allowed to start
+                                                                wait time.</h6>
 
+                                                            <div
+                                                                class="row contact-information-form align-items-center">
+                                                                <label for="" class="col-4"
+                                                                    style="font-size: 14px;">Non-airport
+                                                                    transfers:</label>
+                                                                <select id="inputState" class="col-5">
+                                                                    <option>10</option>
+                                                                    <option selected>....</option>
+                                                                </select>
+                                                                <span class="col-3"
+                                                                    style="font-size: 12px; font-weight: 500;">Minutes</span>
+                                                            </div>
+                                                            <div
+                                                                class="row contact-information-form align-items-center">
+                                                                <label for="" class="col-4"
+                                                                    style="font-size: 14px;">Airport transfers -
+                                                                    Domestic:</label>
+                                                                <select id="inputState" class="col-5">
+                                                                    <option>10</option>
+                                                                    <option selected>....</option>
+                                                                </select>
+                                                                <span class="col-3"
+                                                                    style="font-size: 12px; font-weight: 500;">Minutes</span>
+                                                            </div>
+                                                            <div
+                                                                class="row contact-information-form align-items-center">
+                                                                <label for="" class="col-4"
+                                                                    style="font-size: 14px;">Airport transfers -
+                                                                    International:</label>
+                                                                <select id="inputState" class="col-5">
+                                                                    <option>10</option>
+                                                                    <option selected>....</option>
+                                                                </select>
+                                                                <span class="col-3"
+                                                                    style="font-size: 12px; font-weight: 500;">Minutes</span>
+                                                            </div>
                                                         </div>
 
-                                                        <hr>
-                                                        <div class="row m-auto text-center align-items-center"
+
+
+                                                        <div class="position-relative p-3 mt-3"
+                                                            style="border: 1px solid rgb(194, 194, 194);">
+                                                            <span
+                                                                style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Payment
+                                                                Processing</span>
+
+                                                            <div
+                                                                class="row contact-information-form align-items-center">
+
+                                                                <label for="" class="col-7"
+                                                                    style="font-size: 13px;">Require driver to take
+                                                                    payment for the following payment status:</label>
+                                                                <select id="inputState" class="col-3">
+                                                                    <option selected>--Select Options--</option>
+                                                                    <option>...</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="position-relative p-3 mt-3"
+                                                            style="border: 1px solid rgb(194, 194, 194);">
+                                                            <span
+                                                                style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Display</span>
+
+                                                            <div
+                                                                class="row contact-information-form align-items-center">
+                                                                <label for="" class="col-6 fw-bold">Hide Passenger
+                                                                    Company Name: </label>
+                                                                <input type="checkbox" name="" id="" class="col-2">
+                                                            </div>
+                                                            <div
+                                                                class="row contact-information-form align-items-center">
+                                                                <label for="" class="col-6 fw-bold">Hide Passenger Phone
+                                                                    Number: </label>
+                                                                <input type="checkbox" name="" id="" class="col-2">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row m-auto text-center mt-3 align-items-center"
                                                             style="font-size: 13px; width:200px;">
                                                             <button class="update-company-info"
                                                                 style="font-size: 12px;">Update My Company
@@ -1627,6 +1776,172 @@
                                                 </div>
                                             </div>
 
+                                        </div>
+
+                                        <!-- System Users -->
+                                        <div id="SystemUsers"
+                                            class="fade tab-pane active show on d-flex  align-items-center w-100 ms-4 ">
+                                            <div class=" p-2" style="border: 1px solid black; width:500px">
+                                                <div
+                                                    class="usersHeading pb-1 d-flex justify-content-between align-items-center">
+                                                    <div class="user-head ps-3">
+                                                        <span class="fw-bold">User</span>
+                                                    </div>
+                                                    <div class="showUsers pe-3">
+                                                        <span class="fw-bold">show all</span>
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="p-3"
+                                                    style="height: 300px; overflow-y:scroll; width: 100%; border: 1px solid black; font-size: 13px;">
+                                                    <a href="#" class="list-group-item list-group-item-action">Epson St
+                                                        Notice (myadmin)</a>
+                                                    <a href="#" class="list-group-item list-group-item-action">Hussain
+                                                        Akhtar (hussain.akhtar)</a>
+                                                    <a href="#" class="list-group-item list-group-item-action">Kyle
+                                                        Robert (kylerobert1)</a>
+                                                    <a href="#" class="list-group-item list-group-item-action">MaCarmela
+                                                        Dabon (carmela.dabon)</a>
+                                                    <a href="#" class="list-group-item list-group-item-action">Nardgelde
+                                                        Jacques (reloaded24)</a>
+                                                    <a href="#" class="list-group-item list-group-item-action">Taris
+                                                        Aqdas (aqdas.taris)</a>
+                                                    <a href="#" class="list-group-item list-group-item-action">Waqas
+                                                        Zafar (waqas.zafar)</a>
+                                                </div>
+                                                <div class="btn w-100 bg-dark" style="border-radius: 0 !important;">
+                                                    <button class="bg-transparent border-0 text-light"
+                                                        style="font-size: 14px ;">Edit User</button>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class=" ms-3" style="border: 1px solid black;">
+                                                <h5 class="ps-3"
+                                                    style="font-size: 14px ; font-weight: 800; margin-top: 10px;">Add
+                                                    Users</h5>
+                                                <div class="userContainer d-flex">
+                                                    <div class="position-relative p-3 m-3"
+                                                        style="border: 1px solid rgb(194, 194, 194);">
+                                                        <span
+                                                            style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Personal
+                                                            Information</span>
+
+                                                        <form class="row pickup-dropoff  bill-pay w-100"
+                                                            style="border: none ;">
+                                                            <!-- Pickup & Dropoff Form Fields -->
+                                                            <div class="mb-2 col-6">
+                                                                <label for="pickupLocation" class="form-label">First
+                                                                    Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="pickupLocation">
+                                                            </div>
+                                                            <div class="mb-2 col-6">
+                                                                <label for="dropoffLocation" class="form-label">Last
+                                                                    Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="dropoffLocation">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="pickupLocation" class="form-label">Office
+                                                                    Phone
+                                                                    Number</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="pickupLocation"
+                                                                    placeholder="Enter Phone Number">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="pickupLocation" class="form-label">Mobile
+                                                                    Phone
+                                                                    Number</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="pickupLocation"
+                                                                    placeholder="Enter Phone Number">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="dropoffLocation" class="form-label">Email
+                                                                    Address</label>
+                                                                <input type="email" class="form-control"
+                                                                    id="dropoffLocation">
+                                                            </div>
+
+                                                            <div class="position-relative p-3 m-3"
+                                                                style="border: 1px solid rgb(194, 194, 194);">
+                                                                <span
+                                                                    style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Web
+                                                                    Access</span>
+                                                                <div class="mb-2">
+                                                                    <label for="dropoffLocation" class="form-label">User
+                                                                        Name</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="dropoffLocation">
+                                                                </div>
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="position-relative p-1 m-3"
+                                                    style="border: 1px solid rgb(194, 194, 194);">
+                                                    <span
+                                                        style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">User
+                                                        Statuses & Groups</span>
+
+                                                    <form class="row pickup-dropoff  bill-pay w-100"
+                                                        style="border: none ;">
+                                                        <!-- Pickup & Dropoff Form Fields -->
+                                                        <div class="mb-2 col-12">
+                                                            <label for="pickupLocation" class="form-label">Primary
+                                                                Role</label>
+                                                            <select id="inputState" class="col-12 py-2"
+                                                                style="font-size: 12px;">
+                                                                <option>Mapped to Tolls</option>
+                                                                <option>....</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-2 col-6">
+                                                            <label for="pickupLocation" class="form-label">Activation</label>
+                                                            <select id="inputState" class="col-12 py-1"
+                                                                style="font-size: 12px;">
+                                                                <option>Activate</option>
+                                                                <option>....</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-2 col-6">
+                                                            <label for="pickupLocation" class="form-label">Lock-out</label>
+                                                            <select id="inputState" class="col-12 py-1"
+                                                                style="font-size: 12px;">
+                                                                <option>Unlocked</option>
+                                                                <option>Locked</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-2 col-5 me-1">
+                                                            <label for="pickupLocation" class="form-label">If Inactive, reason</label>
+                                                          <input type="text">
+                                                        </div>
+                                                        <div class="mb-2 col-5" style="margin-left: 35px;">
+                                                            <label for="pickupLocation" class="form-label">If Locked, reason</label>
+                                                          <input type="text">
+                                                        </div>
+
+                                                        <div class="position-relative p-3 m-3"
+                                                            style="border: 1px solid rgb(194, 194, 194);">
+                                                            <span
+                                                                style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Web
+                                                                Access</span>
+                                                            <div class="mb-2">
+                                                                <label for="dropoffLocation" class="form-label">User
+                                                                    Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="dropoffLocation">
+                                                            </div>
+                                                    </form>
+
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
