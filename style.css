@@ -297,6 +297,17 @@ nav {
   transform: scale(2);
   background-color: #2e2e2e;
 }
+/* Account Buttons */
+.account-btns .btn-danger:hover {
+  background-color: brown !important;
+}
+.account-btn .btn-primary:hover {
+  background-color: rgb(0, 89, 255) !important;
+}
+
+.account-btn .btn-secondary:hover {
+  background-color: #131313 !important;
+}
 /* Media query for screen sizes 800px or less */
 @media (max-width: 800px) {
   .swiper-button-prev,
