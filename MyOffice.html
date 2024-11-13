@@ -23,7 +23,7 @@
     <header class="w-100">
         <div class="header row">
             <div class="col img-fluid ms-md-0 ms-2">
-                <img src="./Assets/logo-Black.png">
+                <a href="./index.html"><img src="./Assets/logo-Black.png"></a>
             </div>
             <div class="col search-bar">
                 <form class="d-flex search-form" role="search">
@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 <div class="col pe-0 ps-0 text-center card-item swiper-slide">
-                    <a href="#">
+                    <a href="./Accounts.html">
                         <img src="./Assets/accounting-book_6439007.png" alt="">
                         <p>Account</p>
                     </a>
@@ -158,8 +158,7 @@
                                                 data-bs-toggle="tab">Company Preferences</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="#SystemUsers"
-                                                class="nav-link contact-information-child-tabs active"
+                                            <a href="#SystemUsers" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">System Users</a>
                                         </li>
                                         <li class="nav-item col-7">
@@ -179,11 +178,12 @@
                                                 data-bs-toggle="tab">iCalender Settings</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="" class="nav-link contact-information-child-tabs"
+                                            <a href="#onlineReservation"
+                                                class="nav-link contact-information-child-tabs active"
                                                 data-bs-toggle="tab">Online Reservations</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="" class="nav-link contact-information-child-tabs"
+                                            <a href="#paymentGateway" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Payment Gateway</a>
                                         </li>
                                         <li class="nav-item col-7">
@@ -195,18 +195,23 @@
                                                 data-bs-toggle="tab">System Settings</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="" class="nav-link contact-information-child-tabs"
+                                            <a href="#limoAnywherePay" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Lime Anywhere PAY</a>
                                         </li>
                                     </ul>
 
                                     <div class="tab-content position-absolute w-75" style="top: 170px; left: 14%;">
-                                        <div class="tab-pane fade row w-75" id="contact-information">
+                                        <div class="tab-pane fade row" style="width: 90%;" id="contact-information">
                                             <!-- Company Information -->
                                             <div class="d-flex justify-content-center ms-5">
                                                 <div class="col-4 ms-5 text-center mt-4" style="font-size: 14px;">
                                                     <h6>Company Information:</h6>
-                                                    <a href="">Manage Company Aliases</a>
+                                                    <!-- Button trigger modal -->
+                                                    <a href="#staticBackdrop" class="" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop">
+                                                        Manage Company Aliases
+                                                    </a>
+
                                                 </div>
                                                 <div class="col-10">
                                                     <div class="row contact-information-form">
@@ -1777,11 +1782,10 @@
                                             </div>
 
                                         </div>
-
                                         <!-- System Users -->
-                                        <div id="SystemUsers"
-                                            class="fade tab-pane active show on d-flex  align-items-center w-100 ms-4 ">
-                                            <div class=" p-2" style="border: 1px solid black; width:500px">
+                                        <div id="SystemUsers" class="fade tab-pane d-flex w-100 ms-4 ">
+                                            <div class=" p-2"
+                                                style="border: 1px solid rgb(97, 97, 97); width:500px; height: 400px;">
                                                 <div
                                                     class="usersHeading pb-1 d-flex justify-content-between align-items-center">
                                                     <div class="user-head ps-3">
@@ -1818,11 +1822,11 @@
 
 
 
-                                            <div class=" ms-3" style="border: 1px solid black;">
-                                                <h5 class="ps-3"
-                                                    style="font-size: 14px ; font-weight: 800; margin-top: 10px;">Add
+                                            <div class=" ms-3" style="border: 1px solid rgb(109, 109, 109);">
+                                                <h5 class="ps-3 text-center"
+                                                    style="font-size: 17px ; font-weight: 700; margin-top: 10px;">Add
                                                     Users</h5>
-                                                <div class="userContainer d-flex">
+                                                <div class="userContainer">
                                                     <div class="position-relative p-3 m-3"
                                                         style="border: 1px solid rgb(194, 194, 194);">
                                                         <span
@@ -1867,80 +1871,890 @@
                                                                     id="dropoffLocation">
                                                             </div>
 
-                                                            <div class="position-relative p-3 m-3"
-                                                                style="border: 1px solid rgb(194, 194, 194);">
-                                                                <span
-                                                                    style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Web
-                                                                    Access</span>
-                                                                <div class="mb-2">
-                                                                    <label for="dropoffLocation" class="form-label">User
-                                                                        Name</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="dropoffLocation">
-                                                                </div>
+
                                                         </form>
 
                                                     </div>
-
+                                                    <div class="position-relative p-3 m-3"
+                                                        style="border: 1px solid rgb(194, 194, 194);">
+                                                        <span
+                                                            style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Web
+                                                            Access</span>
+                                                        <div class="mb-2">
+                                                            <label for="dropoffLocation" class="form-label">User
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="dropoffLocation"
+                                                                style="border: 1px solid gray">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="position-relative p-1 m-3"
+                                                <div>
+                                                    <div class="position-relative p-2 m-3"
+                                                        style="border: 1px solid rgb(194, 194, 194);">
+                                                        <span
+                                                            style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">User
+                                                            Statuses & Groups</span>
+
+                                                        <form class="row pickup-dropoff  bill-pay w-100"
+                                                            style="border: none ;">
+                                                            <!-- Pickup & Dropoff Form Fields -->
+                                                            <div class="mb-2 col-12">
+                                                                <label for="pickupLocation" class="form-label">Primary
+                                                                    Role</label>
+                                                                <select id="inputState" class="col-12 py-2"
+                                                                    style="font-size: 12px;">
+                                                                    <option>Mapped to Tolls</option>
+                                                                    <option>....</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-6">
+                                                                <label for="pickupLocation"
+                                                                    class="form-label">Activation</label>
+                                                                <select id="inputState" class="col-12 py-1"
+                                                                    style="font-size: 12px;">
+                                                                    <option>Activate</option>
+                                                                    <option>....</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-6">
+                                                                <label for="pickupLocation"
+                                                                    class="form-label">Lock-out</label>
+                                                                <select id="inputState" class="col-12 py-1"
+                                                                    style="font-size: 12px;">
+                                                                    <option>Unlocked</option>
+                                                                    <option>Locked</option>
+                                                                </select>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <div class="mb-2 col-6 me-1 d-flex  flex-column">
+                                                                    <label for="pickupLocation" class="form-label">If
+                                                                        Inactive, reason</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div class="mb-2 col-6 d-flex flex-column"
+                                                                    style="margin-left: 5px;">
+                                                                    <label for="pickupLocation" class="form-label">If
+                                                                        Locked, reason</label>
+                                                                    <input type="text" class=" ">
+                                                                </div>
+                                                            </div>
+
+                                                        </form>
+
+
+                                                    </div>
+                                                    <div class="position-relative p-3 m-3"
+                                                        style="border: 1px solid rgb(194, 194, 194);">
+                                                        <span
+                                                            style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Restrict
+                                                            Access by IP Address:</span>
+                                                        <div class="mb-2 d-flex flex-column">
+                                                            <label for="dropoffLocation" class="form-label">Allowed
+                                                                IPs</label>
+                                                            <textarea name="" id="" cols="30"></textarea>
+                                                        </div>
+                                                        <div class="mb-2 d-flex flex-column">
+                                                            <label for="dropoffLocation" class="form-label">Allowed
+                                                                IPs</label>
+                                                            <textarea name="" id="" cols="30"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative p-3 m-3"
                                                     style="border: 1px solid rgb(194, 194, 194);">
                                                     <span
                                                         style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">User
-                                                        Statuses & Groups</span>
-
-                                                    <form class="row pickup-dropoff  bill-pay w-100"
-                                                        style="border: none ;">
-                                                        <!-- Pickup & Dropoff Form Fields -->
-                                                        <div class="mb-2 col-12">
-                                                            <label for="pickupLocation" class="form-label">Primary
-                                                                Role</label>
-                                                            <select id="inputState" class="col-12 py-2"
-                                                                style="font-size: 12px;">
-                                                                <option>Mapped to Tolls</option>
-                                                                <option>....</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-2 col-6">
-                                                            <label for="pickupLocation" class="form-label">Activation</label>
-                                                            <select id="inputState" class="col-12 py-1"
-                                                                style="font-size: 12px;">
-                                                                <option>Activate</option>
-                                                                <option>....</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-2 col-6">
-                                                            <label for="pickupLocation" class="form-label">Lock-out</label>
-                                                            <select id="inputState" class="col-12 py-1"
-                                                                style="font-size: 12px;">
-                                                                <option>Unlocked</option>
-                                                                <option>Locked</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-2 col-5 me-1">
-                                                            <label for="pickupLocation" class="form-label">If Inactive, reason</label>
-                                                          <input type="text">
-                                                        </div>
-                                                        <div class="mb-2 col-5" style="margin-left: 35px;">
-                                                            <label for="pickupLocation" class="form-label">If Locked, reason</label>
-                                                          <input type="text">
-                                                        </div>
-
-                                                        <div class="position-relative p-3 m-3"
-                                                            style="border: 1px solid rgb(194, 194, 194);">
-                                                            <span
-                                                                style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Web
-                                                                Access</span>
-                                                            <div class="mb-2">
-                                                                <label for="dropoffLocation" class="form-label">User
-                                                                    Name</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="dropoffLocation">
-                                                            </div>
-                                                    </form>
-
+                                                        Notes</span>
+                                                    <div class="mb-2 d-flex flex-column">
+                                                        <textarea name="" id="" cols="30"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-auto text-center mt-3 align-items-center"
+                                                    style="font-size: 13px; width:200px;">
+                                                    <button class="update-company-info"
+                                                        style="font-size: 14px;">Continue</button>
                                                 </div>
 
+                                                <div class="ms-3 mt-4 text-center">
+                                                    <p><span class="text-danger fw-bold ">Note:</span> "Calendar Only"
+                                                        users should login via /calendar/ instead of /admin/ directory
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Limo Anywhere Pay -->
+                                        <div id="limoAnywherePay" class="fade tab-pane ms-5" style="margin-top: -110%;">
+                                            <div class="d-flex w-100 text-center">
+                                                <div class="content">
+                                                    <img src="./Assets/logo-black-min.png" alt="" class="img-fluid"
+                                                        style="width: 10%;">
+                                                    <h6 class="fw-bold mt-2" style="color: rgb(73, 73, 73);">WORLD WIDE
+                                                        BLACK CAR</h6>
+                                                    <div class="intro">
+                                                        <p class="text-center fw-bold fs-5">Software & Payments are
+                                                            Better Together!</p>
+                                                        <p class="text-center"
+                                                            style="font-size: 13px; font-weight: 500; margin-top: -10px;  font-family:sans-serif; letter-spacing: .5px;">
+                                                            At Limo Anywhere, we believe Software and Payments are
+                                                            better together. That’s why we’ve launched Limo Anywhere
+                                                            Pay, to give you a single payment solution to solve all of
+                                                            your business needs.</p>
+                                                    </div>
+
+
+                                                    <div
+                                                        class="features-container d-flex justify-content-between align-items-center mt-4">
+                                                        <!-- First Column -->
+                                                        <div class="feature-column">
+                                                            <ul class="feature-list list-unstyled text-start">
+                                                                <li>Single Source for Support</li>
+                                                                <li>Payment Reports Made Easy</li>
+                                                                <li>Request for Payment Emails</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <!-- Second Column -->
+                                                        <div class="feature-column">
+                                                            <ul class="feature-list list-unstyled text-start">
+                                                                <li>Level 2/3 Data Processing</li>
+                                                                <li>Automatic Card Updates</li>
+                                                                <li>Integration Everywhere</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <!-- Third Column -->
+                                                        <div class="feature-column">
+                                                            <ul class="feature-list list-unstyled text-start">
+                                                                <li>Accelerated Funding</li>
+                                                                <li>Streamlined Easy Migration</li>
+                                                                <li>Safe and Secure</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="feature-column">
+                                                            <ul class="feature-list list-unstyled text-start">
+                                                                <li>Competitive Processing Rates</li>
+                                                                <li>Much More Coming Soon</li>
+                                                                <li><a href="#" class="learn-more">Learn More about LA
+                                                                        PAY</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="features d-flex justify-content-between w-75 m-auto mt-5 ">
+                                                        <div class="p-2 farture-box">
+                                                            <img src="./Assets/double-arrows" alt="" class="img-fluid"
+                                                                style="width: 16%;">
+                                                            <h5 class="fw-bold">Interchange +</h5>
+                                                            <p>Includes gateway service charges, PCI compliance
+                                                                solution, breach protection, and 24/7 support.</p>
+                                                            <p style="margin-top: -10px; font-weight: 700;">Interchange
+                                                                Fee + 0.55%</p>
+                                                            <p style="margin-top: -10px; font-weight: 700;">10¢ per
+                                                                Transaction</p>
+                                                            <p style="margin-top: -10px; font-weight: 700;">$29.95
+                                                                Monthly Fee</p>
+                                                            <a href="#" class="button btn text-white fw-bold"
+                                                                style="background-color: rgb(228, 168, 57); font-size: 14px;">GET
+                                                                STARTED</a>
+                                                        </div>
+                                                        <div class="p-1 farture-box">
+                                                            <img src="./Assets/setting" alt="" class="img-fluid"
+                                                                style="width: 28%;">
+                                                            <h5 class="fw-bold">Custom Analysis</h5>
+                                                            <p style="letter-spacing: 1px; font-size: 12px;">Process
+                                                                large volumes and/or have special requirements?
+                                                                <br>
+                                                                Submit your last 3 processing statements for a custom
+                                                                quote.
+                                                            </p>
+                                                            <a href="#" class="button btn text-white fw-bold"
+                                                                style="background-color: rgb(228, 168, 57); font-size: 14px;">REQUEST
+                                                                ANALYSIS</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- paymentGateway -->
+                                        <div id="paymentGateway" class="fade tab-pane text-center"
+                                            style="margin-top: -110%; margin-left: 180px; ">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <!-- Main Content -->
+                                                    <div class="col-md-10 main-content p-0 position-absolute mt-3"
+                                                        style="border: 1px solid rgb(170, 170, 170);">
+                                                        <h5 class="text-center text-white py-2"
+                                                            style=" background-color: rgb(75, 75, 75);">Payment Gateway
+                                                        </h5>
+                                                        <div
+                                                            class="mb-3 row justify-content-between w-100 m-auto mt-3 pe-5">
+                                                            <label for="installationStatus" class="form-label col-3"
+                                                                style="font-size: 14px; font-weight:600;">Installation
+                                                                Status:</label>
+                                                            <select name="" id="" class=" col-8 w-50 p-0"
+                                                                style="font-size: 14px;">
+                                                                <option value="">Installed</option>
+                                                                <option value="">Not Installed</option>
+                                                            </select>
+                                                        </div>
+                                                        <div
+                                                            class="mb-3 row justify-content-between w-100 m-auto mt-3 pe-5">
+                                                            <label for="installationStatus" class="form-label col-4"
+                                                                style="font-size: 14px; font-weight:600;">If Installed,
+                                                                Activation Code:</label>
+                                                            <input type="text" class=" col-8 w-50 p-0"
+                                                                style="font-size: 14px;">
+                                                        </div>
+                                                        <div class="mt-3 p-2">
+                                                            <table class="w-100">
+                                                                <tr style="border: 1px solid black;">
+                                                                    <th style="border-right: 1px solid black;"
+                                                                        class="text-start ps-5 py-2">Gateway Name</th>
+                                                                    <th style="border-left: 1px solid black;">Actions
+                                                                    </th>
+                                                                </tr>
+                                                                <tr
+                                                                    style="border: 1px solid black; font-size: 14px; font-weight: 600;">
+                                                                    <td style="border-right: 1px solid black;"
+                                                                        class="text-start ps-5 py-1">Gateway Name</td>
+                                                                    <td style="border-left: 1px solid black;"><a
+                                                                            href="#editGatewayModal"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#editGatewayModal">Edit</a>
+                                                                        <a href="#">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr
+                                                                    style="border: 1px solid black; font-size: 14px; font-weight: 600;">
+                                                                    <td style="border-right: 1px solid black;"
+                                                                        class="text-start ps-5 py-1">Gateway Name</td>
+                                                                    <td style="border-left: 1px solid black;"><a
+                                                                            href="#editGatewayModal"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#editGatewayModal">Edit</a>
+                                                                        <a href="#">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="text-start ps-5 fw-bold mt-3 mb-3">
+                                                            <a href="#addGatewayModel" data-bs-toggle="modal"
+                                                                data-bs-target="#addGatewayModel">Add Gateway</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- onlineReservation -->
+                                        <div class="tab-pane fade active show on" id="onlineReservation">
+                                            <div class="d-flex w-100 ms-3 position-absolute" style="margin-top: -110%;">
+                                                <div class="tabs col-2">
+                                                    <ul class="nav nav-tabs d-flex flex-column">
+                                                        <li class="nav-item">
+                                                            <a href="#ORES"
+                                                                class="nav-link contact-information-child-tabs mt-2 ms-0 active"
+                                                                data-bs-toggle="tab">ORES & Mobile</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#secondTab"
+                                                                class="nav-link contact-information-child-tabs mt-2 ms-0"
+                                                                data-bs-toggle="tab">Consumer App</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#thirdTab"
+                                                                class="nav-link contact-information-child-tabs mt-2 ms-0"
+                                                                data-bs-toggle="tab">PWA</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="tab-content w-75 col-12">
+                                                    <div class="fade tab-pane ms-5 w-100 p-3 ms-5 ps-5 pe-5 show on active"
+                                                        id="ORES">
+                                                        <div class="tabs co-12">
+                                                            <ul class="nav nav-tabs d-flex co-12">
+                                                                <li class="nav-item " style="width: 16.5%; text-align: center;"><a href="#ABC"
+                                                                        class="nav-link contact-information-child-tabs "
+                                                                        data-bs-toggle="tab">Settings</a></li>
+                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#myWebsite"
+                                                                        class="nav-link contact-information-child-tabs active"
+                                                                        data-bs-toggle="tab">My Website</a></li>
+                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#widgets"
+                                                                        class="nav-link contact-information-child-tabs"
+                                                                        data-bs-toggle="tab">Widgets</a></li>
+                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#design"
+                                                                        class="nav-link contact-information-child-tabs"
+                                                                        data-bs-toggle="tab">Design</a></li>
+                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#analytics"
+                                                                        class="nav-link contact-information-child-tabs"
+                                                                        data-bs-toggle="tab">Analytics</a></li>
+                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#rules"
+                                                                        class="nav-link contact-information-child-tabs"
+                                                                        data-bs-toggle="tab">Rules</a></li>
+                                                            </ul>
+                                                            <div class="tab-content">
+                                                                <div class="fade tab-pane   mt-1 p-2" id="ABC"
+                                                                    style="border: 1px solid black; ">
+                                                                    <div class="select-allies text-center py-2"
+                                                                        style="background-color: rgb(218, 215, 215); border: 2px solid rgb(173, 173, 173);">
+                                                                        <label for=""
+                                                                            style="font-size: 15px; font-weight: 700;">Select
+                                                                            Allas</label>
+                                                                        <select class="col-6 ms-2">
+                                                                            <option value="">option 1</option>
+                                                                            <option value="">option 2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="p-1">
+                                                                        <h6 class="fw-bold pt-2 ps-2 pb-2"
+                                                                            style="font-size: 13px; background-color: rgb(218, 215, 215);">
+                                                                            General Settings:
+                                                                        </h6>
+                                                                        <div class="">
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Display
+                                                                                    Company Logo: (?)</label>
+                                                                                <select id="inputState" class="col-5">
+                                                                                    <option>No</option>
+                                                                                    <option>Yes</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Default Date
+                                                                                    Format: (?)</label>
+                                                                                <select id="inputState" class="col-5">
+                                                                                    <option>MM/DD/YYYY</option>
+                                                                                    <option>DD/MM/YYYY</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Default Time
+                                                                                    Format: (?)</label>
+                                                                                <select id="inputState" class="col-5">
+                                                                                    <option>AM/PM</option>
+                                                                                    <option>24-Hour</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Allow New
+                                                                                    Account Creation: (?)</label>
+                                                                                <select id="inputState" class="col-5">
+                                                                                    <option>Yes</option>
+                                                                                    <option>No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Enable the
+                                                                                    Online Reservation
+                                                                                    System:(?)</label>
+                                                                                <select id="inputState" class="col-5">
+                                                                                    <option>Yes</option>
+                                                                                    <option>No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center my-2">
+                                                                                <div class="col-6"> <label for=""
+                                                                                        class="">If not allowed,
+                                                                                        message displayed to your
+                                                                                        customers:(?)
+                                                                                    </label>
+                                                                                    <p style="font-size: 12px;">Values
+                                                                                        between "#" signs <a
+                                                                                            href="#">Help</a>.</p>
+                                                                                </div>
+                                                                                <textarea name="" id="" cols=""
+                                                                                    class="col-5" rows="5"></textarea>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Allow
+                                                                                    Reservation Cut-Off:(?)</label>
+                                                                                <select id="inputState" class="col-5">
+                                                                                    <option>Yes</option>
+                                                                                    <option>No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center my-2">
+                                                                                <div class="col-6"> <label for=""
+                                                                                        class="">If allowed, message
+                                                                                        displayed to your customers:(?)
+                                                                                    </label>
+                                                                                    <p style="font-size: 12px;">Values
+                                                                                        between "#" signs <a
+                                                                                            href="#">Help</a>.</p>
+                                                                                </div>
+                                                                                <textarea name="" id="" cols=""
+                                                                                    class="col-5" rows="5"></textarea>
+                                                                            </div>
+                                                                            <div
+                                                                                class="row contact-information-form align-items-center  my-2">
+                                                                                <label for="" class="col-6">Allow
+                                                                                    Reservation Cut-Off
+                                                                                    Period:(?)</label>
+                                                                                <div class="col-5">
+                                                                                    <select id="inputState" class="">
+                                                                                        <option>1:</option>
+                                                                                        <option>2:</option>
+                                                                                    </select> <span class=""
+                                                                                        style="width: 2px;">:</span>
+                                                                                    <select id="inputState"
+                                                                                        class=" me-2">
+                                                                                        <option>00:</option>
+                                                                                        <option>00:</option>
+                                                                                    </select>
+                                                                                    <select id="inputState" class="">
+                                                                                        <option>AM:</option>
+                                                                                        <option>PM:</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-10 text-end mt-2"
+                                                                                    style="margin-left: -20px;">
+                                                                                    <select id="inputState" class="">
+                                                                                        <option>1:</option>
+                                                                                        <option>2:</option>
+                                                                                    </select> <span class=""
+                                                                                        style="width: 2px;">:</span>
+                                                                                    <select id="inputState"
+                                                                                        class=" me-2">
+                                                                                        <option>00:</option>
+                                                                                        <option>00:</option>
+                                                                                    </select>
+                                                                                    <select id="inputState" class="">
+                                                                                        <option>AM:</option>
+                                                                                        <option>PM:</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="row contact-information-form align-items-center  my-2">
+                                                                                    <label for="" class="col-6">Show SMS
+                                                                                        Opt-in:(?)</label>
+                                                                                    <select id="inputState"
+                                                                                        class="col-5  ms-3">
+                                                                                        <option>Yes</option>
+                                                                                        <option>No</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="row contact-information-form align-items-center  my-2">
+                                                                                    <label for="" class="col-6">Require
+                                                                                        SMS Opt-in:(?)</label>
+                                                                                    <select id="inputState"
+                                                                                        class="col-5  ms-3">
+                                                                                        <option>Yes</option>
+                                                                                        <option>No</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="row contact-information-form align-items-center my-2">
+                                                                                    <label for="" class="col-6">If
+                                                                                        required, message displayed to
+                                                                                        your customers:(?)</label>
+                                                                                    <textarea name="" id=""
+                                                                                        class="col-5 text-end ms-3"></textarea>
+                                                                                </div>
+
+                                                                                <div class="rateDisplaySetting">
+                                                                                    <h4 style="font-size: 14px; background-color: rgb(218, 215, 215);"
+                                                                                        class="p-2">Rates & Display
+                                                                                        Settings</h4>
+                                                                                    <div class="">
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center  my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Calculate
+                                                                                                and Display Pricing to
+                                                                                                Customers:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Enable
+                                                                                                dedicated quotes
+                                                                                                link:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">If pricing
+                                                                                                not found turned off,
+                                                                                                allow user to
+                                                                                                submit:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Book </option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">If pricing
+                                                                                                not found for Return
+                                                                                                Trip, message displayed
+                                                                                                to your
+                                                                                                customers:(?)</label>
+                                                                                            <textarea name="" id=""
+                                                                                                class="col-5 text-end ms-2"></textarea>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Display
+                                                                                                Vehicle
+                                                                                                Results:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Book </option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Allow Rate
+                                                                                                Grouping:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Book </option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Show Promo
+                                                                                                Code Box in Top Menu
+                                                                                                Bar:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Book </option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Show Child
+                                                                                                Seat Option:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Book </option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Show
+                                                                                                Accessible
+                                                                                                Option:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Show
+                                                                                                Airline/Flight fields
+                                                                                                for Airport
+                                                                                                Dropoffs:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Show
+                                                                                                Airport PU
+                                                                                                Options:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2 mt-4">
+                                                                                            <label for=""
+                                                                                                class="col-6">Autocomplete
+                                                                                                Results
+                                                                                                Order:(?)</label>
+                                                                                            <div class="col-5">
+                                                                                                <li style="border-top: 1px solid rgb(90, 90, 90); list-style: none; font-size: 13px; border-left: 8px dotted rgb(48, 48, 48); font-weight: 500;"
+                                                                                                    class="ps-3 pt-2 mb-2">
+                                                                                                    <a href=""
+                                                                                                        class="text-decoration-none text-black">Google
+                                                                                                        Address</a>
+                                                                                                </li>
+                                                                                                <li style="border-top: 1px solid rgb(90, 90, 90); list-style: none; font-size: 13px;  border-left: 8px dotted rgb(48, 48, 48); font-weight: 500;"
+                                                                                                    class="ps-3 pt-2 mb-2">
+                                                                                                    <a href=""
+                                                                                                        class="text-decoration-none text-black">Airport</a>
+                                                                                                </li>
+                                                                                                <li style="border-top: 1px solid rgb(90, 90, 90); list-style: none; font-size: 13px;  border-left: 8px dotted rgb(48, 48, 48); font-weight: 500;"
+                                                                                                    class="ps-3 pt-2 mb-2">
+                                                                                                    <a href=""
+                                                                                                        class="text-decoration-none text-black">Stored
+                                                                                                        Address</a>
+                                                                                                </li>
+                                                                                                <li style="border-top: 1px solid rgb(90, 90, 90); list-style: none; font-size: 13px;  border-left: 8px dotted rgb(48, 48, 48); font-weight: 500;"
+                                                                                                    class="ps-3 pt-2 mb-2">
+                                                                                                    <a href=""
+                                                                                                        class="text-decoration-none text-black">Fbo</a>
+                                                                                                </li>
+                                                                                                <li style="border-top: 1px solid rgb(90, 90, 90); list-style: none; font-size: 13px;  border-left: 8px dotted rgb(48, 48, 48); font-weight: 500;"
+                                                                                                    class="ps-3 pt-2 mb-2">
+                                                                                                    <a href=""
+                                                                                                        class="text-decoration-none text-black">GlobalPoi</a>
+                                                                                                </li>
+                                                                                                <li style="border-top: 1px solid rgb(90, 90, 90); border-bottom: 1px solid rgb(90, 90, 90);  border-left: 8px dotted rgb(48, 48, 48); font-weight: 500; list-style: none; font-size: 13px;"
+                                                                                                    class="py-2 ps-3"><a
+                                                                                                        href=""
+                                                                                                        class="text-decoration-none text-black">Seaport</a>
+                                                                                                </li>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="billingSetting">
+                                                                                    <h4 style="font-size: 14px; background-color: rgb(218, 215, 215);"
+                                                                                        class="p-2">Billing
+                                                                                        Settings</h4>
+                                                                                    <div class="">
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center  my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Accepted
+                                                                                                Payment
+                                                                                                Methods:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Require
+                                                                                                Credit Card on All
+                                                                                                Reservations (Except
+                                                                                                Direct Bill):(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <div class="col-6"> <label
+                                                                                                    for=""
+                                                                                                    class="">Credit Card
+                                                                                                    Required
+                                                                                                    Disclaimer:(?)
+                                                                                                </label>
+                                                                                                <p
+                                                                                                    style="font-size: 12px;">
+                                                                                                    Values
+                                                                                                    between "#" signs <a
+                                                                                                        href="#">Help</a>.
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <textarea name="" id=""
+                                                                                                cols=""
+                                                                                                class="col-5 ms-2"
+                                                                                                rows="5"></textarea>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <label for=""
+                                                                                                class="col-6">Require
+                                                                                                Billing Address on
+                                                                                                Credit Card
+                                                                                                Transactions:(?)</label>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="row contact-information-form align-items-center my-2">
+                                                                                            <div class="col-6"> <label
+                                                                                                    for=""
+                                                                                                    class="">Enable
+                                                                                                    Auto-Approvals:(?)
+                                                                                                </label>
+                                                                                                <p
+                                                                                                    style="font-size: 12px;">
+                                                                                                    If enabled, applies
+                                                                                                    only if <a
+                                                                                                        href="#">Auto
+                                                                                                        Accept New
+                                                                                                        Reservations</a>
+                                                                                                    is set to "Yes"
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <select id="inputState"
+                                                                                                class="col-5  ms-2">
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="postSubmission">
+                                                                                    <h4 style="font-size: 14px; background-color: rgb(218, 215, 215);"
+                                                                                        class="p-2">Post Submission
+                                                                                        Settings</h4>
+
+                                                                                    <div
+                                                                                        class="row contact-information-form align-items-center my-2">
+                                                                                        <div class="col-6"> <label
+                                                                                                for="" class="">Text for
+                                                                                                confirmation page when
+                                                                                                "Auto-Approve" set to
+                                                                                                Yes:(?)
+                                                                                            </label>
+                                                                                            <p style="font-size: 12px;">
+                                                                                                Values
+                                                                                                between "#" signs <a
+                                                                                                    href="#">Help</a>.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <textarea name="" id="" cols=""
+                                                                                            class="col-5 ms-2"
+                                                                                            rows="5"></textarea>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="row contact-information-form align-items-center my-2">
+                                                                                        <div class="col-6"> <label
+                                                                                                for="" class="">Text for
+                                                                                                confirmation page when
+                                                                                                "Auto-Approve" set to
+                                                                                                No:(?)
+                                                                                            </label>
+                                                                                            <p style="font-size: 12px;">
+                                                                                                Values
+                                                                                                between "#" signs <a
+                                                                                                    href="#">Help</a>.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <textarea name="" id="" cols=""
+                                                                                            class="col-5 ms-2"
+                                                                                            rows="5"></textarea>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="row contact-information-form align-items-center my-2">
+                                                                                        <div class="col-6"> <label
+                                                                                                for="" class="">Text for
+                                                                                                email when
+                                                                                                "Auto-Approve" set to
+                                                                                                No:(?)
+                                                                                            </label>
+                                                                                            <p style="font-size: 12px;">
+                                                                                                Values
+                                                                                                between "#" signs <a
+                                                                                                    href="#">Help</a>.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <textarea name="" id="" cols=""
+                                                                                            class="col-5 ms-2"
+                                                                                            rows="5"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fade tab-pane active show on" id="myWebsite"
+                                                                    style="border: 2px solid rgb(173, 173, 173);">
+                                                                    <div class="select-allies text-center py-2 m-2"
+                                                                        style="background-color: rgb(218, 215, 215); border: 2px solid rgb(173, 173, 173);">
+                                                                        <label for=""
+                                                                            style="font-size: 15px; font-weight: 700;">Select
+                                                                            Allas</label>
+                                                                        <select class="col-6 ms-2 p-1">
+                                                                            <option value="">option 1</option>
+                                                                            <option value="">option 2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class=" text-center">
+                                                                        <h5 style="font-size: 17px; font-weight: 700;" class="mt-3">
+                                                                            Preferred Method: Embed The Booking System
+                                                                            In Your Website</h5>
+                                                                        <p style="font-size: 14px;">When you embed the
+                                                                            booking system on your website the user
+                                                                            never leaves your website during the booking
+                                                                            process. Copy and paste the following code
+                                                                            into the source of the “Reservations” page
+                                                                            on your website.</p>
+                                                                        <textarea name="" id="" cols="70" rows="5"
+                                                                            style="border: 5px double gray;" placeholder="https://book.mylimobiz.com/v4/blackcarrides"></textarea>
+                                                                    </div>
+                                                                    <div class=" text-center">
+                                                                        <h5 style="font-size: 17px;" class="mt-3 font-weight: 700;">Alternative Method: Place A Link On Your Website</h5>
+                                                                        <p  style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;">Place one or more links on your website. When a user clicks on the link they will transition from your website to your reservation system. Below is the web address you should use with any “Reservation” or “Book Now” links/buttons on your site.</p>
+                                                                        <a href="#" type="button" class="btn btn-primary w-75 m-auto my-3" style="background-color: rgb(99, 99, 99) !important; border: none; border-radius: 0;"> https://book.mylimobiz.com/v4/blackcarrides</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fade tab-pane" id="widgets">
+                                                                    Lorem, ipsum dolor.
+                                                                </div>
+                                                                <div class="fade tab-pane" id="design">
+                                                                    Lorem, ipsum dolor.
+                                                                </div>
+                                                                <div class="fade tab-pane" id="analytics">
+                                                                    Lorem, ipsum dolor.
+                                                                </div>
+                                                                <div class="fade tab-pane" id="rules">
+                                                                    Lorem, ipsum dolor.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fade tab-pane ms-5 w-100 p-3 ms-5 ps-5 pe-5"
+                                                        id="secondTab">
+                                                        Lorem, ipsum.
+                                                    </div>
+                                                    <div class="fade tab-pane ms-5 w-100 p-3 ms-5 ps-5 pe-5"
+                                                        id="thirdTab">
+                                                        Lorem ipsum dolor sit amet.
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1948,23 +2762,306 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" fade tab-pane" id="company-settings1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat.
+                </div>
+            </div>
+            <div class=" fade tab-pane" id="company-settings1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat.
+            </div>
+            <div class=" fade tab-pane" id="company-settings2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit 2
+            </div>
+            <div class=" fade tab-pane" id="company-settings3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 3
+            </div>
+            <div class=" fade tab-pane" id="company-settings4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 4
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Add Gateway Model -->
+    <div class="modal fade" id="addGatewayModel" aria-labelledby="addGatewayModel" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Gateway</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, officiis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Gateway Modal -->
+    <div class="modal fade" id="editGatewayModal" tabindex="-1" aria-labelledby="editGatewayModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editGatewayModalLabel">Edit Gateway</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="gatewayName" class="form-label" style="font-size: 14px;">Gateway Name:</label>
+                            <input type="text" id="gatewayName" class="col-12 py-1" style="font-size: 14px;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentType" class="form-label" style="font-size: 14px;">Type of Payment
+                                Gateway:</label>
+                            <select id="paymentType" class="col-12 py-1" style="font-size: 14px;">
+                                <option>Custom</option>
+                                <option>Square</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="accessToken" class="form-label" style="font-size: 14px;">Access Token:</label>
+                            <input type="text" id="accessToken" class=" col-12 py-1" style="font-size: 14px;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="location" class="form-label" style="font-size: 14px;">Location:</label>
+                            <input type="text" id="location" class="col-12 py-1" style="font-size: 14px;">
+                            <button class="btn mt-2"
+                                style="font-size: 14px; background-color: rgb(128, 128, 128); color: white;">Connect
+                                with Square</button>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="isDefaultGateway" class="form-check-input">
+                            <label for="isDefaultGateway" class="form-check-label" style="font-size: 14px;">Is Default
+                                Gateway</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" style="font-size: 14px;">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        style="font-size: 14px;">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Company Information Modal -->
+    <div class="modal fade w-100" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" style="margin: 0;">
+            <div class="modal-content" style="width: 86vw; margin: 50px 50px;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 ms-3" id="staticBackdropLabel">Company Aliases</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-2">
+                        <div class="row">
+                            <!-- Sidebar Section -->
+                            <div class="col-md-3 sidebar">
+                                <!-- <p class="fw-bold">Company Aliases</p> -->
+                                <div class="list-group p-3"
+                                    style="height: 300px; overflow-y: scroll; border: 1px solid black;">
+                                    <a href="#" class="text-decoration-none text-black">startblackcar</a>
+                                    <a href="#" class="text-decoration-none text-black">capecodblackcar</a>
+                                    <a href="#" class="text-decoration-none text-black">loganblackcar</a>
+                                    <a href="#" class="text-decoration-none text-black">bestbostoncarservice</a>
+                                    <a href="#" class="text-decoration-none text-black">allnationlimo</a>
+                                    <a href="#" class="text-decoration-none text-black">bostonviplimos</a>
+                                    <a href="#" class="text-decoration-none text-black">worldwideblackcar</a>
+                                </div>
+                                <button class="btn bg-black text-light mt-2 w-100">New
+                                    Alias</button>
+                            </div>
+
+                            <!-- Form Section -->
+                            <div class="col-md-8">
+                                <form class=" p-3" style="border: 1px solid rgb(134, 134, 134);">
+                                    <!-- Use Online Reservation Checkbox -->
+                                    <div class="mb-2 ms-5 ps-2 pt-3">
+                                        <label class="form-check-label contact-information-form" for="onlineReservation"
+                                            style="font-size: 14px; font-weight: bold;">Use
+                                            Online Reservation System
+                                            for this Alias</label>
+                                        <input type="checkbox" class="form-check-input "
+                                            style="border: 1px solid rgb(92, 92, 92);" id="onlineReservation">
+                                    </div>
+
+                                    <!-- Alias and Company Information -->
+                                    <div class="d-flex justify-content-center">
+                                        <div class="col-10">
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Company
+                                                    Alias:</label>
+                                                <input type="text" name="" id="" class="col-8">
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Company
+                                                    Name:</label>
+                                                <input type="text" name="" id="" class="col-8">
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Street
+                                                    Address:</label>
+                                                <input type="text" name="" id="" class="col-8">
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Street
+                                                    Address 2:</label>
+                                                <input type="text" name="" id="" class="col-8">
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">City/Town:</label>
+                                                <input type="text" name="" id="" class="col-8">
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">State/Province/Territory:</label>
+                                                <select id="inputState" class="col-8">
+                                                    <option selected>
+                                                        Choose...
+                                                    </option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Zip/Postal
+                                                    Code:</label>
+                                                <input type="number" name="" id="" class="col-8">
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col-4">EIN/Bussiness
+                                                    Number:</label>
+                                                <!-- <div class="d-flex"> -->
+                                                <input type="number" name="" id="" class="col-4">
+                                                <input type="checkbox" name="" id=""
+                                                    class="col-1 p-0 m-0 ms-4 d-flex me-0" style="width: 14px;">
+                                                <span class="col mt-1" style="font-size: 12px; font-weight: 500;">Show
+                                                    on Trip Tkts
+                                                    & Inv:</span>
+                                                <!-- </div> -->
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Country:</label>
+                                                <select id="inputState" class="col-8">
+                                                    <option selected>
+                                                        Choose...
+                                                    </option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Primary
+                                                    Phone
+                                                    Number:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input id="phone" type="tel" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Secondary
+                                                    Phone
+                                                    Number:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input id="phone" type="tel" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Fax
+                                                    Number:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input id="phone" type="number" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">General
+                                                    Email
+                                                    Address:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input type="email" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Reservations
+                                                    Email
+                                                    Address:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input type="email" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Quote
+                                                    Email
+                                                    Address:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input type="email" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Billing
+                                                    Email
+                                                    Address:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input type="email" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="contact-information-form d-flex mt-1">
+                                                <label for="" class="col-3 form-label"
+                                                    style="padding: auto ; margin-left: -5px;">Company
+                                                    Website URL:</label>
+                                                <div class="col-9 ms-5 ps-1">
+                                                    <input type="url" class="ps-5 pe-0"
+                                                        style="font-size: 11.7px; padding: 5px; width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="row contact-information-form mt-1">
+                                                <label for="" class="col">Default
+                                                    Gateway:</label>
+                                                <select id="inputState" class="col-8">
+                                                    <option selected>
+                                                        Choose...
+                                                    </option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="row contact-information-form mt-1 mb-4">
+                                                <label for="" class="col">Default
+                                                    Currency:</label>
+                                                <select id="inputState" class="col-8">
+                                                    <option selected>
+                                                        Choose...
+                                                    </option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" fade tab-pane" id="company-settings2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit 2
-                    </div>
-                    <div class=" fade tab-pane" id="company-settings3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 3
-                    </div>
-                    <div class=" fade tab-pane" id="company-settings4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 4
+                    <div class="modal-footer w-75 me-5 pe-5 m-auto">
+                        <button type="button" class="btn text-light"
+                            style="background-color: forestgreen; font-size: 13px;">Add
+                            Alies</button>
+                        <button type="button" class="btn text-light " data-bs-dismiss="modal"
+                            style="background-color: rgb(73, 71, 69); font-size: 13px;">Close</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>

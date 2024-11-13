@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 :root {
   --primary-color: #5f517496;
   --primary-color: rgb(66, 66, 66);
@@ -268,11 +268,34 @@ nav {
   border-radius: 5px;
   font-weight: 400;
   margin-top: 2px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-.update-company-info:hover{
-background-color: transparent;
-color: black;
+.update-company-info:hover {
+  background-color: transparent;
+  color: black;
+}
+.feature-list li {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+}
+.feature-list li::before {
+  content: "\2713\0020";
+  color: rgb(116, 13, 13);
+  font-weight: bold;
+}
+.features .farture-box {
+  border: 2px solid rgb(151, 151, 151);
+  border-radius: 5px;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  width: 350px;
+}
+.features .farture-box:hover {
+  cursor: pointer;
+  transform: scale(2);
+  background-color: #2e2e2e;
 }
 /* Media query for screen sizes 800px or less */
 @media (max-width: 800px) {

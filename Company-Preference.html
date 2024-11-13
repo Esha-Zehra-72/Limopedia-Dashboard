@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Account Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            background-color: #f1f1f1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            min-height: 100vh;
+        }
+        .highlight-red {
+            background-color: #f8d7da;
+        }
+        .highlight-yellow {
+            background-color: #fff3cd;
+        }
+        .tab-content {
+            margin-top: 20px;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h5>Customer Accounts</h5>
+                <div class="form-group">
+                    <label>Display</label><br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="activeAccounts" name="display" checked>
+                        <label class="form-check-label" for="activeAccounts">Active Accounts</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="allAccounts" name="display">
+                        <label class="form-label" for="allAccounts">All Accounts</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="showTypes">Show Types:</label>
+                    <select id="showTypes" class="form-control">
+                        <option>Any</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Search By</label><br>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="searchName">
+                        <label class="form-check-label" for="searchName">Name</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="searchPhone">
+                        <label class="form-check-label" for="searchPhone">Phone</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="searchCompany">
+                        <label class="form-check-label" for="searchCompany">Company</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="searchAccount">
+                        <label class="form-check-label" for="searchAccount">Account#</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sortBy">Sort By:</label>
+                    <select id="sortBy" class="form-control">
+                        <option>Account #</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary w-100">Go</button>
+                <div class="mt-3">
+                    <button class="btn btn-secondary w-100 mb-2">Delete</button>
+                    <button class="btn btn-secondary w-100 mb-2">Reservation</button>
+                    <button class="btn btn-secondary w-100">Edit</button>
+                </div>
+                <button class="btn btn-success w-100 mt-3">Add New Account</button>
+            </div>
+
+            <!-- Main Form Section -->
+            <div class="col-md-9 form-section">
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Account Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Financial Data</a>
+                    </li>
+                </ul>
+
+                <!-- Account Information Form -->
+                <div class="tab-content">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="prefix">Prefix</label>
+                                <input type="text" class="form-control" id="prefix">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" class="form-control" id="companyName">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="department">Department</label>
+                                <input type="text" class="form-control" id="department">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="jobTitle">Job Title</label>
+                                <input type="text" class="form-control" id="jobTitle">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Account Type</label><br>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="billing">
+                                <label class="form-check-label" for="billing">Billing Cnct</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="passngr">
+                                <label class="form-check-label" for="passngr">Passngr</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="address">Primary Address</label>
+                                <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="state">State/Prov</label>
+                                <select id="state" class="form-control">
+                                    <option>MA</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="zip">Zip/Post</label>
+                                <input type="text" class="form-control" id="zip">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="country">Country</label>
+                                <select id="country" class="form-control">
+                                    <option>USA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group highlight-red">
+                            <label for="privateNotes">Internal/Private Notes</label>
+                            <textarea id="privateNotes" class="form-control" rows="2"></textarea>
+                        </div>
+                        <div class="form-group highlight-yellow">
+                            <label for="driverNotes">Notes for Drivers</label>
+                            <textarea id="driverNotes" class="form-control" rows="2"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="priority">Priority</label>
+                                <select id="priority" class="form-control">
+                                    <option>Normal</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="status">Status</label>
+                                <select id="status" class="form-control">
+                                    <option>Active</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="webAccess">Web Access</label>
+                                <select id="webAccess" class="form-control">
+                                    <option>Allow</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
