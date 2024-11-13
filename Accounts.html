@@ -139,16 +139,16 @@
                             style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Display</span>
                         <div class="mb-2 d-flex justify-content-between align-items-center">
                             <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
+                                <input type="radio" name="" id="" name="Active-Acount">
                                 <label for="Active Accounts" class="form-label" >Active Accounts</label>
                             </div>
                             <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
-                                <label for="Active Accounts" class="form-label" >All Accounts</label>
+                                <input type="radio" name="" id="" name="Active-Acount">
+                                <label for="All Accounts" class="form-label" >All Accounts</label>
                             </div>
                         </div>
                         <div class="mb-2 col-12">
-                            <label for="pickupLocation" class="form-label" style="font-size: 14px;">Show Types:</label>
+                            <label for="pickupLocation" class="form-label col-3" style="font-size: 14px;">Show Types:</label>
                             <select id="inputState" class=" py-1 col-8"
                                 style="font-size: 12px;">
                                 <option>Any</option>
@@ -159,35 +159,40 @@
                     <div class="position-relative p-3 m-3 w-100" style="border: 1px solid rgb(194, 194, 194);">
                         <span
                             style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Search By</span>
-                        <div class="mb-2 d-flex justify-content-between align-items-center">
-                            <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
-                                <label for="Active Accounts" class="form-label" >Name</label>
+                        <div class="mb-2 row w-100">
+                            <div class="col-6" style="font-size: 14px; font-weight: 600"> 
+                                <input type="radio" name="" id="" name="name">
+                                <label for="Name" class="form-label" >Name</label>
                             </div>
-                            <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
+                            <div class="col-6" style="font-size: 14px; font-weight: 600"> 
+                                <input type="radio" name="" id="" name="Secaccount">
                                 <label for="Active Accounts" class="form-label" >Phone</label>
                             </div>
-                            <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
+                            <div class="col-6" style="font-size: 14px; font-weight: 600"> 
+                                <input type="radio" name="" id="" name="Secaccount">
                                 <label for="Active Accounts" class="form-label" >Company</label>
                             </div>
-                            <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
+                            <div class="col-6" style="font-size: 14px; font-weight: 600"> 
+                                <input type="radio" name="" id="" name="Secaccount">
                                 <label for="Active Accounts" class="form-label" >Account#</label>
                             </div>
                             <div class="" style="font-size: 14px; font-weight: 600"> 
-                                <input type="radio" name="" id="" name="account">
+                                <input type="radio" name="" id="" name="Secaccount">
                                 <label for="Active Accounts" class="form-label" >Show All</label>
                             </div>
                         </div>
                         <div class="mb-2 col-12">
-                            <label for="pickupLocation" class="form-label" style="font-size: 14px;">Show Types:</label>
-                            <select id="inputState" class=" py-1 col-8"
+                            <label for="pickupLocation" class="form-label col-2  fw-bold"  style="font-size: 14px;">Sort By:</label>
+                            <select id="inputState" class=" py-1 col-3"
                                 style="font-size: 12px;">
                                 <option>Any</option>
                                 <option>....</option>
                             </select>
+                        </div>
+
+                        <div class="row gap-4">
+                            <input type="text" class=" ms-2 col-8 py-1">
+                            <button class="btn-primary btn w-25 col-3" style="font-weight: 600; background-color: rgb(49, 49, 49); border: none;">Go</button>
                         </div>
                     </div>
                 </div>
