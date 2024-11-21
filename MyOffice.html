@@ -162,7 +162,7 @@
                                                 data-bs-toggle="tab">System Users</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="" class="nav-link contact-information-child-tabs"
+                                            <a href="#policy" class="nav-link contact-information-child-tabs active"
                                                 data-bs-toggle="tab">Policies</a>
                                         </li>
                                         <li class="nav-item col-7">
@@ -179,17 +179,17 @@
                                         </li>
                                         <li class="nav-item col-7">
                                             <a href="#onlineReservation"
-                                                class="nav-link contact-information-child-tabs active"
+                                                class="nav-link contact-information-child-tabs "
                                                 data-bs-toggle="tab">Online Reservations</a>
                                         </li>
                                         <li class="nav-item col-7">
                                             <a href="#paymentGateway" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Payment Gateway</a>
                                         </li>
-                                        <li class="nav-item col-7">
+                                        <!-- <li class="nav-item col-7">
                                             <a href="" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Third-party Plug-in</a>
-                                        </li>
+                                        </li> -->
                                         <li class="nav-item col-7">
                                             <a href="" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">System Settings</a>
@@ -2115,30 +2115,30 @@
                                                             <table class="w-100">
                                                                 <tr style="border: 1px solid black;">
                                                                     <th style="border-right: 1px solid black;"
-                                                                        class="text-start ps-5 py-2">Gateway Name</th>
+                                                                        class="text-start ps-5 py-2 ">Gateway Name</th>
                                                                     <th style="border-left: 1px solid black;">Actions
                                                                     </th>
                                                                 </tr>
                                                                 <tr
                                                                     style="border: 1px solid black; font-size: 14px; font-weight: 600;">
                                                                     <td style="border-right: 1px solid black;"
-                                                                        class="text-start ps-5 py-1">Gateway Name</td>
+                                                                        class="text-start ps-5 py-1">BCR-SQ-Gateway</td>
                                                                     <td style="border-left: 1px solid black;"><a
-                                                                            href="#editGatewayModal"
+                                                                            href="#editGatewayModal" class="edit-link"
                                                                             data-bs-toggle="modal"
                                                                             data-bs-target="#editGatewayModal">Edit</a>
-                                                                        <a href="#">Delete</a>
+                                                                        <a href="#" class="delete-link">Delete</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr
                                                                     style="border: 1px solid black; font-size: 14px; font-weight: 600;">
                                                                     <td style="border-right: 1px solid black;"
-                                                                        class="text-start ps-5 py-1">Gateway Name</td>
+                                                                        class="text-start ps-5 py-1">BEC-SQ-gatewa</td>
                                                                     <td style="border-left: 1px solid black;"><a
                                                                             href="#editGatewayModal"
-                                                                            data-bs-toggle="modal"
+                                                                            data-bs-toggle="modal" class="edit-link"
                                                                             data-bs-target="#editGatewayModal">Edit</a>
-                                                                        <a href="#">Delete</a>
+                                                                        <a href="#" class="delete-link">Delete</a>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -2155,7 +2155,7 @@
                                         </div>
 
                                         <!-- onlineReservation -->
-                                        <div class="tab-pane fade active show on" id="onlineReservation">
+                                        <div class="tab-pane fade " id="onlineReservation">
                                             <div class="d-flex w-100 ms-3 position-absolute" style="margin-top: -110%;">
                                                 <div class="tabs col-2">
                                                     <ul class="nav nav-tabs d-flex flex-column">
@@ -2182,22 +2182,34 @@
                                                         id="ORES">
                                                         <div class="tabs co-12">
                                                             <ul class="nav nav-tabs d-flex co-12">
-                                                                <li class="nav-item " style="width: 16.5%; text-align: center;"><a href="#ABC"
+                                                                <li class="nav-item "
+                                                                    style="width: 16.5%; text-align: center;"><a
+                                                                        href="#ABC"
                                                                         class="nav-link contact-information-child-tabs "
                                                                         data-bs-toggle="tab">Settings</a></li>
-                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#myWebsite"
+                                                                <li class="nav-item"
+                                                                    style="width: 16.5%; text-align: center;"><a
+                                                                        href="#myWebsite"
                                                                         class="nav-link contact-information-child-tabs active"
                                                                         data-bs-toggle="tab">My Website</a></li>
-                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#widgets"
+                                                                <li class="nav-item"
+                                                                    style="width: 16.5%; text-align: center;"><a
+                                                                        href="#widgets"
                                                                         class="nav-link contact-information-child-tabs"
                                                                         data-bs-toggle="tab">Widgets</a></li>
-                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#design"
+                                                                <li class="nav-item"
+                                                                    style="width: 16.5%; text-align: center;"><a
+                                                                        href="#design"
                                                                         class="nav-link contact-information-child-tabs"
                                                                         data-bs-toggle="tab">Design</a></li>
-                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#analytics"
+                                                                <li class="nav-item"
+                                                                    style="width: 16.5%; text-align: center;"><a
+                                                                        href="#analytics"
                                                                         class="nav-link contact-information-child-tabs"
                                                                         data-bs-toggle="tab">Analytics</a></li>
-                                                                <li class="nav-item" style="width: 16.5%; text-align: center;"><a href="#rules"
+                                                                <li class="nav-item"
+                                                                    style="width: 16.5%; text-align: center;"><a
+                                                                        href="#rules"
                                                                         class="nav-link contact-information-child-tabs"
                                                                         data-bs-toggle="tab">Rules</a></li>
                                                             </ul>
@@ -2713,7 +2725,8 @@
                                                                         </select>
                                                                     </div>
                                                                     <div class=" text-center">
-                                                                        <h5 style="font-size: 17px; font-weight: 700;" class="mt-3">
+                                                                        <h5 style="font-size: 17px; font-weight: 700;"
+                                                                            class="mt-3">
                                                                             Preferred Method: Embed The Booking System
                                                                             In Your Website</h5>
                                                                         <p style="font-size: 14px;">When you embed the
@@ -2723,12 +2736,25 @@
                                                                             into the source of the “Reservations” page
                                                                             on your website.</p>
                                                                         <textarea name="" id="" cols="70" rows="5"
-                                                                            style="border: 5px double gray;" placeholder="https://book.mylimobiz.com/v4/blackcarrides"></textarea>
+                                                                            style="border: 5px double gray;"
+                                                                            placeholder="https://book.mylimobiz.com/v4/blackcarrides"></textarea>
                                                                     </div>
                                                                     <div class=" text-center">
-                                                                        <h5 style="font-size: 17px;" class="mt-3 font-weight: 700;">Alternative Method: Place A Link On Your Website</h5>
-                                                                        <p  style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;">Place one or more links on your website. When a user clicks on the link they will transition from your website to your reservation system. Below is the web address you should use with any “Reservation” or “Book Now” links/buttons on your site.</p>
-                                                                        <a href="#" type="button" class="btn btn-primary w-75 m-auto my-3" style="background-color: rgb(99, 99, 99) !important; border: none; border-radius: 0;"> https://book.mylimobiz.com/v4/blackcarrides</a>
+                                                                        <h5 style="font-size: 17px;"
+                                                                            class="mt-3 font-weight: 700;">Alternative
+                                                                            Method: Place A Link On Your Website</h5>
+                                                                        <p
+                                                                            style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                                                                            Place one or more links on your website.
+                                                                            When a user clicks on the link they will
+                                                                            transition from your website to your
+                                                                            reservation system. Below is the web address
+                                                                            you should use with any “Reservation” or
+                                                                            “Book Now” links/buttons on your site.</p>
+                                                                        <a href="#" type="button"
+                                                                            class="btn btn-primary w-75 m-auto my-3"
+                                                                            style="background-color: rgb(99, 99, 99) !important; border: none; border-radius: 0;">
+                                                                            https://book.mylimobiz.com/v4/blackcarrides</a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="fade tab-pane" id="widgets">
@@ -2753,6 +2779,247 @@
                                                     <div class="fade tab-pane ms-5 w-100 p-3 ms-5 ps-5 pe-5"
                                                         id="thirdTab">
                                                         Lorem ipsum dolor sit amet.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Policies -->
+                                        <div class="tab-pane fade active show on w-100 position-relative" id="policy"
+                                        style="margin-top: -115%;" >
+                                            <div class="w-100 ms-3 mt-5 position-absolute" style="top: 0px;">
+                                                <div class="tabs">
+                                                    <ul class="nav nav-tabs d-flex">
+                                                        <li class="nav-item">
+                                                            <a href="#StoredAgreements"
+                                                                class="nav-link contact-information-child-tabs mt-2 ms-0 active"
+                                                                data-bs-toggle="tab">Stored Agreements</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#PrivacyPolicy"
+                                                                class="nav-link contact-information-child-tabs mt-2 ms-0 "
+                                                                data-bs-toggle="tab">Privacy Policy</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content z-3 position-absolute w-100">
+                                                    <div class="fade tab-pane active show on position-absolute d-flex "
+                                                        id="StoredAgreements">
+                                                        <div class="p-2 col"
+                                                            style="border: 1px solid rgba(97, 97, 97, 0.096); width:300px;">
+                                                            <div
+                                                                class="usersHeading pb-1 d-flex justify-content-between align-items-center">
+                                                                <div class="user-head">
+                                                                    <span class="fw-bold" style="font-size: 14px;">Stored Agreements</span>
+                                                                </div>
+                                                                <div class="showUsers">
+                                                                    <span class="fw-bold" style="font-size: 14px;">show all</span>
+                                                                    <input type="checkbox" name="" id="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="p-3"
+                                                                style="overflow-y:scroll; width: 100%; border: 1px solid rgba(0, 0, 0, 0.164); font-size: 13px;">
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Standard
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Updated
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Standard
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Updated
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Standard
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Updated
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Updated
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Standard
+                                                                    Rental Agreement</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">Updated
+                                                                    Rental Agreement</a>
+                                                            </div>
+                                                            <div class="btn w-100 mt-0 p-0"
+                                                                style="border-radius: 0 !important;">
+                                                                <button class="policy-dlt-btn border-0 text-light py-1"
+                                                                    type="delete">Delete</button>
+                                                                <button
+                                                                    class="policy-edt-btn  border-0 text-light py-1 my-1"
+                                                                    type="edit">Edit</button>
+                                                                <button
+                                                                    class="bg-dark add-agreement-btn col-12 border-0 text-light py-2 px-0"
+                                                                    style="font-size: 14px;" type="submit">Add New
+                                                                    Agreement</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" ms-3 p-2 position-relative"
+                                                            style="width: 781px; border: 1px solid rgba(87, 87, 87, 0.185); ">
+                                                            <div class="ps-0 col-12">
+                                                                <label for="pickupLocation"
+                                                                    class="form-label mb-0 pb-0 fw-bold"  style="font-size: 12px;">Rental Name</label>
+                                                                <input type="text" class="col-12 input-field-border" style=" background-color: rgba(255, 235, 205, 0.616);">
+                                                            </div>
+                                                            <div class=" col pe-0">
+                                                                <label for="pickupLocation"
+                                                                    class="form-label mb-0 pb-0 fw-bold"  style="font-size: 12px;">Status</label>
+                                                                <select id="input-field-border"  class="col-12 py-1"
+                                                                    style="font-size: 12px; border:  1px solid rgba(3, 3, 3, 0.26);  background-color: rgba(255, 235, 205, 0.616);">
+                                                                    <option>Acitve</option>
+                                                                    <option>Unactive</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="p-0 m-0 mt-3">
+                                                                <h2 for="" class="fw-bold" style="font-size: 12px;">Rental Agreement</h2>
+                                                                <div class="col-12 p-1 mt-0"
+                                                                    style=" border: 1px solid rgba(60, 94, 91, 0.281);">
+                                                                    <div class=" py-0"
+                                                                        style=" border: 2px solid rgba(107, 155, 148, 0.24); background-color:rgba(68, 117, 113, 0.164) ;">
+                                                                        <div class="col-6 m-1 e-btn-cont"
+                                                                            style="border: 1px solid rgba(66, 88, 87, 0.425); font-size: 10px !important; background-color: rgba(88, 143, 138, 0.205); font-size: 12px; ">
+                                                                            <button
+                                                                                class="btn py-0  px-1  fst-italic fw-bold"
+                                                                                id="bold-text">B</button>
+                                                                            <button
+                                                                                class="btn py-0  px-1 fst-italic fw-bold"
+                                                                                id="italicText">I</button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold text-decoration-underline"
+                                                                                id="underLine">U</button>
+                                                                            <button
+                                                                                class="btn py-0 px-1 fst-italic fw-bold position-relative color-picker-btn" id="color-picker"><label
+                                                                                    for="color"
+                                                                                    class="text-decoration-underline">A</label>
+                                                                                <input type="color" id="color"></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"
+                                                                                style="transform: rotate(270deg);"><i
+                                                                                    class="fa-solid fa-scissors" id="cut"></i></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"
+                                                                                style="transform: rotate(176deg);"><i
+                                                                                    class="fa-regular fa-copy" id="copy"></i></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i class="fa-solid fa-paste" id="paste"></i></button>
+
+
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i
+                                                                                    class="fa-solid fa-arrow-rotate-left" id="undo"></i></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i
+                                                                                    class="fa-solid fa-arrow-rotate-right"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-content overflow-hidden p-2" contenteditable="true" style="font-size: 13px; border: 1px solid rgba(0, 0, 0, 0.151) !important; outline: none;min-height: 200px;">
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing
+                                                                        elit. Fuga temporibus deserunt, incidunt
+                                                                        explicabo
+                                                                        doloribus in id illum nihil tempore fugiat?
+                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus deserunt, incidunt explicabo doloribus in id illum nihil tempore fugiat?
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing
+                                                                        elit. Fuga temporibus deserunt, incidunt
+                                                                        explicabo
+                                                                        doloribus in id illum nihil tempore fugiat?
+                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus deserunt, incidunt explicabo doloribus in id illum nihil tempore fugiat?
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mt-2 row align-items-center">
+                                                                <div class="showUsers col-4">
+                                                                    <input type="checkbox" name="" id="" class="p-0">
+                                                                    <span class="pb-2" style="font-size: 12.5px; font-weight: 600;">Use this agreement as default</span>
+                                                                </div>
+                                                                <div class="showUsers col">
+                                                                    <input type="checkbox" name="" id="" class="p-0">
+                                                                    <span class="pb-2" style="font-size: 12.5px; font-weight: 600;">Default form-out agreement</span>
+                                                                </div>
+                                                                <button class="col-3 me-3 required-field-btn">complete Require Fileds</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fade tab-pane position-absolute w-100 col-12" id="PrivacyPolicy">
+                                                        <div class="p-1 col-12" style="border: 1px solid rgba(97, 97, 97, 0.096);">
+                                                            <div class="py-2 col-12 pe-0 text-center" style=" background-color: rgba(255, 235, 205, 0.788);">
+                                                                <label for="pickupLocation"
+                                                                    class="form-label mb-0 pb-0 fw-bold"  style="font-size: 12px; color: rgb(39, 39, 39);">Select Alias</label>
+                                                                <select id="input-field-border"  class="col-4 py-1"
+                                                                    style="font-size: 12px; border:  1px solid rgba(3, 3, 3, 0.26);  background-color: rgba(255, 235, 205, 0.616);">
+                                                                    <option>blackcarnrides</option>
+                                                                    <option>allnationcarsservice</option>
+                                                                    <option>bestbostoncarservice</option>
+                                                                    <option>bostonviplimousines</option>
+                                                                    <option>capecodblackcar</option>
+                                                                    <option>loganblackcar</option>
+                                                                    <option>starblackcar</option>
+                                                                    <option>worldwideblackcar</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="p-0 m-0 mt-2">
+                                                                <h2 for="" class="fw-bold " style="font-size: 12px;">Policy:</h2>
+                                                                <div class="col-12 p-1 mt-0"
+                                                                    style=" border: 1px solid rgba(60, 94, 91, 0.521);">
+                                                                    <div class=" py-0"
+                                                                        style=" border: 2px solid rgba(107, 155, 148, 0.24); background-color:rgba(68, 117, 113, 0.164) ;">
+                                                                        <div class="col-6 m-1 e-btn-cont"
+                                                                            style="border: 1px solid rgba(66, 88, 87, 0.425); font-size: 10px !important; background-color: rgba(88, 143, 138, 0.205); font-size: 12px;">
+                                                                            <button
+                                                                                class="btn py-0  px-1  fst-italic fw-bold"
+                                                                                id="bold-text">B</button>
+                                                                            <button
+                                                                                class="btn py-0  px-1 fst-italic fw-bold"
+                                                                                id="italicText">I</button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold text-decoration-underline"
+                                                                                id="underLine">U</button>
+                                                                            <button
+                                                                                class="btn py-0 px-1 fst-italic fw-bold position-relative color-picker-btn" id="color-picker"><label
+                                                                                    for="color"
+                                                                                    class="text-decoration-underline">A</label>
+                                                                                <input type="color" id="color"></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"
+                                                                                style="transform: rotate(270deg);"><i
+                                                                                    class="fa-solid fa-scissors" id="cut"></i></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"
+                                                                                style="transform: rotate(176deg);"><i
+                                                                                    class="fa-regular fa-copy" id="copy"></i></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i class="fa-solid fa-paste" id="paste"></i></button>
+
+
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i
+                                                                                    class="fa-solid fa-arrow-rotate-left" id="undo"></i></button>
+                                                                            <button
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i
+                                                                                    class="fa-solid fa-arrow-rotate-right"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-content overflow-hidden p-2" contenteditable="true" style="font-size: 13px; border: 1px solid rgba(0, 0, 0, 0.212) !important; outline: none; min-height: 200px;">
+                                                                        Please contact blackcarnrides@gmail.com for privacy policy. </div>
+                                                                </div>
+                                                            </div>
+                                                      
+
+                                                            <div class="mt-2 row text-center w-100">
+                                                                <button class=" required-field-btn col-12 w-100" style="    margin-left: 12px;">Updata Policy Content</button>
+                                                            </div>
+                                                      
+                                                        </div>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -2786,11 +3053,47 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add Gateway</h5>
+                    <h5 class="modal-title">Edit Gateway</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, officiis.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="addgatewayName" class="form-label" style="font-size: 14px;">Gateway
+                                Name:</label>
+                            <input type="text" id="addgatewayName" class="col-12 py-1" style="font-size: 14px;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="aadpaymentType" class="form-label" style="font-size: 14px;">Type of Payment
+                                Gateway:</label>
+                            <select id="addpaymentType" class="col-12 py-1" style="font-size: 14px;">
+                                <option>Square</option>
+                                <option>Limo Anywhere PAY</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="addaccessToken" class="form-label" style="font-size: 14px;">Login:</label>
+                            <input type="text" id="addaccessToken" class=" col-12 py-1" style="font-size: 14px;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="aadlocation" class="form-label" style="font-size: 14px;">Transaction
+                                Key:</label>
+                            <input type="text" id="addlocation" class="col-12 py-1" style="font-size: 14px;">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="isDefaultGateway" class="form-check-input"
+                                style="border: 1px solid black;">
+                            <label for="isDefaultGateway" class="form-check-label" style="font-size: 14px; ">Is Default
+                                Gateway</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary border-0"
+                        style="font-size: 14px; background-color:rgb(83, 133, 134) ;">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        style="font-size: 14px;">Cancel</button>
                 </div>
             </div>
         </div>
@@ -2805,7 +3108,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="editGatewayForm">
                         <div class="mb-3">
                             <label for="gatewayName" class="form-label" style="font-size: 14px;">Gateway Name:</label>
                             <input type="text" id="gatewayName" class="col-12 py-1" style="font-size: 14px;">
@@ -2831,14 +3134,16 @@
                                 with Square</button>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" id="isDefaultGateway" class="form-check-input">
+                            <input type="checkbox" id="isDefaultGateway" class="form-check-input"
+                                style="border:1px solid rgb(32, 32, 32);">
                             <label for="isDefaultGateway" class="form-check-label" style="font-size: 14px;">Is Default
                                 Gateway</label>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" style="font-size: 14px;">Save</button>
+                    <button type="submit" form="editGatewayForm" class="btn btn-primary border-0"
+                        style="font-size: 14px; background-color: rgb(43, 80, 80);">Save</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                         style="font-size: 14px;">Cancel</button>
                 </div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Selected Text</title>
+    <style>
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Select Text Example</h1>
+    <p>
+        Highlight any part of this paragraph, and it will show the selected content in an alert box.
+    </p>
+
+    <button onclick="getSelectedText()">bold</button>
+
+    <script>
+        function getSelectedText() {
+            const selection = window.getSelection(); // Get the selected content
+    
+            if (selection.rangeCount > 0) {
+                const range = selection.getRangeAt(0);  // Get the range of the selected text
+                const selectedText = range.toString();  // Get the text content
+    
+                if (selectedText) {
+                    // Get the parent element of the selected text
+                    const parentElement = range.startContainer.parentElement;
+    
+                    // Check if the selected text's parent element is a <strong> tag (bold text)
+                    if (parentElement && parentElement.tagName === "STRONG") {
+                        // If the parent element is <strong>, remove the bold formatting by replacing <strong> with its child nodes
+                        parentElement.replaceWith(...parentElement.childNodes);
+                        console.log("Bold removed");
+    
+                    } else {
+                        // If it's not bold, make it bold by wrapping it in a <strong> tag
+                        const bold = document.createElement("strong");
+                        bold.textContent = selectedText;  // Set the selected text as the content of the <strong> tag
+                        range.deleteContents();  // Delete the selected text
+                        range.insertNode(bold);  // Insert the <strong> element with the text in it
+                        console.log("Bold applied");
+                    }
+                }
+            } else {
+                console.log("No text selected. Please highlight some text.");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

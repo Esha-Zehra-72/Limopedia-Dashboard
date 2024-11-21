@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Card</title>
+    <style>
+        #colorPicker {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Custom color picker card styling */
+        .color-picker-card {
+            position: absolute;
+            top: 100%; /* Open just below the button */
+            left: 0;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: none; /* Hidden by default */
+            z-index: 1000;
+        }
+
+        .color-picker-card input[type="color"] {
+            border: none;
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .color-picker-card .close-btn {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+            font-size: 12px;
+            color: #888;
+            cursor: pointer;
+        }
+
+        .color-picker-card .close-btn:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn py-0 px-1 fst-italic fw-bold text-decoration-underline position-relative" id="colorPicker">A</button>
+
+    <script>
+        const colorPicker = document.querySelector("#colorPicker");
+
+        colorPicker.addEventListener('click', function () {
+            // Check if the color picker card already exists
+            let existingCard = document.querySelector('.color-picker-card');
+            if (existingCard) {
+                // Toggle visibility if the card already exists
+                existingCard.style.display = existingCard.style.display === 'none' ? 'block' : 'none';
+                return;
+            }
+
+            // Create the color picker card
+            const card = document.createElement('div');
+            card.classList.add('color-picker-card');
+
+            // Create the actual color input
+            const picker = document.createElement('input');
+            picker.type = 'color';
+
+            // Add a close button to the card
+            const closeBtn = document.createElement('span');
+            closeBtn.textContent = 'Close';
+            closeBtn.classList.add('close-btn');
+
+            // Append the picker and close button to the card
+            card.appendChild(picker);
+            card.appendChild(closeBtn);
+
+            // Position the card relative to the button
+            colorPicker.style.position = 'relative'; // Ensure button has a relative position
+            colorPicker.insertAdjacentElement('afterend', card);
+
+            // Show the card
+            card.style.display = 'block';
+
+            // Handle color input selection
+            picker.addEventListener('input', function () {
+                console.log("Selected Color:", picker.value);
+            });
+
+            // Close the card when clicking the close button
+            closeBtn.addEventListener('click', function () {
+                card.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

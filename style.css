@@ -308,6 +308,62 @@ nav {
 .account-btn .btn-secondary:hover {
   background-color: #131313 !important;
 }
+
+/* Policy */
+.policy-dlt-btn {
+  font-size: 14px;
+  width: 170px;
+  background-color: #f1281a;
+  transition: all 0.5s ease;
+}
+.policy-dlt-btn:hover {
+  background-color: rgb(201, 61, 61);
+}
+.policy-edt-btn {
+  font-size: 14px;
+  width: 105px;
+  background-color: #008cba;
+  transition: all 0.5s ease;
+}
+.policy-edt-btn:hover {
+  background-color: #11ade0;
+}
+
+.add-agreement-btn:hover {
+  background-color: #4b4b4b !important;
+  transition: all 0.5s ease;
+}
+/* COLOR PICKER */
+#color {
+  width: 10px;
+  height: 5px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+}
+.e-btn-cont button{
+  font-size: 12px !important;
+}
+.input-field-border{
+  border: 1px solid rgba(3, 3, 3, 0.26);
+  outline: none !important;
+  font-size: 12px;
+  padding: 3px
+}
+.required-field-btn{
+  border: 2px solid rgba(128, 128, 128, 0.363);
+  background-color: rgba(146, 146, 146, 0.432);
+  color: #383838;
+  padding: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Manrope, sans-serif;
+  transition: all .5s ease;
+}
+.required-field-btn:hover{
+  background-color: transparent;
+}
 /* Media query for screen sizes 800px or less */
 @media (max-width: 800px) {
   .swiper-button-prev,

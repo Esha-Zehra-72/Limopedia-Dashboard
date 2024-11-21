@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Color Picker</title>
+    <style>
+        #colorPicker {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Styling the dynamically added color picker */
+        .inline-color-picker {
+            position: absolute;
+            margin-left: 5px; /* Space between button and picker */
+            top: 0; /* Aligns with the button */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn py-0 px-1 fst-italic fw-bold text-decoration-underline position-relative" id="colorPicker">A</button>
+
+    <script>
+        const colorPicker = document.querySelector("#colorPicker");
+
+        colorPicker.addEventListener('click', function() {
+            // Check if the color picker already exists to avoid adding it again
+            let existingPicker = document.querySelector('.inline-color-picker');
+            if (existingPicker) {
+                existingPicker.click(); // Trigger the existing color picker
+                return;
+            }
+
+            // Create the color picker input element
+            const picker = document.createElement('input');
+            picker.type = 'color';
+            picker.classList.add('inline-color-picker'); // Add a class for styling
+            
+            // Append the color picker directly after the button
+            colorPicker.insertAdjacentElement('afterend', picker);
+
+            // Listen for color selection
+            picker.addEventListener('input', function() {
+                console.log("Selected Color:", picker.value);
+            });
+
+            // Trigger the color picker dialog
+            picker.click();
+        });
+    </script>
+
+</body>
+</html>
