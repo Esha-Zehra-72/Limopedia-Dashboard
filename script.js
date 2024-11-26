@@ -311,10 +311,10 @@ cut.addEventListener('click', function () {
 const copy = document.querySelector("#copy")
 const paste = document.querySelector("#paste")
 const undo = document.querySelector("#undo")
-const textContent = document.querySelector(".text-content") 
+const textContent = document.querySelector(".text-content")
 let copyText = "";
 let previousState = ''
-function saveSate (){
+function saveSate() {
     previousState = textContent.textContent
 }
 copy.addEventListener('click', function () {
@@ -335,11 +335,46 @@ copy.addEventListener('click', function () {
     }
 })
 // Undo Functionality
-undo.addEventListener('click', function(){
-    if(previousState){
+undo.addEventListener('click', function () {
+    if (previousState) {
         textContent.innerHTML = previousState
         console.log("Undo action performed.");
-    }else {
+    } else {
         console.log("No previous state to restore.");
     }
+})
+
+// serviceTypeTab
+const serviceTypeTab = document.getElementById('serviceTypeTab')
+serviceTypeTab.addEventListener('click', function (event) {
+    event.stopPropagation()
+})
+// Add new Alises Modal Table
+
+const addNewAlisesBtn2 = document.querySelector('.add-new-alises-btn2')
+addNewAlisesBtn2.addEventListener('click', () => {
+    const ServiceTypeName = document.querySelector('#ServiceTypeName').value
+    const ServiceTypeCode = document.querySelector('#ServiceTypeCode').value
+    const Agreement = document.querySelector('#Agreement').value
+    const PricingType = document.querySelector('#PricingType').value
+    // const defaultValue = document.querySelector("#defaultValue").value
+    console.log("Service Type Code : ", ServiceTypeCode)
+
+
+    const tableBody = document.querySelector('#aliesTableBody')
+    console.log(tableBody);
+
+    const newRow = document.createElement('tr')
+    newRow.innerHTML = `
+<th scope="row"><input type="checkbox" name="" id=""></th>
+<td><a href="#">${ServiceTypeName}</td>
+<td>${ServiceTypeCode}</td>
+<td>${Agreement}</td>
+<td>${PricingType}</td>
+`
+    tableBody.appendChild(newRow)
+    const modal =  bootstrap.Modal.getInstance(document.querySelector('#addnewAlieses'))
+    modal.hide()
+    document.querySelector('#addnewAlieses form').reset()
+
 })

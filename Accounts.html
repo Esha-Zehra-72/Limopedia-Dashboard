@@ -132,7 +132,7 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, perferendis.
             </div>
             <div class="fade tab-pane show on active d-flex w-100" id="accountAccounts">
-                <div class="customerAccount ">
+                <div class="customerAccount w-25">
                     <h5 class="m-2" style="font-size: 14px;">Customer Accounts</h5>
                     <div class="position-relative p-3 m-3 w-100" style="border: 1px solid rgb(194, 194, 194);">
                         <span
@@ -148,9 +148,9 @@
                             </div>
                         </div>
                         <div class="mb-2 col-12">
-                            <label for="pickupLocation" class="form-label col-3" style="font-size: 14px;">Show
+                            <label for="showTypes" class="form-label col-3" style="font-size: 14px;">Show
                                 Types:</label>
-                            <select id="inputState" class=" py-1 col-8" style="font-size: 12px;">
+                            <select id="showTypes" class=" py-1 col-8" style="font-size: 12px;">
                                 <option>Any</option>
                                 <option>....</option>
                             </select>
@@ -183,14 +183,14 @@
                             </div>
                         </div>
                         <div class="mb-2 col-12">
-                            <label for="pickupLocation" class="form-label col-2  fw-bold" style="font-size: 14px;">Sort
+                            <label for="sortBy" class="form-label col-4  fw-bold" style="font-size: 14px;">Sort
                                 By:</label>
-                            <select id="inputState" class=" py-1 col-3" style="font-size: 12px;">
+                            <select id="sortBy" class=" py-1 col-7" style="font-size: 12px;">
                                 <option>Any</option>
                                 <option>....</option>
                             </select>
                         </div>
-                        <div class="row gap-5 mt-4">
+                        <div class="row gap-3 mt-4">
                             <input type="text" class=" ms-2 col-8 py-1">
                             <button class="btn-primary btn col-2"
                                 style="font-weight: 600; background-color: rgba(66, 66, 66, 0.705); color: rgb(255, 255, 255) ;border: 2px solid rgb(99, 99, 99);">Go</button>
@@ -225,7 +225,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="accountInformation ms-5">
+                <div class="accountInformation ms-5 w-50">
                     <div class="tabs">
                         <ul class="nav nav-tabs">
                             <li class="nav-item"><a href="#accountInfo"
@@ -244,9 +244,9 @@
                                         Information</span>
                                         <div class="info1 row justify-content-center align-items-center col">
                                             <div class="mb-2 col-2" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start"
+                                                <label for="Prefix" class="form-label mb-0 text-start"
                                                     style="font-size: 12px;">Prefix</label>
-                                                <select id="inputState" class="py-1 col-12 text-start"
+                                                <select id="Prefix" class="py-1 col-12 text-start"
                                                     style="font-size: 12px;">
                                                     <option></option>
                                                     <option>....</option>
@@ -337,9 +337,9 @@
                                                     id="dropoffLocation">
                                             </div>
                                             <div class="mb-2 col-2" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start"
+                                                <label for="State/Prov" class="form-label mb-0 text-start"
                                                     style="font-size: 11px;">State/Prov</label>
-                                                <select id="inputState" class="py-1 col-12 text-start"
+                                                <select id="State/Prov" class="py-1 col-12 text-start"
                                                     style="font-size: 12px;">
                                                     <option></option>
                                                     <option>....</option>
@@ -353,30 +353,30 @@
                                                     id="dropoffLocation">
                                             </div>
                                             <div class="mb-2 col-12" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start"
+                                                <label for="Country" class="form-label mb-0 text-start"
                                                     style="font-size: 11px;">Country</label>
-                                                <select id="inputState" class="py-1 col-12 text-start"
+                                                <select id="Country" class="py-1 col-12 text-start"
                                                     style="font-size: 12px;">
                                                     <option></option>
                                                     <option>....</option>
                                                 </select>
                                             </div>
                                             <div class="mb-2 col-6" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start"
+                                                <label for="Internal/Private Notes" class="form-label mb-0 text-start"
                                                     style="font-size: 12px; font-weight: 600;">Internal/Private Notes
                                                 </label>
                                                 <textarea name="" id="" class="col-12 "
                                                     style="background-color: rgba(236, 176, 241, 0.541);"></textarea>
                                             </div>
                                             <div class="mb-2 col-6" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start"
+                                                <label for="Preferences/Trip" class="form-label mb-0 text-start"
                                                     style="font-size: 12px; font-weight: 600;">Preferences/Trip
                                                     Notes</label>
                                                 <textarea name="" id="" class="col-12"
                                                     style="background-color: rgba(216, 223, 156, 0.541);"></textarea>
                                             </div>
                                             <div class="mb-2 col-12" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start"
+                                                <label for="NotesforDrivers" class="form-label mb-0 text-start"
                                                     style="font-size: 12px; font-weight: 600;">Notes for Drivers</label>
                                                 <textarea name="" id="" class="col-12"
                                                     style="background-color: rgba(216, 223, 156, 0.541);"></textarea>
@@ -599,16 +599,16 @@
                                             Setting</span>
 
                                             <div class="mb-2 col-4" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start text-danger fw-bold"
+                                                <label for="Priority" class="form-label mb-0 text-start text-danger fw-bold"
                                                     style="font-size: 12px;">Priority</label>
-                                                <select id="inputState" class="py-1 col-12 text-start"
+                                                <select id="Priority" class="py-1 col-12 text-start"
                                                     style="font-size: 12px;">
                                                     <option></option>
                                                     <option>....</option>
                                                 </select>
                                             </div>
                                             <div class="mb-2 col-3" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start fw-bold text-success"
+                                                <label for="Satus" class="form-label mb-0 text-start fw-bold text-success"
                                                     style="font-size: 12px;">Satus</label>
                                                 <select id="inputState" class="py-1 col-12 text-start"
                                                     style="font-size: 12px;">
@@ -617,9 +617,9 @@
                                                 </select>
                                             </div>
                                             <div class="mb-2 col-5" style="margin-left: -2px !important;">
-                                                <label for="pickupLocation" class="form-label mb-0 text-start fw-bold text-primary"
+                                                <label for="WebAccess" class="form-label mb-0 text-start fw-bold text-primary"
                                                     style="font-size: 12px;">Web Access</label>
-                                                <select id="inputState" class="py-1 col-12 text-start"
+                                                <select id="WebAccess" class="py-1 col-12 text-start"
                                                     style="font-size: 12px;">
                                                     <option></option>
                                                     <option>....</option>

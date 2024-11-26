@@ -294,8 +294,8 @@ nav {
 }
 .features .farture-box:hover {
   cursor: pointer;
-  transform: scale(2);
-  background-color: #2e2e2e;
+  /* transform: scale(2);
+  background-color: #2e2e2e; */
 }
 /* Account Buttons */
 .account-btns .btn-danger:hover {
@@ -342,16 +342,16 @@ nav {
   top: 10px;
   left: 13px;
 }
-.e-btn-cont button{
+.e-btn-cont button {
   font-size: 12px !important;
 }
-.input-field-border{
+.input-field-border {
   border: 1px solid rgba(3, 3, 3, 0.26);
   outline: none !important;
   font-size: 12px;
-  padding: 3px
+  padding: 3px;
 }
-.required-field-btn{
+.required-field-btn {
   border: 2px solid rgba(128, 128, 128, 0.363);
   background-color: rgba(146, 146, 146, 0.432);
   color: #383838;
@@ -359,11 +359,69 @@ nav {
   font-size: 14px;
   font-weight: 600;
   font-family: Manrope, sans-serif;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-.required-field-btn:hover{
+.required-field-btn:hover {
   background-color: transparent;
 }
+input{
+  outline: none !important;
+}
+.dropdown-menu.show {
+  display: block;
+  transform: translate(1px, 0px) !important;
+  padding: 2px !important;
+  font-size: 12px !important;
+  inset: 0px auto auto 15px !important;
+  background-color: #80808030 !important ;
+  width: inherit !important;
+}
+.dropdown-menu.show a.active {
+  font-weight: 600;
+  color: rgba(0, 103, 238, 0.932) !important;
+}
+
+.tab-pane:not(.active) {
+  display: none !important; /*Hide inactive tabs*/
+}
+/* New Alises Modal */
+.add-new-alises-btn1 {
+  font-size: 14px;
+  border: 2px solid rgb(90, 90, 90);
+  color: rgb(90, 90, 90);
+  padding: 4px 13px;
+  font-weight: 600;
+  border-radius: 0 !important;
+  transition: all 0.5s ease;
+}
+.add-new-alises-btn1:hover {
+  background-color: #383838;
+  color: white;
+  border-radius: 5px !important;
+}
+.add-new-alises-btn2 {
+  font-size: 14px;
+  border: 2px solid rgb(50, 86, 117);
+  color: rgb(50, 86, 117);
+  padding: 4px 13px;
+  font-weight: 600;
+  border-radius: 0  !important;
+  transition: all 0.5s ease;
+}
+.add-new-alises-btn2:hover{
+  background-color: rgb(50, 86, 117) ;
+  color: white;
+  border-radius: 5px !important;
+}
+/* #onlineReservation .tab-pane:not(.active){
+  display: none;
+}
+#SystemUsers .tab-pane:not(.active){
+  display: none ;
+}
+#limoAnywherePay .tab-pane:not(.active){
+  display: none ;
+} */
 /* Media query for screen sizes 800px or less */
 @media (max-width: 800px) {
   .swiper-button-prev,

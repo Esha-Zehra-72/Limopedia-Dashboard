@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Office</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Intel country link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <!-- Inter Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="mt-1 ms-0 col-12 align-items-center  py-1 row"
+        style="background-color: rgba(95, 95, 94, 0.11); border: 1px solid rgba(75, 74, 73, 0.164);">
+        <span class="col-6 text-start" style="font-size: 12px; font-weight: 600;"> Service
+            Types</span>
+        <div class="col-6 text-end"> <button class="btn" type="button" data-bs-target="#addnewAlieses"
+                data-bs-toggle="modal"
+                style="font-size: 12px; border: 1px solid rgba(90, 90, 90, 0.37); padding: 4px 8px; font-weight: 600; ">Add
+                new</button></div>
+
+
+    </div>
+
+    <div class="py-2 mt-2" style="border: 1px solid rgba(68, 68, 68, 0.247);">
+
+        <table class="table">
+            <thead class="text-center" style="font-size: 14px;">
+                <tr>
+                    <th scope="col" style=" color: rgb(73, 73, 73);"></th>
+                    <th scope="col" style=" color:  rgba(44, 44, 44, 0.801);"> Name</th>
+                    <th scope="col" style=" color: rgba(44, 44, 44, 0.801);">Code</th>
+                    <th scope="col" style=" color: rgba(44, 44, 44, 0.801);">Pricing Type</th>
+                    <th scope="col" style=" color: rgba(44, 44, 44, 0.801);">Pricing Type</th>
+                    <th scope="col" style=" color: rgba(44, 44, 44, 0.801);">Agreement</th>
+                    <th scope="col" style=" color:  rgba(44, 44, 44, 0.801);">Default</th>
+                </tr>
+            </thead>
+            <tbody class="text-center" style="font-size: 12px;">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Mark</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Mark</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add new Alises -->
+    <div id="addnewAlieses" class="modal fade" aria-labelledby="addnewAlieses" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog " style="width: 450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Add New Service Type</h6>
+                    <button type="button" class="btn-close fw-bold" data-bs-dismiss="modal" aria-label="Close"
+                        style="font-size: 10px;"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="general">
+                            <h6 class="p-2"
+                                style="background-color: rgba(134, 134, 134, 0.342);  color: rgba(37, 37, 37, 0.87);"><i
+                                    class="fa-solid fa-caret-down me-2" style="color: rgba(0, 0, 0, 0.582);"></i>General
+                            </h6>
+                            <div class="mb-2">
+                                <label for="ServiceTypeName" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Service Type
+                                    Name:</label>
+                                <input type="text" id="ServiceTypeName" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Type Service Type Name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="ServiceTypeCode" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Service Type
+                                    Code:</label>
+                                <input type="text" id="ServiceTypeCode" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Type Service Type Code">
+                            </div>
+                            <div class="mb-2">
+                                <label for="Agreement" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Agreement:</label>
+                                <select id="Agreement" class="col-12 py-1" style="font-size: 14px;">
+                                    <option>Not Selected</option>
+                                    <option>Selected</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pricing mb-2">
+                            <h6 class="p-2"
+                                style="background-color: rgba(134, 134, 134, 0.342); color: rgba(37, 37, 37, 0.87);"><i
+                                    class="fa-solid fa-caret-down me-2" style="color: rgba(0, 0, 0, 0.582);"></i>Pricing
+                            </h6>
+                            <label for="PricingType" class="form-label mb-0"
+                                style="font-size: 14px; font-weight: 600;">Pricing Type:</label>
+                            <input type="text" id="PricingType" class=" col-12 py-1 ps-1" style="font-size: 14px;"
+                                placeholder="Not Selected">
+                        </div>
+
+                        <div class="oresApps">
+                            <h6 class="p-2 mt-1"
+                                style="background-color: rgba(134, 134, 134, 0.342);  color: rgba(37, 37, 37, 0.87);"><i
+                                    class="fa-solid fa-caret-down me-2"
+                                    style="color: rgba(0, 0, 0, 0.582);"></i>ORES/Apps</h6>
+                            <div class="mb-2">
+                                <label for="ServiceTypeName" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Select aliases this
+                                    Service Type will be displayed for:</label>
+                                <input type="text" id="ServiceTypeName" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Not Selected">
+                            </div>
+                            <div class="mb-2">
+                                <label for="ServiceTypeCode" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Custom Label
+                                    Name:</label>
+                                <input type="text" id="ServiceTypeCode" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Type Service type Custom Label Name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="pickUp" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Pick Up:</label>
+                                <input type="text" id="pickUp" class="col-12 py-1 ps-1" style="font-size: 14px;"
+                                    placeholder="Not Selected">
+                            </div>
+                            <div class="mb-2">
+                                <label for="pickOff" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Pick Off:</label>
+                                <input type="text" id="pickOff" class="col-12 py-1 ps-1" style="font-size: 14px;"
+                                    placeholder="Not Selected">
+                            </div>
+                            <div class="mb-2">
+                                <label for="stops" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Stops:</label>
+                                <input type="text" id="stops" class="col-12 py-1 ps-1" style="font-size: 14px;"
+                                    placeholder="Not Selected">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer  text-start d-block">
+                    <button type="cancel" class="btn add-new-alises-btn1" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn add-new-alises-btn2 ">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- SWiper Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Function to save form data and add it to the table
+        document.querySelector('.add-new-alises-btn2').addEventListener('click', function () {
+            // Get values from modal inputs
+            const serviceTypeName = document.getElementById('ServiceTypeName').value;
+            const serviceTypeCode = document.getElementById('ServiceTypeCode').value;
+            const agreement = document.getElementById('Agreement').value;
+            const pricingType = document.getElementById('PricingType').value;
+
+            // Table where data will be appended
+            const tableBody = document.querySelector('.table tbody');
+
+            // Create a new row
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+    <th scope="row">${tableBody.rows.length + 1}</th>
+    <td>${serviceTypeName}</td>
+    <td>${serviceTypeCode}</td>
+    <td>${pricingType}</td>
+    <td>${pricingType}</td>
+    <td>${agreement}</td>
+    <td>-</td> <!-- Add other fields as needed -->
+  `;
+
+            // Append the new row to the table
+            tableBody.appendChild(newRow);
+
+            // Close the modal
+            const modal = bootstrap.Modal.etInstanceg(document.getElementById('addnewAlieses'));
+            modal.hide();
+
+            // Clear form fields for the next entry
+            document.querySelector('#addnewAlieses form').reset();
+        });
+
+    </script>
+</body>
+
+</html>

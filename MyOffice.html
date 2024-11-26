@@ -142,14 +142,14 @@
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div class="active fade all show tab-pane " id="company-settings">
+                    <div class="active fade all show on tab-pane " id="company-settings">
                         <div class="row">
                             <div class="col-3">
                                 <div>
                                     <ul class="nav nav-links mt-1 ms-2">
                                         <li class="nav-item col-7">
                                             <a href="#contact-information"
-                                                class="nav-link contact-information-child-tabs"
+                                                class="nav-link contact-information-child-tabs  active"
                                                 data-bs-toggle="tab">Contact Information</a>
                                         </li>
                                         <li class="nav-item col-7">
@@ -162,17 +162,17 @@
                                                 data-bs-toggle="tab">System Users</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="#policy" class="nav-link contact-information-child-tabs active"
+                                            <a href="#policy" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Policies</a>
                                         </li>
-                                        <li class="nav-item col-7">
+                                        <!-- <li class="nav-item col-7">
                                             <a href="" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">ReadBack Script Templates</a>
                                         </li>
                                         <li class="nav-item col-7">
                                             <a href="" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Messaging % Templates Settings</a>
-                                        </li>
+                                        </li> -->
                                         <li class="nav-item col-7">
                                             <a href="" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">iCalender Settings</a>
@@ -183,16 +183,29 @@
                                                 data-bs-toggle="tab">Online Reservations</a>
                                         </li>
                                         <li class="nav-item col-7">
-                                            <a href="#paymentGateway" class="nav-link contact-information-child-tabs"
+                                            <a href="#paymentGateway" class="nav-link contact-information-child-tabs "
                                                 data-bs-toggle="tab">Payment Gateway</a>
                                         </li>
                                         <!-- <li class="nav-item col-7">
                                             <a href="" class="nav-link contact-information-child-tabs"
                                                 data-bs-toggle="tab">Third-party Plug-in</a>
                                         </li> -->
-                                        <li class="nav-item col-7">
-                                            <a href="" class="nav-link contact-information-child-tabs"
-                                                data-bs-toggle="tab">System Settings</a>
+
+                                        <!-- System Setting -->
+                                        <li class="nav-item dropdown col-7">
+                                            <a href="#"
+                                                class="nav-link dropdown-toggle systemSettings contact-information-child-tabs"
+                                                data-bs-toggle="dropdown" role="button" aria-expanded="true"
+                                                id="systemSettingsToggle">System
+                                                Settings</a>
+                                            <ul class="dropdown-menu position-relative text-black" id="serviceTypeTab"
+                                                style="position: relative !important;
+    top: -35px;  ">
+                                                <li><a href="#serviceTypes" class="nav-link py-1 text-black"
+                                                        data-bs-toggle="tab">Service Types</a></li>
+                                            </ul>
+
+
                                         </li>
                                         <li class="nav-item col-7">
                                             <a href="#limoAnywherePay" class="nav-link contact-information-child-tabs"
@@ -201,7 +214,8 @@
                                     </ul>
 
                                     <div class="tab-content position-absolute w-75" style="top: 170px; left: 14%;">
-                                        <div class="tab-pane fade row" style="width: 90%;" id="contact-information">
+                                        <div class="tab-pane fade show on active row" style="width: 90%;"
+                                            id="contact-information">
                                             <!-- Company Information -->
                                             <div class="d-flex justify-content-center ms-5">
                                                 <div class="col-4 ms-5 text-center mt-4" style="font-size: 14px;">
@@ -232,7 +246,7 @@
                                                     </div>
                                                     <div class="row contact-information-form">
                                                         <label for="" class="col">State/Province/Territory</label>
-                                                        <select id="inputState" class="col-8">
+                                                        <select class="col-8">
                                                             <option selected>Choose...</option>
                                                             <option>...</option>
                                                         </select>
@@ -254,7 +268,7 @@
                                                     </div>
                                                     <div class="row contact-information-form">
                                                         <label for="" class="col">Country</label>
-                                                        <select id="inputState" class="col-8">
+                                                        <select class="col-8">
                                                             <option selected>Choose...</option>
                                                             <option>...</option>
                                                         </select>
@@ -378,14 +392,14 @@
                                                         style="border: 1px solid gray;">
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">My Time Zone</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>Eastern (US/Canada) (EST)</option>
                                                                 <option>...</option>
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">My Start Zone</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>Calander</option>
                                                                 <option>...</option>
                                                             </select>
@@ -393,7 +407,7 @@
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Default Date Formate
                                                                 (Back-Office):</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>MM/DD/YYYY</option>
                                                                 <option>DD/MM/YYYY</option>
                                                             </select>
@@ -401,21 +415,21 @@
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Default Time Format
                                                                 (Back-office):</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>HH:MM AM/PM</option>
                                                                 <option>24 Hou</option>
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Default Reservation Type</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>In-House</option>
                                                                 <option>...</option>
                                                             </select>
                                                         </div>
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Default Currency</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>$ (US Dollar)</option>
                                                                 <option>...</option>
                                                             </select>
@@ -443,7 +457,7 @@
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Sort order in Global Search
                                                                 By:</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>Pick-up Date & Time</option>
                                                                 <option>...</option>
                                                             </select>
@@ -451,7 +465,7 @@
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Raise alert for new Online &
                                                                 E-farm-in reservations:</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -464,7 +478,7 @@
                                                         <div class="row contact-information-form">
                                                             <label for="" class="col">Include the following date range
                                                                 in LALocal export:</label>
-                                                            <select id="inputState" class="col-8">
+                                                            <select class="col-8">
                                                                 <option selected>Current Date</option>
                                                                 <option>No</option>
                                                             </select>
@@ -482,7 +496,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Time Format - Customer
                                                                 Forms:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>HH:MM AM/PM</option>
                                                                 <option>24-Hour</option>
                                                             </select>
@@ -490,7 +504,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Time Format - Driver
                                                                 Forms:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>HH:MM AM/PM</option>
                                                                 <option>24-Hour</option>
                                                             </select>
@@ -498,7 +512,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Time Format - Affiliate
                                                                 Forms:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>HH:MM AM/PM</option>
                                                                 <option>24-Hour</option>
                                                             </select>
@@ -508,12 +522,12 @@
                                                             <label for="" class="col-5">Trip Sheet Font Style &
                                                                 Size:</label>
                                                             <div class="d-flex gap-2" style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Arial</option>
                                                                     <option>Times New Roman</option>
                                                                     <option>Verdana</option>
                                                                 </select>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>8pt</option>
                                                                     <option>10pt</option>
                                                                     <option>12pt</option>
@@ -523,7 +537,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Rate Data on Trip Sheets -
                                                                 Driver:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -531,7 +545,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Rate Data on Trip Sheets -
                                                                 Customer:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -540,7 +554,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Bill to Information on Trip
                                                                 Sheets - Customer</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -549,7 +563,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Bill to Information on Trip
                                                                 Sheets - Driver</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -561,14 +575,14 @@
                                                                 Sheets (Driver & Customer):</label></label>
                                                             <div class="d-flex gap-2 justify-content-center align-items-center"
                                                                 style="margin-left: 15px;">
-                                                                <select class=" col-3" id="inputState">
+                                                                <select class=" col-3">
                                                                     <option>Yes</option>
                                                                     <option>No</option>
                                                                 </select>
                                                                 <span class="col-5"
                                                                     style="font-size: 12px; width: 200px; margin-right: -40px;">If
                                                                     Yes, show extra gratuity field? </span>
-                                                                <select class=" col-3" id="inputState">
+                                                                <select class=" col-3">
                                                                     <option>Yes</option>
                                                                     <option>No</option>
                                                                 </select>
@@ -577,7 +591,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Pessangers Contact Info on
                                                                 Trip Sheets - Affiliate</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option selected>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -585,7 +599,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Affiliate Agreements on
                                                                 Affiliate Trip Sheets ?</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option selected>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -593,7 +607,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Trip Total on Confirmations
                                                                 and Payment Receipts:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes, show totals</option>
                                                                 <option>No</option>
                                                             </select>
@@ -601,7 +615,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Itemize Charges on Standard
                                                                 Confirmations and Payment Receipts:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -609,7 +623,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show Drop-off Time On Standard
                                                                 Email Confirmations:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -617,7 +631,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Highlight Notes on Driver Trip
                                                                 Sheets:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -625,7 +639,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Highlight Notes on Customer Trip
                                                                 Sheets:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -633,7 +647,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Hide Rental Agreement on Driver
                                                                 Trip Sheets:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -641,7 +655,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Include Trip Notes on Trip
                                                                 Sheets by default:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -649,7 +663,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Hide Trip Notes from customer on
                                                                 Trip Sheets by default:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -659,12 +673,12 @@
                                                             <label for="" class="col-5">Manifest Font Style &
                                                                 Size:</label>
                                                             <div class="d-flex gap-2" style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Arial</option>
                                                                     <option>Times New Roman</option>
                                                                     <option>Verdana</option>
                                                                 </select>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>8pt</option>
                                                                     <option>10pt</option>
                                                                     <option>12pt</option>
@@ -674,7 +688,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Blank out dates on Reports
                                                                 screen:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -682,7 +696,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Display Bill To Phone Number on
                                                                 Invoices:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -690,7 +704,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Exclude Passenger Name on Driver
                                                                 Payroll Logs/Reports:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -702,7 +716,7 @@
                                                         <div class="row contact-information-form mt-1">
                                                             <label for="" class="col-5 mt-2">Show Dashboard
                                                                 Reports:</label>
-                                                            <select id="inputState" class="col-4">
+                                                            <select class="col-4">
                                                                 <option>Yes</option>
                                                                 <option>No</option>
                                                             </select>
@@ -720,7 +734,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Customer Account
                                                                 Numbers:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>System Generated</option>
                                                                 <option>....</option>
                                                             </select>
@@ -730,7 +744,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Allow duplicate account
                                                                 numbers:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -741,7 +755,7 @@
                                                                 (Back-office Only):</label>
                                                             <div class="d-flex gap-2 justify-content-center align-items-center"
                                                                 style="margin-left: -9px">
-                                                                <select class=" col-3" id="inputState">
+                                                                <select class=" col-3">
                                                                     <option>Yes</option>
                                                                     <option>No</option>
                                                                 </select>
@@ -760,7 +774,7 @@
 
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Default Calendar View:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Month</option>
                                                                 <option selected>Week</option>
                                                                 <option>Day</option>
@@ -769,7 +783,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Show estimated drop-off time on
                                                                 Calendar:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -777,7 +791,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Start Monthly & Weekly Calendar
                                                                 on:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Monday</option>
                                                                 <option selected>Sunday</option>
                                                             </select>
@@ -786,7 +800,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Display Unfinalized Reservations
                                                                 on Calendar?</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -805,7 +819,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Open Reservation Screen
                                                                 as</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Modal dialog</option>
                                                                 <option>Full screen</option>
                                                             </select>
@@ -814,7 +828,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Use auto complete on reservation
                                                                 screen:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -822,7 +836,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Exclude non-account data from
                                                                 auto complete:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -830,7 +844,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Hide Booked By field on
                                                                 reservation screen:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -838,7 +852,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Update PickUp Time Based on the
                                                                 Arrival flight's ETA and flight offset: (?)</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -846,7 +860,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Auto Populate DO Time based on
                                                                 Duration value:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -854,7 +868,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Perform Country Lookup When
                                                                 Saving Routing Information:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -862,7 +876,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Produce Readback script on First
                                                                 save:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -870,7 +884,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Produce Readback script on all
                                                                 save:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -881,14 +895,14 @@
                                                                 Rate Multiplier:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Per Hour - (Base Rate)</option>
                                                                     <option>Per Pass - (Base Rate)</option>
                                                                 </select>
                                                                 <span for="" class="col ms-2"
                                                                     style="font-size: 12px; width: 70px;">Applies
                                                                     To:</span>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>For Airport, To Airport</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -901,14 +915,14 @@
                                                                 Rate Multiplier:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Per Hour - (Base Rate)</option>
                                                                     <option>Per Pass - (Base Rate)</option>
                                                                 </select>
                                                                 <span for="" class="col ms-2"
                                                                     style="font-size: 12px; width: 70px;">Applies
                                                                     To:</span>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>For Airport, To Airport</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -921,14 +935,14 @@
                                                                 Rate Multiplier:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Per Hour - (Base Rate)</option>
                                                                     <option>Per Pass - (Base Rate)</option>
                                                                 </select>
                                                                 <span for="" class="col ms-2"
                                                                     style="font-size: 12px; width: 70px;">Applies
                                                                     To:</span>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>For Airport, To Airport</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -941,14 +955,14 @@
                                                                 into Rate Multiplier:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Per Hour - (Base Rate)</option>
                                                                     <option>Per Pass - (Base Rate)</option>
                                                                 </select>
                                                                 <span for="" class="col ms-2"
                                                                     style="font-size: 12px; width: 70px;">Applies
                                                                     To:</span>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>For Airport, To Airport</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -962,14 +976,14 @@
                                                                 Total:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>To One Fixed Rate</option>
                                                                     <option>Per Pass - (Base Rate)</option>
                                                                 </select>
                                                                 <span for="" class="col ms-2"
                                                                     style="font-size: 12px; width: 70px;">Applies
                                                                     To:</span>
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>For Airport, To Airport</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -981,7 +995,7 @@
                                                             <label for="" class="col-5">Miles to Kilometers:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Miles</option>
                                                                     <option>...</option>
                                                                 </select>
@@ -992,7 +1006,7 @@
                                                             <label for="" class="col-5">Avoid:</label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Not Selected</option>
                                                                     <option>...</option>
                                                                 </select>
@@ -1004,7 +1018,7 @@
                                                             </label>
                                                             <div class="d-flex align-items-center"
                                                                 style="margin-left: -1px;">
-                                                                <select class=" col" id="inputState">
+                                                                <select class=" col">
                                                                     <option>Not Selected</option>
                                                                     <option>...</option>
                                                                 </select>
@@ -1024,7 +1038,7 @@
                                                                 <span for="" class="col-1 ms-1 me-0"
                                                                     style="font-size: 12px; width: 90px;">Associated
                                                                     with:</span>
-                                                                <select class=" col-4" id="inputState">
+                                                                <select class=" col-4">
                                                                     <option>Misc Free 1 - (Miscellaneous)</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -1044,7 +1058,7 @@
                                                                 <span for="" class="col-1 ms-1 me-0"
                                                                     style="font-size: 12px; width: 90px;">Associated
                                                                     with:</span>
-                                                                <select class=" col-4" id="inputState">
+                                                                <select class=" col-4">
                                                                     <option>Misc Free 1 - (Miscellaneous)</option>
                                                                     <option>For Airport, To Airport</option>
 
@@ -1057,7 +1071,7 @@
                                                             <label for="" class="col-5">Do not allow to save
                                                                 reservations without CC info on Credit Card
                                                                 reservations:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1065,7 +1079,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Default List Size on
                                                                 Reservations Screens:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>15</option>
                                                                 <option selected>01</option>
                                                             </select>
@@ -1073,7 +1087,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Greeting Sign Default
                                                                 Setting:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Greeting Sign is not Required</option>
                                                                 <option selected>01</option>
                                                             </select>
@@ -1081,7 +1095,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Action on "Save
                                                                 Reservation.":</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Save & Stay on the Same Screen</option>
                                                                 <option selected>01</option>
                                                             </select>
@@ -1089,7 +1103,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Auto-assign Linked Drivers and
                                                                 Cars:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1098,7 +1112,7 @@
                                                             <label for="" class="col-5">Filter rates on the FIXED rate
                                                                 tab of the Apply Rate Table dialog based on reservation
                                                                 criteria:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1107,7 +1121,7 @@
                                                             <label for="" class="col-5">Blank out Vehicle Type, Service
                                                                 Type, Car and Driver drop-downs when copying
                                                                 reservations:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1115,7 +1129,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Blank out PU Date and Time when
                                                                 copying reservations:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1124,7 +1138,7 @@
                                                             <label for="" class="col-5">Blank out Vehicle Type, Car,
                                                                 Driver and Status drop-downs when creating round
                                                                 trips:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1132,7 +1146,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Blank out PU Date and Time when
                                                                 creating round trips:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1140,7 +1154,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Prompt user to verify Payment
                                                                 Information of reservation on first save:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1148,7 +1162,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Layout of Trip Notes and Bill To
                                                                 & Pax Notes on the reservation screen:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Stacked</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1156,7 +1170,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Warn user if Car assigned does
                                                                 not match Vehicle Type assigned:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Stacked</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1164,7 +1178,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">When farming out, sort
                                                                 affiliates by:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Location, then Name</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1172,7 +1186,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Validate credit card numbers on
                                                                 entry:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Location, then Name</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1180,7 +1194,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Hide "Preferred" Drop Down Boxes
                                                                 on reservation/dispatch sections:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1189,7 +1203,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Auto Apply Vehicle Type when
                                                                 rate selected from Apply Rate Table:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1202,7 +1216,7 @@
                                                         style="border: 1px solid gray;">
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Open Settle Window as:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Modal dialog</option>
                                                                 <option>....</option>
                                                             </select>
@@ -1210,7 +1224,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">Allow Unsettled Trips To Be
                                                                 Invoiced:</label>
-                                                            <select id="inputState" class="col-3">
+                                                            <select class="col-3">
                                                                 <option>Yes</option>
                                                                 <option selected>No</option>
                                                             </select>
@@ -1221,7 +1235,7 @@
                                                                 Have Not Been Settled After:</label>
                                                             <div class="d-flex gap-2 justify-content-center align-items-center"
                                                                 style="margin-left: -72px; width: 50%;">
-                                                                <select id="inputState" class="col-6">
+                                                                <select class="col-6">
                                                                     <option>Yes</option>
                                                                     <option selected>No</option>
                                                                 </select>
@@ -1233,7 +1247,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-5">By default, calculate agent
                                                                 commissions on:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Base Charges</option>
                                                                 <option selected>Base Charges</option>
                                                             </select>
@@ -1253,7 +1267,7 @@
                                                         <div class="row contact-information-form align-items-center">
                                                             <label for="" class="col-6">Calculate Driver Hourly Pay
                                                                 Based On:</label>
-                                                            <select id="inputState" class="col-5">
+                                                            <select class="col-5">
                                                                 <option>Trip Payroll Data</option>
                                                                 <option selected>....</option>
                                                             </select>
@@ -1294,8 +1308,8 @@
                                                                         <td><label for="" class="col-5"
                                                                                 style="font-size: 13px; font-weight: 500;">Tolls:</label>
                                                                         </td>
-                                                                        <td class="text-center"> <select id="inputState"
-                                                                                class="col-12" style="font-size: 12px;">
+                                                                        <td class="text-center"> <select class="col-12"
+                                                                                style="font-size: 12px;">
                                                                                 <option>Mapped to Tolls -
                                                                                     (Miscellaneous)</option>
                                                                                 <option>....</option>
@@ -1306,8 +1320,8 @@
                                                                         <td><label for=""
                                                                                 style="font-size: 13px; font-weight: 500">Parking:</label>
                                                                         </td>
-                                                                        <td class="text-center"> <select id="inputState"
-                                                                                class="col-12" style="font-size: 12px;">
+                                                                        <td class="text-center"> <select class="col-12"
+                                                                                style="font-size: 12px;">
                                                                                 <option>Mapped to Parking -
                                                                                     (Miscellaneous)</option>
                                                                                 <option>...</option>
@@ -1318,8 +1332,8 @@
                                                                         <td><label for=""
                                                                                 style="font-size: 13px; font-weight: 500;">Extra
                                                                                 Gratuity:</label></td>
-                                                                        <td class="text-center"> <select id="inputState"
-                                                                                class="col-12" style="font-size: 12px;">
+                                                                        <td class="text-center"> <select class="col-12"
+                                                                                style="font-size: 12px;">
                                                                                 <option>Mapped to Extra Gratuity -
                                                                                     (Gratuities)</option>
                                                                                 <option>...</option>
@@ -1330,8 +1344,8 @@
                                                                         <td><label for=""
                                                                                 style="font-size: 13px; font-weight: 500;">Miscellaneous
                                                                                 1:</label></td>
-                                                                        <td class="text-center"> <select id="inputState"
-                                                                                class="col-12" style="font-size: 12px;">
+                                                                        <td class="text-center"> <select class="col-12"
+                                                                                style="font-size: 12px;">
                                                                                 <option>Mapped to Misc Fee 1 -
                                                                                     (Miscellaneous)</option>
                                                                                 <option>...</option>
@@ -1343,8 +1357,8 @@
                                                                         <td><label for=""
                                                                                 style="font-size: 13px; font-weight: 500;">Miscellaneous
                                                                                 2:</label></td>
-                                                                        <td class="text-center"> <select id="inputState"
-                                                                                class="col-12" style="font-size: 12px;">
+                                                                        <td class="text-center"> <select class="col-12"
+                                                                                style="font-size: 12px;">
                                                                                 <option>Mapped to Misc Fee 2 -
                                                                                     (Miscellaneous)</option>
                                                                                 <option>...</option>
@@ -1356,8 +1370,8 @@
                                                                                 style="font-size: 13px; font-weight: 500;">Extra
                                                                                 Stops <a href="#">Help</a>: </label>
                                                                         </td>
-                                                                        <td class="text-center"> <select id="inputState"
-                                                                                class="col-12" style="font-size: 12px;">
+                                                                        <td class="text-center"> <select class="col-12"
+                                                                                style="font-size: 12px;">
                                                                                 <option>Mapped to Extra Stops - (Base
                                                                                     Rate)
                                                                                 </option>
@@ -1373,7 +1387,7 @@
                                                                                 style="font-size: 13px; font-weight: 500;">Wait
                                                                                 Time:</label></td>
                                                                         <td class="text-center border-0"> <select
-                                                                                id="inputState" class="col-12 "
+                                                                                class="col-12 "
                                                                                 style="font-size: 12px;">
                                                                                 <option>Mapped to OT/Wait Time - (Base
                                                                                     Rate)
@@ -1696,7 +1710,7 @@
                                                                 <label for="" class="col-4"
                                                                     style="font-size: 14px;">Non-airport
                                                                     transfers:</label>
-                                                                <select id="inputState" class="col-5">
+                                                                <select class="col-5">
                                                                     <option>10</option>
                                                                     <option selected>....</option>
                                                                 </select>
@@ -1708,7 +1722,7 @@
                                                                 <label for="" class="col-4"
                                                                     style="font-size: 14px;">Airport transfers -
                                                                     Domestic:</label>
-                                                                <select id="inputState" class="col-5">
+                                                                <select class="col-5">
                                                                     <option>10</option>
                                                                     <option selected>....</option>
                                                                 </select>
@@ -1720,7 +1734,7 @@
                                                                 <label for="" class="col-4"
                                                                     style="font-size: 14px;">Airport transfers -
                                                                     International:</label>
-                                                                <select id="inputState" class="col-5">
+                                                                <select class="col-5">
                                                                     <option>10</option>
                                                                     <option selected>....</option>
                                                                 </select>
@@ -1743,7 +1757,7 @@
                                                                 <label for="" class="col-7"
                                                                     style="font-size: 13px;">Require driver to take
                                                                     payment for the following payment status:</label>
-                                                                <select id="inputState" class="col-3">
+                                                                <select class="col-3">
                                                                     <option selected>--Select Options--</option>
                                                                     <option>...</option>
                                                                 </select>
@@ -1783,7 +1797,7 @@
 
                                         </div>
                                         <!-- System Users -->
-                                        <div id="SystemUsers" class="fade tab-pane d-flex w-100 ms-4 ">
+                                        <div class="fade tab-pane d-flex w-100 ms-4" id="SystemUsers">
                                             <div class=" p-2"
                                                 style="border: 1px solid rgb(97, 97, 97); width:500px; height: 400px;">
                                                 <div
@@ -1837,53 +1851,56 @@
                                                             style="border: none ;">
                                                             <!-- Pickup & Dropoff Form Fields -->
                                                             <div class="mb-2 col-6">
-                                                                <label for="pickupLocation" class="form-label">First
+                                                                <label for="systemUserFirstName"
+                                                                    class="form-label">First
                                                                     Name</label>
                                                                 <input type="text" class="form-control"
-                                                                    id="pickupLocation">
+                                                                    id="systemUserFirstName">
                                                             </div>
                                                             <div class="mb-2 col-6">
-                                                                <label for="dropoffLocation" class="form-label">Last
+                                                                <label for="systemUserLastName" class="form-label">Last
                                                                     Name</label>
                                                                 <input type="text" class="form-control"
-                                                                    id="dropoffLocation">
+                                                                    id="systemUserLastName">
                                                             </div>
                                                             <div class="mb-2">
-                                                                <label for="pickupLocation" class="form-label">Office
+                                                                <label for="systemUserOfficeNO"
+                                                                    class="form-label">Office
                                                                     Phone
                                                                     Number</label>
                                                                 <input type="number" class="form-control"
-                                                                    id="pickupLocation"
+                                                                    id="systemUserOfficeNO"
                                                                     placeholder="Enter Phone Number">
                                                             </div>
                                                             <div class="mb-2">
-                                                                <label for="pickupLocation" class="form-label">Mobile
+                                                                <label for="systemUserMobileNo"
+                                                                    class="form-label">Mobile
                                                                     Phone
                                                                     Number</label>
                                                                 <input type="number" class="form-control"
-                                                                    id="pickupLocation"
+                                                                    id="systemUserMobileNo"
                                                                     placeholder="Enter Phone Number">
                                                             </div>
                                                             <div class="mb-2">
-                                                                <label for="dropoffLocation" class="form-label">Email
+                                                                <label for="systemUserEmail" class="form-label">Email
                                                                     Address</label>
                                                                 <input type="email" class="form-control"
-                                                                    id="dropoffLocation">
+                                                                    id="systemUserEmail">
                                                             </div>
 
 
                                                         </form>
 
                                                     </div>
-                                                    <div class="position-relative p-3 m-3"
+                                                    <div class="position-relative p-3 m-3 z-3"
                                                         style="border: 1px solid rgb(194, 194, 194);">
                                                         <span
                                                             style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Web
                                                             Access</span>
                                                         <div class="mb-2">
-                                                            <label for="dropoffLocation" class="form-label">User
+                                                            <label for="systemUserName" class="form-label">User
                                                                 Name</label>
-                                                            <input type="text" class="form-control" id="dropoffLocation"
+                                                            <input type="text" class="form-control" id="systemUserName"
                                                                 style="border: 1px solid gray">
                                                         </div>
                                                     </div>
@@ -1901,8 +1918,7 @@
                                                             <div class="mb-2 col-12">
                                                                 <label for="pickupLocation" class="form-label">Primary
                                                                     Role</label>
-                                                                <select id="inputState" class="col-12 py-2"
-                                                                    style="font-size: 12px;">
+                                                                <select class="col-12 py-2" style="font-size: 12px;">
                                                                     <option>Mapped to Tolls</option>
                                                                     <option>....</option>
                                                                 </select>
@@ -1910,8 +1926,7 @@
                                                             <div class="mb-2 col-6">
                                                                 <label for="pickupLocation"
                                                                     class="form-label">Activation</label>
-                                                                <select id="inputState" class="col-12 py-1"
-                                                                    style="font-size: 12px;">
+                                                                <select class="col-12 py-1" style="font-size: 12px;">
                                                                     <option>Activate</option>
                                                                     <option>....</option>
                                                                 </select>
@@ -1919,8 +1934,7 @@
                                                             <div class="mb-2 col-6">
                                                                 <label for="pickupLocation"
                                                                     class="form-label">Lock-out</label>
-                                                                <select id="inputState" class="col-12 py-1"
-                                                                    style="font-size: 12px;">
+                                                                <select class="col-12 py-1" style="font-size: 12px;">
                                                                     <option>Unlocked</option>
                                                                     <option>Locked</option>
                                                                 </select>
@@ -1950,12 +1964,12 @@
                                                             style="position: absolute; top: -14px; left: 20px; background-color: rgb(255, 255, 255); z-index: 23; font-weight: 500; padding: 0px 5px; font-size: 14px; color: rgb(57, 57, 116);">Restrict
                                                             Access by IP Address:</span>
                                                         <div class="mb-2 d-flex flex-column">
-                                                            <label for="dropoffLocation" class="form-label">Allowed
+                                                            <label for="systemUserAddress" class="form-label">Allowed
                                                                 IPs</label>
                                                             <textarea name="" id="" cols="30"></textarea>
                                                         </div>
                                                         <div class="mb-2 d-flex flex-column">
-                                                            <label for="dropoffLocation" class="form-label">Allowed
+                                                            <label for="systemUserAddress" class="form-label">Allowed
                                                                 IPs</label>
                                                             <textarea name="" id="" cols="30"></textarea>
                                                         </div>
@@ -1986,7 +2000,7 @@
                                         </div>
 
                                         <!-- Limo Anywhere Pay -->
-                                        <div id="limoAnywherePay" class="fade tab-pane ms-5" style="margin-top: -110%;">
+                                        <div id="limoAnywherePay" class="fade tab-pane ms-5 mb-4">
                                             <div class="d-flex w-100 text-center">
                                                 <div class="content">
                                                     <img src="./Assets/logo-black-min.png" alt="" class="img-fluid"
@@ -2082,8 +2096,8 @@
                                         </div>
 
                                         <!-- paymentGateway -->
-                                        <div id="paymentGateway" class="fade tab-pane text-center"
-                                            style="margin-top: -110%; margin-left: 180px; ">
+                                        <div class="fade tab-pane text-center" id="paymentGateway"
+                                            style="margin-top: 1%; margin-left: 180px; ">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <!-- Main Content -->
@@ -2156,7 +2170,7 @@
 
                                         <!-- onlineReservation -->
                                         <div class="tab-pane fade " id="onlineReservation">
-                                            <div class="d-flex w-100 ms-3 position-absolute" style="margin-top: -110%;">
+                                            <div class="d-flex w-100 ms-3 position-absolute" style="margin-top: 0%;">
                                                 <div class="tabs col-2">
                                                     <ul class="nav nav-tabs d-flex flex-column">
                                                         <li class="nav-item">
@@ -2236,7 +2250,7 @@
                                                                                 class="row contact-information-form align-items-center  my-2">
                                                                                 <label for="" class="col-6">Display
                                                                                     Company Logo: (?)</label>
-                                                                                <select id="inputState" class="col-5">
+                                                                                <select class="col-5">
                                                                                     <option>No</option>
                                                                                     <option>Yes</option>
                                                                                 </select>
@@ -2245,7 +2259,7 @@
                                                                                 class="row contact-information-form align-items-center  my-2">
                                                                                 <label for="" class="col-6">Default Date
                                                                                     Format: (?)</label>
-                                                                                <select id="inputState" class="col-5">
+                                                                                <select class="col-5">
                                                                                     <option>MM/DD/YYYY</option>
                                                                                     <option>DD/MM/YYYY</option>
                                                                                 </select>
@@ -2254,7 +2268,7 @@
                                                                                 class="row contact-information-form align-items-center  my-2">
                                                                                 <label for="" class="col-6">Default Time
                                                                                     Format: (?)</label>
-                                                                                <select id="inputState" class="col-5">
+                                                                                <select class="col-5">
                                                                                     <option>AM/PM</option>
                                                                                     <option>24-Hour</option>
                                                                                 </select>
@@ -2263,7 +2277,7 @@
                                                                                 class="row contact-information-form align-items-center  my-2">
                                                                                 <label for="" class="col-6">Allow New
                                                                                     Account Creation: (?)</label>
-                                                                                <select id="inputState" class="col-5">
+                                                                                <select class="col-5">
                                                                                     <option>Yes</option>
                                                                                     <option>No</option>
                                                                                 </select>
@@ -2273,7 +2287,7 @@
                                                                                 <label for="" class="col-6">Enable the
                                                                                     Online Reservation
                                                                                     System:(?)</label>
-                                                                                <select id="inputState" class="col-5">
+                                                                                <select class="col-5">
                                                                                     <option>Yes</option>
                                                                                     <option>No</option>
                                                                                 </select>
@@ -2296,7 +2310,7 @@
                                                                                 class="row contact-information-form align-items-center  my-2">
                                                                                 <label for="" class="col-6">Allow
                                                                                     Reservation Cut-Off:(?)</label>
-                                                                                <select id="inputState" class="col-5">
+                                                                                <select class="col-5">
                                                                                     <option>Yes</option>
                                                                                     <option>No</option>
                                                                                 </select>
@@ -2320,34 +2334,32 @@
                                                                                     Reservation Cut-Off
                                                                                     Period:(?)</label>
                                                                                 <div class="col-5">
-                                                                                    <select id="inputState" class="">
+                                                                                    <select class="">
                                                                                         <option>1:</option>
                                                                                         <option>2:</option>
                                                                                     </select> <span class=""
                                                                                         style="width: 2px;">:</span>
-                                                                                    <select id="inputState"
-                                                                                        class=" me-2">
+                                                                                    <select class=" me-2">
                                                                                         <option>00:</option>
                                                                                         <option>00:</option>
                                                                                     </select>
-                                                                                    <select id="inputState" class="">
+                                                                                    <select class="">
                                                                                         <option>AM:</option>
                                                                                         <option>PM:</option>
                                                                                     </select>
                                                                                 </div>
                                                                                 <div class="col-10 text-end mt-2"
                                                                                     style="margin-left: -20px;">
-                                                                                    <select id="inputState" class="">
+                                                                                    <select class="">
                                                                                         <option>1:</option>
                                                                                         <option>2:</option>
                                                                                     </select> <span class=""
                                                                                         style="width: 2px;">:</span>
-                                                                                    <select id="inputState"
-                                                                                        class=" me-2">
+                                                                                    <select class=" me-2">
                                                                                         <option>00:</option>
                                                                                         <option>00:</option>
                                                                                     </select>
-                                                                                    <select id="inputState" class="">
+                                                                                    <select class="">
                                                                                         <option>AM:</option>
                                                                                         <option>PM:</option>
                                                                                     </select>
@@ -2356,8 +2368,7 @@
                                                                                     class="row contact-information-form align-items-center  my-2">
                                                                                     <label for="" class="col-6">Show SMS
                                                                                         Opt-in:(?)</label>
-                                                                                    <select id="inputState"
-                                                                                        class="col-5  ms-3">
+                                                                                    <select class="col-5  ms-3">
                                                                                         <option>Yes</option>
                                                                                         <option>No</option>
                                                                                     </select>
@@ -2366,8 +2377,7 @@
                                                                                     class="row contact-information-form align-items-center  my-2">
                                                                                     <label for="" class="col-6">Require
                                                                                         SMS Opt-in:(?)</label>
-                                                                                    <select id="inputState"
-                                                                                        class="col-5  ms-3">
+                                                                                    <select class="col-5  ms-3">
                                                                                         <option>Yes</option>
                                                                                         <option>No</option>
                                                                                     </select>
@@ -2392,8 +2402,7 @@
                                                                                                 class="col-6">Calculate
                                                                                                 and Display Pricing to
                                                                                                 Customers:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2404,8 +2413,7 @@
                                                                                                 class="col-6">Enable
                                                                                                 dedicated quotes
                                                                                                 link:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2417,8 +2425,7 @@
                                                                                                 not found turned off,
                                                                                                 allow user to
                                                                                                 submit:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Book </option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2440,8 +2447,7 @@
                                                                                                 class="col-6">Display
                                                                                                 Vehicle
                                                                                                 Results:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Book </option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2451,8 +2457,7 @@
                                                                                             <label for=""
                                                                                                 class="col-6">Allow Rate
                                                                                                 Grouping:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Book </option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2463,8 +2468,7 @@
                                                                                                 class="col-6">Show Promo
                                                                                                 Code Box in Top Menu
                                                                                                 Bar:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Book </option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2474,8 +2478,7 @@
                                                                                             <label for=""
                                                                                                 class="col-6">Show Child
                                                                                                 Seat Option:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Book </option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2486,8 +2489,7 @@
                                                                                                 class="col-6">Show
                                                                                                 Accessible
                                                                                                 Option:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2499,8 +2501,7 @@
                                                                                                 Airline/Flight fields
                                                                                                 for Airport
                                                                                                 Dropoffs:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2511,8 +2512,7 @@
                                                                                                 class="col-6">Show
                                                                                                 Airport PU
                                                                                                 Options:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2571,8 +2571,7 @@
                                                                                                 class="col-6">Accepted
                                                                                                 Payment
                                                                                                 Methods:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2584,8 +2583,7 @@
                                                                                                 Credit Card on All
                                                                                                 Reservations (Except
                                                                                                 Direct Bill):(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2617,8 +2615,7 @@
                                                                                                 Billing Address on
                                                                                                 Credit Card
                                                                                                 Transactions:(?)</label>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2640,8 +2637,7 @@
                                                                                                     is set to "Yes"
                                                                                                 </p>
                                                                                             </div>
-                                                                                            <select id="inputState"
-                                                                                                class="col-5  ms-2">
+                                                                                            <select class="col-5  ms-2">
                                                                                                 <option>Yes</option>
                                                                                                 <option>No</option>
                                                                                             </select>
@@ -2785,8 +2781,8 @@
                                         </div>
 
                                         <!-- Policies -->
-                                        <div class="tab-pane fade active show on w-100 position-relative" id="policy"
-                                        style="margin-top: -115%;" >
+                                        <div class="tab-pane fade  w-100 position-relative" id="policy"
+                                            style="margin-top: -5%;">
                                             <div class="w-100 ms-3 mt-5 position-absolute" style="top: 0px;">
                                                 <div class="tabs">
                                                     <ul class="nav nav-tabs d-flex">
@@ -2810,10 +2806,13 @@
                                                             <div
                                                                 class="usersHeading pb-1 d-flex justify-content-between align-items-center">
                                                                 <div class="user-head">
-                                                                    <span class="fw-bold" style="font-size: 14px;">Stored Agreements</span>
+                                                                    <span class="fw-bold"
+                                                                        style="font-size: 14px;">Stored
+                                                                        Agreements</span>
                                                                 </div>
                                                                 <div class="showUsers">
-                                                                    <span class="fw-bold" style="font-size: 14px;">show all</span>
+                                                                    <span class="fw-bold" style="font-size: 14px;">show
+                                                                        all</span>
                                                                     <input type="checkbox" name="" id="">
                                                                 </div>
                                                             </div>
@@ -2865,20 +2864,24 @@
                                                             style="width: 781px; border: 1px solid rgba(87, 87, 87, 0.185); ">
                                                             <div class="ps-0 col-12">
                                                                 <label for="pickupLocation"
-                                                                    class="form-label mb-0 pb-0 fw-bold"  style="font-size: 12px;">Rental Name</label>
-                                                                <input type="text" class="col-12 input-field-border" style=" background-color: rgba(255, 235, 205, 0.616);">
+                                                                    class="form-label mb-0 pb-0 fw-bold"
+                                                                    style="font-size: 12px;">Rental Name</label>
+                                                                <input type="text" class="col-12 input-field-border"
+                                                                    style=" background-color: rgba(255, 235, 205, 0.616);">
                                                             </div>
                                                             <div class=" col pe-0">
                                                                 <label for="pickupLocation"
-                                                                    class="form-label mb-0 pb-0 fw-bold"  style="font-size: 12px;">Status</label>
-                                                                <select id="input-field-border"  class="col-12 py-1"
+                                                                    class="form-label mb-0 pb-0 fw-bold"
+                                                                    style="font-size: 12px;">Status</label>
+                                                                <select id="input-field-border" class="col-12 py-1"
                                                                     style="font-size: 12px; border:  1px solid rgba(3, 3, 3, 0.26);  background-color: rgba(255, 235, 205, 0.616);">
                                                                     <option>Acitve</option>
                                                                     <option>Unactive</option>
                                                                 </select>
                                                             </div>
                                                             <div class="p-0 m-0 mt-3">
-                                                                <h2 for="" class="fw-bold" style="font-size: 12px;">Rental Agreement</h2>
+                                                                <h2 for="" class="fw-bold" style="font-size: 12px;">
+                                                                    Rental Agreement</h2>
                                                                 <div class="col-12 p-1 mt-0"
                                                                     style=" border: 1px solid rgba(60, 94, 91, 0.281);">
                                                                     <div class=" py-0"
@@ -2895,43 +2898,56 @@
                                                                                 class="btn py-0 px-1  fst-italic fw-bold text-decoration-underline"
                                                                                 id="underLine">U</button>
                                                                             <button
-                                                                                class="btn py-0 px-1 fst-italic fw-bold position-relative color-picker-btn" id="color-picker"><label
-                                                                                    for="color"
+                                                                                class="btn py-0 px-1 fst-italic fw-bold position-relative color-picker-btn"
+                                                                                id="color-picker"><label for="color"
                                                                                     class="text-decoration-underline">A</label>
                                                                                 <input type="color" id="color"></button>
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"
                                                                                 style="transform: rotate(270deg);"><i
-                                                                                    class="fa-solid fa-scissors" id="cut"></i></button>
+                                                                                    class="fa-solid fa-scissors"
+                                                                                    id="cut"></i></button>
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"
                                                                                 style="transform: rotate(176deg);"><i
-                                                                                    class="fa-regular fa-copy" id="copy"></i></button>
+                                                                                    class="fa-regular fa-copy"
+                                                                                    id="copy"></i></button>
                                                                             <button
-                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i class="fa-solid fa-paste" id="paste"></i></button>
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i
+                                                                                    class="fa-solid fa-paste"
+                                                                                    id="paste"></i></button>
 
 
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"><i
-                                                                                    class="fa-solid fa-arrow-rotate-left" id="undo"></i></button>
+                                                                                    class="fa-solid fa-arrow-rotate-left"
+                                                                                    id="undo"></i></button>
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"><i
                                                                                     class="fa-solid fa-arrow-rotate-right"></i></button>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="text-content overflow-hidden p-2" contenteditable="true" style="font-size: 13px; border: 1px solid rgba(0, 0, 0, 0.151) !important; outline: none;min-height: 200px;">
+                                                                    <div class="text-content overflow-hidden p-2"
+                                                                        contenteditable="true"
+                                                                        style="font-size: 13px; border: 1px solid rgba(0, 0, 0, 0.151) !important; outline: none;min-height: 200px;">
                                                                         Lorem ipsum dolor sit amet consectetur
                                                                         adipisicing
                                                                         elit. Fuga temporibus deserunt, incidunt
                                                                         explicabo
                                                                         doloribus in id illum nihil tempore fugiat?
-                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus deserunt, incidunt explicabo doloribus in id illum nihil tempore fugiat?
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit. Fuga temporibus deserunt,
+                                                                        incidunt explicabo doloribus in id illum nihil
+                                                                        tempore fugiat?
                                                                         Lorem ipsum dolor sit amet consectetur
                                                                         adipisicing
                                                                         elit. Fuga temporibus deserunt, incidunt
                                                                         explicabo
                                                                         doloribus in id illum nihil tempore fugiat?
-                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus deserunt, incidunt explicabo doloribus in id illum nihil tempore fugiat?
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit. Fuga temporibus deserunt,
+                                                                        incidunt explicabo doloribus in id illum nihil
+                                                                        tempore fugiat?
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -2939,22 +2955,32 @@
                                                             <div class="mt-2 row align-items-center">
                                                                 <div class="showUsers col-4">
                                                                     <input type="checkbox" name="" id="" class="p-0">
-                                                                    <span class="pb-2" style="font-size: 12.5px; font-weight: 600;">Use this agreement as default</span>
+                                                                    <span class="pb-2"
+                                                                        style="font-size: 12.5px; font-weight: 600;">Use
+                                                                        this agreement as default</span>
                                                                 </div>
                                                                 <div class="showUsers col">
                                                                     <input type="checkbox" name="" id="" class="p-0">
-                                                                    <span class="pb-2" style="font-size: 12.5px; font-weight: 600;">Default form-out agreement</span>
+                                                                    <span class="pb-2"
+                                                                        style="font-size: 12.5px; font-weight: 600;">Default
+                                                                        form-out agreement</span>
                                                                 </div>
-                                                                <button class="col-3 me-3 required-field-btn">complete Require Fileds</button>
+                                                                <button class="col-3 me-3 required-field-btn">complete
+                                                                    Require Fileds</button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="fade tab-pane position-absolute w-100 col-12" id="PrivacyPolicy">
-                                                        <div class="p-1 col-12" style="border: 1px solid rgba(97, 97, 97, 0.096);">
-                                                            <div class="py-2 col-12 pe-0 text-center" style=" background-color: rgba(255, 235, 205, 0.788);">
+                                                    <div class="fade tab-pane position-absolute w-100 col-12"
+                                                        id="PrivacyPolicy">
+                                                        <div class="p-1 col-12"
+                                                            style="border: 1px solid rgba(97, 97, 97, 0.096);">
+                                                            <div class="py-2 col-12 pe-0 text-center"
+                                                                style=" background-color: rgba(255, 235, 205, 0.788);">
                                                                 <label for="pickupLocation"
-                                                                    class="form-label mb-0 pb-0 fw-bold"  style="font-size: 12px; color: rgb(39, 39, 39);">Select Alias</label>
-                                                                <select id="input-field-border"  class="col-4 py-1"
+                                                                    class="form-label mb-0 pb-0 fw-bold"
+                                                                    style="font-size: 12px; color: rgb(39, 39, 39);">Select
+                                                                    Alias</label>
+                                                                <select id="input-field-border" class="col-4 py-1"
                                                                     style="font-size: 12px; border:  1px solid rgba(3, 3, 3, 0.26);  background-color: rgba(255, 235, 205, 0.616);">
                                                                     <option>blackcarnrides</option>
                                                                     <option>allnationcarsservice</option>
@@ -2967,7 +2993,8 @@
                                                                 </select>
                                                             </div>
                                                             <div class="p-0 m-0 mt-2">
-                                                                <h2 for="" class="fw-bold " style="font-size: 12px;">Policy:</h2>
+                                                                <h2 for="" class="fw-bold " style="font-size: 12px;">
+                                                                    Policy:</h2>
                                                                 <div class="col-12 p-1 mt-0"
                                                                     style=" border: 1px solid rgba(60, 94, 91, 0.521);">
                                                                     <div class=" py-0"
@@ -2984,42 +3011,234 @@
                                                                                 class="btn py-0 px-1  fst-italic fw-bold text-decoration-underline"
                                                                                 id="underLine">U</button>
                                                                             <button
-                                                                                class="btn py-0 px-1 fst-italic fw-bold position-relative color-picker-btn" id="color-picker"><label
-                                                                                    for="color"
+                                                                                class="btn py-0 px-1 fst-italic fw-bold position-relative color-picker-btn"
+                                                                                id="color-picker"><label for="color"
                                                                                     class="text-decoration-underline">A</label>
                                                                                 <input type="color" id="color"></button>
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"
                                                                                 style="transform: rotate(270deg);"><i
-                                                                                    class="fa-solid fa-scissors" id="cut"></i></button>
+                                                                                    class="fa-solid fa-scissors"
+                                                                                    id="cut"></i></button>
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"
                                                                                 style="transform: rotate(176deg);"><i
-                                                                                    class="fa-regular fa-copy" id="copy"></i></button>
+                                                                                    class="fa-regular fa-copy"
+                                                                                    id="copy"></i></button>
                                                                             <button
-                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i class="fa-solid fa-paste" id="paste"></i></button>
+                                                                                class="btn py-0 px-1  fst-italic fw-bold"><i
+                                                                                    class="fa-solid fa-paste"
+                                                                                    id="paste"></i></button>
 
 
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"><i
-                                                                                    class="fa-solid fa-arrow-rotate-left" id="undo"></i></button>
+                                                                                    class="fa-solid fa-arrow-rotate-left"
+                                                                                    id="undo"></i></button>
                                                                             <button
                                                                                 class="btn py-0 px-1  fst-italic fw-bold"><i
                                                                                     class="fa-solid fa-arrow-rotate-right"></i></button>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="text-content overflow-hidden p-2" contenteditable="true" style="font-size: 13px; border: 1px solid rgba(0, 0, 0, 0.212) !important; outline: none; min-height: 200px;">
-                                                                        Please contact blackcarnrides@gmail.com for privacy policy. </div>
+                                                                    <div class="text-content overflow-hidden p-2"
+                                                                        contenteditable="true"
+                                                                        style="font-size: 13px; border: 1px solid rgba(0, 0, 0, 0.212) !important; outline: none; min-height: 200px;">
+                                                                        Please contact blackcarnrides@gmail.com for
+                                                                        privacy policy. </div>
                                                                 </div>
                                                             </div>
-                                                      
+
 
                                                             <div class="mt-2 row text-center w-100">
-                                                                <button class=" required-field-btn col-12 w-100" style="    margin-left: 12px;">Updata Policy Content</button>
+                                                                <button class=" required-field-btn col-12 w-100"
+                                                                    style="    margin-left: 12px;">Updata Policy
+                                                                    Content</button>
                                                             </div>
-                                                      
+
                                                         </div>
-                                                       
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- System Settings -->
+                                        <div class="tab-content position-absolute z-2"
+                                            style="width: 100% !important; margin-left: 50px;"
+                                            id="serviceTypesContainer">
+                                            <div id="serviceTypes" class="tab-pane fade">
+                                                <div class="p-2" style=" width:100% !important;">
+                                                    <div class=" col-12 pe-0 text-center py-1"
+                                                        style="background-color: rgba(75, 74, 73, 0.301); border: 1px solid rgba(75, 74, 73, 0.26);">
+                                                        <label for="pickupLocation" class="form-label mb-0 pb-0 fw-bold"
+                                                            style="font-size: 12px;">Company Alias</label>
+                                                        <select id="input-field-border" class="col-3"
+                                                            style="font-size: 14px; border:  1px solid rgba(3, 3, 3, 0.26);  ">
+                                                            <option>blackcamedes</option>
+                                                            <option>selectblackcar</option>
+                                                            <option>opensedblockcar</option>
+                                                            <option>luxridescarsvc</option>
+                                                            <option>busservicesforhire</option>
+                                                            <option>allnationtransservice</option>
+                                                            <option>limoworldfleet</option>
+                                                            <option>worldfleetblackcar</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mt-1 ms-0 col-12 align-items-center  py-1 row"
+                                                        style="background-color: rgba(95, 95, 94, 0.11); border: 1px solid rgba(75, 74, 73, 0.164);">
+                                                        <span class="col-6 text-start"
+                                                            style="font-size: 12px; font-weight: 600;"> Service
+                                                            Types</span>
+                                                        <div class="col-6 text-end"> <button class="btn" type="button"
+                                                                data-bs-target="#addnewAlieses" data-bs-toggle="modal"
+                                                                style="font-size: 12px; border: 1px solid rgba(90, 90, 90, 0.37); padding: 4px 8px; font-weight: 600; ">Add
+                                                                new</button></div>
+
+
+                                                    </div>
+
+                                                    <div class="py-2 mt-2"
+                                                        style="border: 1px solid rgba(68, 68, 68, 0.247);">
+
+                                                        <table class="table">
+                                                            <thead class="text-center" style="font-size: 14px;">
+                                                                <tr>
+                                                                    <th scope="col" style=" color: rgb(73, 73, 73);">
+                                                                    </th>
+                                                                    <th scope="col"
+                                                                        style=" color:  rgba(44, 44, 44, 0.801);">Name
+                                                                    </th>
+                                                                    <th scope="col"
+                                                                        style=" color: rgba(44, 44, 44, 0.801);">Code
+                                                                    </th>
+                                                                    <th scope="col"
+                                                                        style=" color: rgba(44, 44, 44, 0.801);">Pricing
+                                                                        Type</th>
+                                                                    <th scope="col"
+                                                                        style=" color: rgba(44, 44, 44, 0.801);">Pricing
+                                                                        Type</th>
+                                                                    <th scope="col"
+                                                                        style=" color: rgba(44, 44, 44, 0.801);">
+                                                                        Agreement</th>
+                                                                    <th scope="col"
+                                                                        style=" color:  rgba(44, 44, 44, 0.801);">
+                                                                        Default</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="text-center" id="aliesTableBody"
+                                                                style="font-size: 12px;">
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row1"
+                                                                            id="row1"></th>
+                                                                    <td><a href="#">Mark</a></td>
+                                                                    <td>123</td>
+                                                                    <td>Fixed</td>
+                                                                    <td>Hourly</td>
+                                                                    <td>Yes</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row2" id="row2"></th>
+                                                                    <td><a href="#">John</a></td>
+                                                                    <td>124</td>
+                                                                    <td>Variable</td>
+                                                                    <td>Hourly</td>
+                                                                    <td>No</td>
+                                                                    <td>Yes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row3" id="row3"></th>
+                                                                    <td><a href="#">Sara</a></td>
+                                                                    <td>125</td>
+                                                                    <td>Fixed</td>
+                                                                    <td>Monthly</td>
+                                                                    <td>Yes</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row4" id="row4"></th>
+                                                                    <td><a href="#">Emil</a></td>
+                                                                    <td>126</td>
+                                                                    <td>Variable</td>
+                                                                    <td>Monthly</td>
+                                                                    <td>No</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row5" id="row5"></th>
+                                                                    <td><a href="#">Jake</a></td>
+                                                                    <td>127</td>
+                                                                    <td>Fixed</td>
+                                                                    <td>Yearly</td>
+                                                                    <td>Yes</td>
+                                                                    <td>Yes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row6" id="row6"></th>
+                                                                    <td><a href="#">Laur</a></td>
+                                                                    <td>128</td>
+                                                                    <td>Variable</td>
+                                                                    <td>Yearly</td>
+                                                                    <td>No</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row1"
+                                                                            id="row1"></th>
+                                                                    <td><a href="#">Mark</a></td>
+                                                                    <td>123</td>
+                                                                    <td>Fixed</td>
+                                                                    <td>Hourly</td>
+                                                                    <td>Yes</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row2" id="row2"></th>
+                                                                    <td><a href="#">John</a></td>
+                                                                    <td>124</td>
+                                                                    <td>Variable</td>
+                                                                    <td>Hourly</td>
+                                                                    <td>No</td>
+                                                                    <td>Yes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row3" id="row3"></th>
+                                                                    <td><a href="#">Sarah</a></td>
+                                                                    <td>125</td>
+                                                                    <td>Fixed</td>
+                                                                    <td>Monthly</td>
+                                                                    <td>Yes</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row4" id="row4"></th>
+                                                                    <td><a href="#">Emily</a></td>
+                                                                    <td>126</td>
+                                                                    <td>Variable</td>
+                                                                    <td>Monthly</td>
+                                                                    <td>No</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row5" id="row5"></th>
+                                                                    <td><a href="#">Jake</a></td>
+                                                                    <td>127</td>
+                                                                    <td>Fixed</td>
+                                                                    <td>Yearly</td>
+                                                                    <td>Yes</td>
+                                                                    <td>Yes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><input type="checkbox" name="row6" id="row6"></th>
+                                                                    <td><a href="#">Laura</a></td>
+                                                                    <td>128</td>
+                                                                    <td>Variable</td>
+                                                                    <td>Yearly</td>
+                                                                    <td>No</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3047,7 +3266,104 @@
     </div>
     </div>
     </div>
+    <!-- Add new Alises -->
+    <div id="addnewAlieses" class="modal fade" aria-labelledby="addnewAlieses" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog " style="width: 450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Add New Service Type</h6>
+                    <button type="button" class="btn-close fw-bold" data-bs-dismiss="modal" aria-label="Close"
+                        style="font-size: 10px;"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="general">
+                            <h6 class="p-2"
+                                style="background-color: rgba(134, 134, 134, 0.342);  color: rgba(37, 37, 37, 0.87);"><i
+                                    class="fa-solid fa-caret-down me-2" style="color: rgba(0, 0, 0, 0.582);"></i>General
+                            </h6>
+                            <div class="mb-2">
+                                <label for="ServiceTypeName" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Service Type
+                                    Name:</label>
+                                <input type="text" id="ServiceTypeName" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Type Service Type Name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="ServiceTypeCode" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Service Type
+                                    Code:</label>
+                                <input type="number" id="ServiceTypeCode" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Type Service Type Code">
+                            </div>
+                            <div class="mb-2">
+                                <label for="Agreement" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Agreement:</label>
+                                <select id="Agreement" class="col-12 py-1" style="font-size: 14px;">
+                                    <option>Not Selected</option>
+                                    <option>Selected</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pricing mb-2">
+                            <h6 class="p-2"
+                                style="background-color: rgba(134, 134, 134, 0.342); color: rgba(37, 37, 37, 0.87);"><i
+                                    class="fa-solid fa-caret-down me-2" style="color: rgba(0, 0, 0, 0.582);"></i>Pricing
+                            </h6>
+                            <label for="PricingType" class="form-label mb-0"
+                                style="font-size: 14px; font-weight: 600;">Pricing Type:</label>
+                            <input type="text" id="PricingType" class=" col-12 py-1 ps-1" style="font-size: 14px;"
+                                placeholder="Not Selected">
+                        </div>
 
+                        <div class="oresApps">
+                            <h6 class="p-2 mt-1"
+                                style="background-color: rgba(134, 134, 134, 0.342);  color: rgba(37, 37, 37, 0.87);"><i
+                                    class="fa-solid fa-caret-down me-2"
+                                    style="color: rgba(0, 0, 0, 0.582);"></i>ORES/Apps</h6>
+                            <div class="mb-2">
+                                <label for="ServiceTypeName" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Select aliases this
+                                    Service Type will be displayed for:</label>
+                                <input type="text" id="ServiceTypeName" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Not Selected">
+                            </div>
+                            <div class="mb-2">
+                                <label for="ServiceTypeCode" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Custom Label
+                                    Name:</label>
+                                <input type="text" id="ServiceTypeCode" class="col-12 py-1 ps-1"
+                                    style="font-size: 14px;" placeholder="Type Service type Custom Label Name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="pickUp" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Pick Up:</label>
+                                <input type="text" id="pickUp" class="col-12 py-1 ps-1" style="font-size: 14px;"
+                                    placeholder="Not Selected">
+                            </div>
+                            <div class="mb-2">
+                                <label for="pickOff" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Pick Off:</label>
+                                <input type="text" id="pickOff" class="col-12 py-1 ps-1" style="font-size: 14px;"
+                                    placeholder="Not Selected">
+                            </div>
+                            <div class="mb-2">
+                                <label for="stops" class="form-label"
+                                    style="font-size: 14px; font-weight: 600; margin-bottom: 0;">Stops:</label>
+                                <input type="text" id="stops" class="col-12 py-1 ps-1" style="font-size: 14px;"
+                                    placeholder="Not Selected">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer  text-start d-block">
+                    <button type="cancel" class="btn add-new-alises-btn1" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn add-new-alises-btn2 ">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- Add Gateway Model -->
     <div class="modal fade" id="addGatewayModel" aria-labelledby="addGatewayModel" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
@@ -3183,22 +3499,23 @@
                             <div class="col-md-8">
                                 <form class=" p-3" style="border: 1px solid rgb(134, 134, 134);">
                                     <!-- Use Online Reservation Checkbox -->
-                                    <div class="mb-2 ms-5 ps-2 pt-3">
-                                        <label class="form-check-label contact-information-form" for="onlineReservation"
-                                            style="font-size: 14px; font-weight: bold;">Use
+                                    <div class="mb-2  ps-2 pt-3">
+                                        <label class="form-check-label contact-information-form mb-3"
+                                            for="onlineReservation" style="font-size: 14px; font-weight: bold;">Use
                                             Online Reservation System
                                             for this Alias</label>
                                         <input type="checkbox" class="form-check-input "
-                                            style="border: 1px solid rgb(92, 92, 92);" id="onlineReservation">
+                                            style="border: 1px solid rgb(92, 92, 92); margin-top: 6px;"
+                                            id="onlineReservation">
                                     </div>
 
                                     <!-- Alias and Company Information -->
-                                    <div class="d-flex justify-content-center">
+                                    <div class="d-flex justify-content-between">
                                         <div class="col-10">
                                             <div class="row contact-information-form mt-1">
                                                 <label for="" class="col">Company
                                                     Alias:</label>
-                                                <input type="text" name="" id="" class="col-8">
+                                                <input type="text" name="" id="" class="col-8 ">
                                             </div>
                                             <div class="row contact-information-form mt-1">
                                                 <label for="" class="col">Company
@@ -3221,7 +3538,7 @@
                                             </div>
                                             <div class="row contact-information-form mt-1">
                                                 <label for="" class="col">State/Province/Territory:</label>
-                                                <select id="inputState" class="col-8">
+                                                <select class="col-8">
                                                     <option selected>
                                                         Choose...
                                                     </option>
@@ -3247,7 +3564,7 @@
                                             </div>
                                             <div class="row contact-information-form mt-1">
                                                 <label for="" class="col">Country:</label>
-                                                <select id="inputState" class="col-8">
+                                                <select class="col-8">
                                                     <option selected>
                                                         Choose...
                                                     </option>
@@ -3256,86 +3573,86 @@
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Primary
+                                                    style="padding: auto ; margin-left: -8px;">Primary
                                                     Phone
                                                     Number:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input id="phone" type="tel" class="ps-5 pe-0"
+                                                    <input id="phone" type="tel" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Secondary
+                                                    style="padding: auto ; margin-left: -8px;">Secondary
                                                     Phone
                                                     Number:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input id="phone" type="tel" class="ps-5 pe-0"
+                                                    <input id="phone" type="tel" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Fax
+                                                    style="padding: auto ; margin-left: -8px;">Fax
                                                     Number:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input id="phone" type="number" class="ps-5 pe-0"
+                                                    <input id="phone" type="number" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">General
+                                                    style="padding: auto ; margin-left: -8px;">General
                                                     Email
                                                     Address:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input type="email" class="ps-5 pe-0"
+                                                    <input type="email" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Reservations
+                                                    style="padding: auto ; margin-left: -8px;">Reservations
                                                     Email
                                                     Address:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input type="email" class="ps-5 pe-0"
+                                                    <input type="email" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Quote
+                                                    style="padding: auto ; margin-left: -8px;">Quote
                                                     Email
                                                     Address:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input type="email" class="ps-5 pe-0"
+                                                    <input type="email" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Billing
+                                                    style="padding: auto ; margin-left: -8px;">Billing
                                                     Email
                                                     Address:</label>
                                                 <div class="col-9 ms-5 ps-1">
-                                                    <input type="email" class="ps-5 pe-0"
+                                                    <input type="email" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="contact-information-form d-flex mt-1">
                                                 <label for="" class="col-3 form-label"
-                                                    style="padding: auto ; margin-left: -5px;">Company
+                                                    style="padding: auto ; margin-left: -8px;">Company
                                                     Website URL:</label>
-                                                <div class="col-9 ms-5 ps-1">
-                                                    <input type="url" class="ps-5 pe-0"
+                                                <div class="col-10 ms-5 ps-1">
+                                                    <input type="url" class=" pe-0"
                                                         style="font-size: 11.7px; padding: 5px; width:400px;">
                                                 </div>
                                             </div>
                                             <div class="row contact-information-form mt-1">
                                                 <label for="" class="col">Default
                                                     Gateway:</label>
-                                                <select id="inputState" class="col-8">
+                                                <select class="col-8">
                                                     <option selected>
                                                         Choose...
                                                     </option>
@@ -3345,7 +3662,7 @@
                                             <div class="row contact-information-form mt-1 mb-4">
                                                 <label for="" class="col">Default
                                                     Currency:</label>
-                                                <select id="inputState" class="col-8">
+                                                <select class="col-8">
                                                     <option selected>
                                                         Choose...
                                                     </option>
