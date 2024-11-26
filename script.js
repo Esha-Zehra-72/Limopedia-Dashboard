@@ -373,8 +373,9 @@ addNewAlisesBtn2.addEventListener('click', () => {
 <td>${PricingType}</td>
 `
     tableBody.appendChild(newRow)
-    const modal =  bootstrap.Modal.getInstance(document.querySelector('#addnewAlieses'))
+    const modal = bootstrap.Modal.getInstance(document.querySelector('#addnewAlieses'))
     modal.hide()
     document.querySelector('#addnewAlieses form').reset()
 
 })
+
