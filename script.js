@@ -379,3 +379,16 @@ addNewAlisesBtn2.addEventListener('click', () => {
 
 })
 
+// Copy URL on Click
+
+
+
+document.getElementById('obtainURL').addEventListener('click', function (e) {
+    e.preventDefault()
+    // The URL to be copied
+    const url = 'https://www.google.com';
+    
+    // Copy the URL to the clipboard
+    navigator.clipboard.writeText(url)
+      
+  });
