@@ -413,6 +413,26 @@ input{
   color: white;
   border-radius: 5px !important;
 }
+
+/* Company Resources */
+.form-control{
+  border: 1px solid rgb(150, 150, 150) !important;
+  outline: none !important;
+}
+.input-group-text {
+  border: 1px solid rgb(150, 150, 150) !important;
+}
+.form-control:active{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:hover{
+  box-shadow: none !important;
+}
 /* #onlineReservation .tab-pane:not(.active){
   display: none;
 }
