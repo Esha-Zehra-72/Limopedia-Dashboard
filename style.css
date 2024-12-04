@@ -364,7 +364,7 @@ nav {
 .required-field-btn:hover {
   background-color: transparent;
 }
-input{
+input {
   outline: none !important;
 }
 .dropdown-menu.show {
@@ -405,33 +405,59 @@ input{
   color: rgb(50, 86, 117);
   padding: 4px 13px;
   font-weight: 600;
-  border-radius: 0  !important;
+  border-radius: 0 !important;
   transition: all 0.5s ease;
 }
-.add-new-alises-btn2:hover{
-  background-color: rgb(50, 86, 117) ;
+.add-new-alises-btn2:hover {
+  background-color: rgb(50, 86, 117);
   color: white;
   border-radius: 5px !important;
 }
 
 /* Company Resources */
-.form-control{
+.form-control {
   border: 1px solid rgb(150, 150, 150) !important;
   outline: none !important;
 }
 .input-group-text {
   border: 1px solid rgb(150, 150, 150) !important;
 }
-.form-control:active{
+.form-control:active {
   outline: none !important;
   box-shadow: none !important;
 }
-.form-control:focus{
+.form-control:focus {
   outline: none !important;
   box-shadow: none !important;
 }
-.form-control:hover{
+.form-control:hover {
   box-shadow: none !important;
+}
+
+.dispatch-label a {
+  font-size: 12px;
+  text-decoration: none !important;
+  transition: all 0.5s ease;
+  color: rgb(24, 24, 24);
+  font-weight: 600;
+}
+.dispatch-label a:hover {
+  color: rgb(211, 35, 35) !important;
+}
+.webAccessBtn {
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid rgb(179, 179, 179);
+  color: rgb(39, 39, 39);
+  transition: all .5s ease;
+}
+.webAccessBtn:hover{
+  background-color:  rgb(39, 39, 39);
+  color: white;
+  border: 2px solid rgb(39, 39, 39);
+}
+.font-size-12px{
+  font-size: 12px !important;
 }
 /* #onlineReservation .tab-pane:not(.active){
   display: none;

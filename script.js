@@ -60,34 +60,83 @@ function clickedBtn(btn) {
 }
 // Inter Lin
 
-const input = document.querySelector("#phone");
-const iti = window.intlTelInput(input, {
-    initialCountry: "us",  // Default country
-    preferredCountries: ["us", "gb", "pk"],  // Preferred countries
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
-});
+document.addEventListener("DOMContentLoaded", () => {
+    // Initialize intlTelInput
+    const input = document.querySelector("#phone");
+    if (input) {
+        const iti = window.intlTelInput(input, {
+            initialCountry: "us",  // Default country
+            preferredCountries: ["us", "gb", "pk"],  // Preferred countries
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+        });
 
-// Hide country names and keep only the flags and dial codes
-document.querySelectorAll('.iti__country-list .iti__country').forEach(country => {
-    const countryName = country.querySelector('.iti__country-name');
-    if (countryName) {
-        countryName.style.display = 'none';  // Hide the country name
+        // Hide country names
+        setTimeout(() => {
+            document.querySelectorAll('.iti__country-list .iti__country').forEach(country => {
+                const countryName = country.querySelector('.iti__country-name');
+                if (countryName) {
+                    countryName.style.display = 'none';
+                }
+            });
+        }, 500); // Adjust timeout as needed
+    } else {
+        console.error("#phone element not found");
+    }
+
+      // Initialize intlTelInput for #phone2
+      const input2 = document.querySelector("#fax");
+      if (input2) {
+          window.intlTelInput(input2, {
+              initialCountry: "us",
+              preferredCountries: ["us", "gb", "pk"],
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+          });
+      } else {
+          console.error("#phone2 element not found");
+      }
+      // Initialize intlTelInput for #CellularPhone
+      const input3 = document.querySelector("#CellularPhone");
+      if (input2) {
+          window.intlTelInput(input3, {
+              initialCountry: "us",
+              preferredCountries: ["us", "gb", "pk"],
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+          });
+      } else {
+          console.error("#phone3 element not found");
+      }
+      // Initialize intlTelInput for #Pager
+      const input4 = document.querySelector("#Pager");
+      if (input2) {
+          window.intlTelInput(input4, {
+              initialCountry: "us",
+              preferredCountries: ["us", "gb", "pk"],
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+          });
+      } else {
+          console.error("#phone4 element not found");
+      }
+
+    // Tab Activation
+    document.querySelectorAll('.company-parent-tabs').forEach((tabs) => {
+        tabs.addEventListener('click', function () {
+            document.querySelectorAll('.company-parent-tabs').forEach((t) => {
+                t.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+
+    // Image Preview and Delete Setup
+    const imgPreviewContainer = document.getElementById('img-preview-container');
+    const deleteLogo = document.getElementById('dlt-logo');
+    if (imgPreviewContainer && deleteLogo) {
+        // Add functionality here
+        console.log("Image preview and delete elements found");
+    } else {
+        console.warn("Image preview or delete logo element not found");
     }
 });
-
-// Contact Information Tab 
-document.querySelectorAll('.company-parent-tabs').forEach((tabs) => {
-    tabs.addEventListener('click', function () {
-        document.querySelectorAll('.company-parent-tabs').forEach((t) => {
-            t.classList.remove('active')
-        })
-        this.classList.add('active')
-    })
-})
-
-
-const imgPreviewContainer = document.getElementById('img-preview-container');
-const deleteLogo = document.getElementById('dlt-logo');
 
 // Function to toggle border and delete link
 function borderShows() {
