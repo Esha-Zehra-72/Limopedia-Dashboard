@@ -117,6 +117,17 @@ document.addEventListener("DOMContentLoaded", () => {
           console.error("#phone4 element not found");
       }
 
+    //   CellularPhone
+    const input5 = document.querySelector("#CellularPhone");
+      if (input2) {
+          window.intlTelInput(input5, {
+              initialCountry: "us",
+              preferredCountries: ["us", "gb", "pk"],
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+          });
+      } else {
+          console.error("#CellularPhone element not found");
+      }
     // Tab Activation
     document.querySelectorAll('.company-parent-tabs').forEach((tabs) => {
         tabs.addEventListener('click', function () {
@@ -429,9 +440,6 @@ addNewAlisesBtn2.addEventListener('click', () => {
 })
 
 // Copy URL on Click
-
-
-
 document.getElementById('obtainURL').addEventListener('click', function (e) {
     e.preventDefault()
     // The URL to be copied

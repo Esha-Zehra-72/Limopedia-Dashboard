@@ -144,10 +144,10 @@
                     <div class="active fade all show on tab-pane" id="company-settings">
                         <div class="d-flex">
                             <div class="col-2 bg-red">
-                                <ul class="nav nav-links mt-1 ms-1" style="width: 300px;">
+                                <ul class="nav nav-links mt-1 ms-1" style="width: 400px;">
                                     <li class="nav-item col-7">
-                                        <a href="./company-settings1.html" class="nav-link contact-information-child-tabs active"
-                                           >Drivers</a>
+                                        <a href="./company-settings1.html"
+                                            class="nav-link contact-information-child-tabs active">Drivers</a>
                                     </li>
                                     <li class="nav-item col-7">
                                         <a href="#company-preferences" class="nav-link contact-information-child-tabs"
@@ -158,12 +158,12 @@
                                             data-bs-toggle="tab">Agents</a>
                                     </li>
                                     <li class="nav-item col-7">
-                                        <a href="#policy" class="nav-link contact-information-child-tabs"
-                                            data-bs-toggle="tab">Vehicle Types</a>
+                                        <a href="./Vechical-Type.html"
+                                            class="nav-link contact-information-child-tabs">Vehicle Types</a>
                                     </li>
                                     <li class="nav-item col-7">
-                                        <a href="#iCalender" class="nav-link contact-information-child-tabs"
-                                            data-bs-toggle="tab">Fleet</a>
+                                        <a href="./Feet.html" class="nav-link contact-information-child-tabs"
+                                           >Fleet</a>
                                     </li>
                                     <li class="nav-item col-7">
                                         <a href="#onlineReservation"
@@ -195,7 +195,7 @@
                                 </ul>
                             </div>
                             <div class="tab-content col-9 mt-2" style="width:  85%;">
-                                <div class="tab-pane fade show on active d-flex justify-content-between" id="drivers">
+                                <div class="tab-pane fade show on active d-flex justify-content-between" id="fleets">
                                     <div class=" p-2 col-3" style="border: 1px solid rgba(211, 211, 211, 0.801); ">
                                         <div
                                             class="usersHeading pb-1 d-flex justify-content-between align-items-center">
@@ -240,28 +240,31 @@
                                                 Zafar (waqas.zafar)</a>
                                         </div>
                                         <div class="text-end mt-2 row align-items-center">
-                                            <button type="submit" class="py-1 px-5 webAccessBtn ms-2" style="width: 94%;">Add new Vehicle</button>
-                                            <button type="submit" class="py-1 px-5 webAccessBtn ms-2 mt-1" style="width: 94%;">Edit Vehicle</button>
+                                            <button type="submit" class="py-1 px-5 webAccessBtn ms-2"
+                                                style="width: 94%;">Add new Vehicle</button>
+                                            <button type="submit" class="py-1 px-5 webAccessBtn ms-2 mt-1"
+                                                style="width: 94%;">Edit Vehicle</button>
                                         </div>
                                     </div>
                                     <div class="col ms-3" style="border: 1px solid rgba(211, 211, 211, 0.801);">
                                         <div class=" col-9 ">
                                             <h5 class="ps-3 "
                                                 style="font-size: 14px ; font-weight: 700; margin-top: 10px; color: rgba(3, 3, 2, 0.678);">
-                                                	
-Add New Vehicle</h5>
+
+                                                Add New Vehicle</h5>
                                             <div class="userContainer" style="width: 820px;">
                                                 <div class="p-3 pt-0 ">
-                                                    <form class="" style="margin-left: 12px; margin-right: -10px;">
+                                                    <div class="" style="margin-left: 12px; margin-right: -10px;">
 
                                                         <div
                                                             class="row position-relative pickup-dropoff mt-2 bill-pay w-100">
                                                             <span class="mt-2 position-absolute"
-                                                                style=" top: -20px;left: 7px; width: 135px; z-index: 23; font-weight: 500; background-color: white; font-size: 12px; color: rgb(57, 57, 116);">Vehicle Information</span>
+                                                                style=" top: -20px;left: 7px; width: 135px; z-index: 23; font-weight: 500; background-color: white; font-size: 12px; color: rgb(57, 57, 116);">Vehicle
+                                                                Information</span>
                                                             <div class="mb-2  col-6">
                                                                 <label for="" class="form-label "
                                                                     style="font-size: 11px; font-weight: 600;">
-                                                                    Code 
+                                                                    Code
                                                                     <span class="text-danger">*</span></label>
                                                                 <input type="number" class="d-block w-100 py-1" id=""
                                                                     style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671);">
@@ -274,339 +277,612 @@ Add New Vehicle</h5>
                                                                 <input type="text" class="d-block w-100 py-1" id="     "
                                                                     style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
                                                             </div>
-                                                            <div class="mb-2 col-7">
+                                                            <div class="mb-2 col-6">
                                                                 <label for="vehicleType" class="form-label"
-                                                                    style="font-size: 13px; font-weight: 600;">Vehicle Type</label>
+                                                                    style="font-size: 13px; font-weight: 600;">Vehicle
+                                                                    Type</label>
                                                                 <select class="col-12 py-1" style="font-size: 12px;"
                                                                     id="vehicleType">
-												
-                                                                        <option value="BCR10STRETCH">10 Pax Stretch Limo (BCR10STRETCH)</option>
-                                                                        
-                                                                        <option value="WBCSTRETCH10">10 Pax Stretch Limo Wolrdwide (WBCSTRETCH10)</option>
-                                                                        
-                                                                        <option value="BCR28PAXBUS">28 Pax Bus (BCR28PAXBUS)</option>
-                                                                        
-                                                                        <option value="WBC28PAXBUS">28 Pax Bus Worldwide (WBC28PAXBUS)</option>
-                                                                        
-                                                                        <option value="WBC36PAXBUS">36 Pax Bus Worldwide (WBC36PAXBUS)</option>
-                                                                        
-                                                                        <option value="37PAXBUS-BCR">37 Passengers  BUS (37PAXBUS-BCR)</option>
-                                                                        
-                                                                        <option value="WBC37PAXBUS" style="color: #FF0000">37 Pax Bus Worldwide (WBC37PAXBUS)</option>
-                                                                        
-                                                                        <option value="WBC55PAXBUS">55 Pax Bus Worldwide (WBC55PAXBUS)</option>
-                                                                        
-                                                                        <option value="56 PAXBUS-BCR">56 Passengers  BUS (56 PAXBUS-BCR)</option>
-                                                                        
-                                                                        <option value="WBC8PAXLIMO">8 Pax Limo Worldwide (WBC8PAXLIMO)</option>
-                                                                        
-                                                                        <option value="BCRECOSED" style="color: #FF0000">Economy SEDAN (BCRECOSED)</option>
-                                                                        
-                                                                        <option value="SED">Economy Sedan (SED)</option>
-                                                                        
-                                                                        <option value="WBCECOSED">Economy Sedan Worldwide (WBCECOSED)</option>
-                                                                        
-                                                                        <option value="BCREXESED">Executive SEDAN (BCREXESED)</option>
-                                                                        
-                                                                        <option value="WBCEXESED">Executive Sedan Worldwide (WBCEXESED)</option>
-                                                                        
-                                                                        <option value="BCREXESUV">Executive SUV (BCREXESUV)</option>
-                                                                        
-                                                                        <option value="WBCEXESUV">Executive SUV Worldwide (WBCEXESUV)</option>
-                                                                        
-                                                                        <option value="LUX">Luxury Sedan (LUX)</option>
-                                                                        
-                                                                        <option value="SUV">Luxury SUV (SUV)</option>
-                                                                        
-                                                                        <option value="BCRPAXVAN">Passenger Van (14 Pax) (BCRPAXVAN)</option>
-                                                                        
-                                                                        <option value="WBCPAXVAN">Passenger Van Worldwide (WBCPAXVAN)</option>
-                                                                        
-                                                                        <option value="BCRPREMSED">Premium Sedan (BCRPREMSED)</option>
-                                                                        
-                                                                        <option value="WBCPREMSED">Premium Sedan Worldwide (WBCPREMSED)</option>
-                                                                        
-                                                                        <option value="BCRPREMSUV">Premium SUV (BCRPREMSUV)</option>
-                                                                        
-                                                                        <option value="WBCPREMSUV">Premium SUV Worldwide (WBCPREMSUV)</option>
-                                                                    
-                                                                </select>
-                                                            </div>
-                                                            <div class="mb-2 col-5">
-                                                                <label for="vehicleType" class="form-label"
-                                                                    style="font-size: 13px; font-weight: 600;">Car Make <span class="text-danger">*</span></label>
-                                                                <select class="col-12 py-1" style="font-size: 12px;"
-                                                                    id="vehicleType">
-                                                                        <option value=""></option>
-                                                                        
-                                                                        <option value="Acura">Acura</option>
-                                                                        
-                                                                        <option value="Alfa Romeo">Alfa Romeo</option>
-                                                                        
-                                                                        <option value="AM General">AM General</option>
-                                                                        
-                                                                        <option value="AMC">AMC</option>
-                                                                        
-                                                                        <option value="Amtrans">Amtrans</option>
-                                                                        
-                                                                        <option value="Aston Martin">Aston Martin</option>
-                                                                        
-                                                                        <option value="Audi">Audi</option>
-                                                                        
-                                                                        <option value="BCI">BCI</option>
-                                                                        
-                                                                        <option value="Bentley">Bentley</option>
-                                                                        
-                                                                        <option value="BMW">BMW</option>
-                                                                        
-                                                                        <option value="Buick">Buick</option>
-                                                                        
-                                                                        <option value="Cadillac">Cadillac</option>
-                                                                        
-                                                                        <option value="Chevrolet">Chevrolet</option>
-                                                                        
-                                                                        <option value="Chrysler">Chrysler</option>
-                                                                        
-                                                                        <option value="Citroen">Citroen</option>
-                                                                        
-                                                                        <option value="Daewoo">Daewoo</option>
-                                                                        
-                                                                        <option value="Daihatsu">Daihatsu</option>
-                                                                        
-                                                                        <option value="Datsun">Datsun</option>
-                                                                        
-                                                                        <option value="Dodge">Dodge</option>
-                                                                        
-                                                                        <option value="Eagle">Eagle</option>
-                                                                        
-                                                                        <option value="Eurotrans">Eurotrans</option>
-                                                                        
-                                                                        <option value="Ferrari">Ferrari</option>
-                                                                        
-                                                                        <option value="FIAT">FIAT</option>
-                                                                        
-                                                                        <option value="Fisker">Fisker</option>
-                                                                        
-                                                                        <option value="Ford">Ford</option>
-                                                                        
-                                                                        <option value="Freight Liner">Freight Liner</option>
-                                                                        
-                                                                        <option value="Genesis">Genesis</option>
-                                                                        
-                                                                        <option value="Geo">Geo</option>
-                                                                        
-                                                                        <option value="GMC">GMC</option>
-                                                                        
-                                                                        <option value="Holden">Holden</option>
-                                                                        
-                                                                        <option value="Honda">Honda</option>
-                                                                        
-                                                                        <option value="HUMMER">HUMMER</option>
-                                                                        
-                                                                        <option value="Hyundai">Hyundai</option>
-                                                                        
-                                                                        <option value="IC Bus">IC Bus</option>
-                                                                        
-                                                                        <option value="Icon">Icon</option>
-                                                                        
-                                                                        <option value="Infiniti">Infiniti</option>
-                                                                        
-                                                                        <option value="Isuzu">Isuzu</option>
-                                                                        
-                                                                        <option value="Iveco">Iveco</option>
-                                                                        
-                                                                        <option value="Jaguar">Jaguar</option>
-                                                                        
-                                                                        <option value="Jeep">Jeep</option>
-                                                                        
-                                                                        <option value="Kia">Kia</option>
-                                                                        
-                                                                        <option value="Lamborghini">Lamborghini</option>
-                                                                        
-                                                                        <option value="Land Rover">Land Rover</option>
-                                                                        
-                                                                        <option value="Lexus">Lexus</option>
-                                                                        
-                                                                        <option value="Lincoln">Lincoln</option>
-                                                                        
-                                                                        <option value="Lotus">Lotus</option>
-                                                                        
-                                                                        <option value="Lucid">Lucid</option>
-                                                                        
-                                                                        <option value="Maserati">Maserati</option>
-                                                                        
-                                                                        <option value="Maybach">Maybach</option>
-                                                                        
-                                                                        <option value="Mazda">Mazda</option>
-                                                                        
-                                                                        <option value="MCI">MCI</option>
-                                                                        
-                                                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
-                                                                        
-                                                                        <option value="Mercury">Mercury</option>
-                                                                        
-                                                                        <option value="Merkur">Merkur</option>
-                                                                        
-                                                                        <option value="MINI">MINI</option>
-                                                                        
-                                                                        <option value="Mitsubishi">Mitsubishi</option>
-                                                                        
-                                                                        <option value="Neoplan">Neoplan</option>
-                                                                        
-                                                                        <option value="Nissan">Nissan</option>
-                                                                        
-                                                                        <option value="Oldsmobile">Oldsmobile</option>
-                                                                        
-                                                                        <option value="Opel">Opel</option>
-                                                                        
-                                                                        <option value="Panoz">Panoz</option>
-                                                                        
-                                                                        <option value="Peugeot">Peugeot</option>
-                                                                        
-                                                                        <option value="Plymouth">Plymouth</option>
-                                                                        
-                                                                        <option value="Pontiac">Pontiac</option>
-                                                                        
-                                                                        <option value="Porsche">Porsche</option>
-                                                                        
-                                                                        <option value="Prevost">Prevost</option>
-                                                                        
-                                                                        <option value="Renault">Renault</option>
-                                                                        
-                                                                        <option value="Rolls-Royce">Rolls-Royce</option>
-                                                                        
-                                                                        <option value="Saab">Saab</option>
-                                                                        
-                                                                        <option value="Saturn">Saturn</option>
-                                                                        
-                                                                        <option value="Scion">Scion</option>
-                                                                        
-                                                                        <option value="Setra">Setra</option>
-                                                                        
-                                                                        <option value="Skoda">Skoda</option>
-                                                                        
-                                                                        <option value="Smart">Smart</option>
-                                                                        
-                                                                        <option value="Sterling">Sterling</option>
-                                                                        
-                                                                        <option value="Subaru">Subaru</option>
-                                                                        
-                                                                        <option value="Suzuki">Suzuki</option>
-                                                                        
-                                                                        <option value="Temsa">Temsa</option>
-                                                                        
-                                                                        <option value="Tesla">Tesla</option>
-                                                                        
-                                                                        <option value="Thomas">Thomas</option>
-                                                                        
-                                                                        <option value="Toyota">Toyota</option>
-                                                                        
-                                                                        <option value="Van Hool">Van Hool</option>
-                                                                        
-                                                                        <option value="Volkswagen">Volkswagen</option>
-                                                                        
-                                                                        <option value="Volvo">Volvo</option>
-                                                                        
-                                                                        <option value="Yugo">Yugo</option>
-                                                                        
-                                                                        <option value="Yutong Bus">Yutong Bus</option>
-                                                                    
+
+                                                                    <option value="BCR10STRETCH">10 Pax Stretch Limo
+                                                                        (BCR10STRETCH)</option>
+
+                                                                    <option value="WBCSTRETCH10">10 Pax Stretch Limo
+                                                                        Wolrdwide (WBCSTRETCH10)</option>
+
+                                                                    <option value="BCR28PAXBUS">28 Pax Bus (BCR28PAXBUS)
+                                                                    </option>
+
+                                                                    <option value="WBC28PAXBUS">28 Pax Bus Worldwide
+                                                                        (WBC28PAXBUS)</option>
+
+                                                                    <option value="WBC36PAXBUS">36 Pax Bus Worldwide
+                                                                        (WBC36PAXBUS)</option>
+
+                                                                    <option value="37PAXBUS-BCR">37 Passengers BUS
+                                                                        (37PAXBUS-BCR)</option>
+
+                                                                    <option value="WBC37PAXBUS" style="color: #FF0000">
+                                                                        37 Pax Bus Worldwide (WBC37PAXBUS)</option>
+
+                                                                    <option value="WBC55PAXBUS">55 Pax Bus Worldwide
+                                                                        (WBC55PAXBUS)</option>
+
+                                                                    <option value="56 PAXBUS-BCR">56 Passengers BUS (56
+                                                                        PAXBUS-BCR)</option>
+
+                                                                    <option value="WBC8PAXLIMO">8 Pax Limo Worldwide
+                                                                        (WBC8PAXLIMO)</option>
+
+                                                                    <option value="BCRECOSED" style="color: #FF0000">
+                                                                        Economy SEDAN (BCRECOSED)</option>
+
+                                                                    <option value="SED">Economy Sedan (SED)</option>
+
+                                                                    <option value="WBCECOSED">Economy Sedan Worldwide
+                                                                        (WBCECOSED)</option>
+
+                                                                    <option value="BCREXESED">Executive SEDAN
+                                                                        (BCREXESED)</option>
+
+                                                                    <option value="WBCEXESED">Executive Sedan Worldwide
+                                                                        (WBCEXESED)</option>
+
+                                                                    <option value="BCREXESUV">Executive SUV (BCREXESUV)
+                                                                    </option>
+
+                                                                    <option value="WBCEXESUV">Executive SUV Worldwide
+                                                                        (WBCEXESUV)</option>
+
+                                                                    <option value="LUX">Luxury Sedan (LUX)</option>
+
+                                                                    <option value="SUV">Luxury SUV (SUV)</option>
+
+                                                                    <option value="BCRPAXVAN">Passenger Van (14 Pax)
+                                                                        (BCRPAXVAN)</option>
+
+                                                                    <option value="WBCPAXVAN">Passenger Van Worldwide
+                                                                        (WBCPAXVAN)</option>
+
+                                                                    <option value="BCRPREMSED">Premium Sedan
+                                                                        (BCRPREMSED)</option>
+
+                                                                    <option value="WBCPREMSED">Premium Sedan Worldwide
+                                                                        (WBCPREMSED)</option>
+
+                                                                    <option value="BCRPREMSUV">Premium SUV (BCRPREMSUV)
+                                                                    </option>
+
+                                                                    <option value="WBCPREMSUV">Premium SUV Worldwide
+                                                                        (WBCPREMSUV)</option>
+
                                                                 </select>
                                                             </div>
                                                             <div class="mb-2 col-3">
-                                                                <label for="Driver" class="form-label"
-                                                                    style="font-size: 11px; font-weight: 600;">Zip/Post</label>
-                                                                <input type="number" class="d-block w-100 py-1" id="     "
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="row position-relative pickup-dropoff mt-2  bill-pay w-100">
-
-                                                            <div class="mb-2  col-6">
-                                                                <label for="" class="form-label "
-                                                                    style="font-size: 11px; font-weight: 600;">Driver's
-                                                                    License#
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">Car Make
                                                                     <span class="text-danger">*</span></label>
-                                                                <input type="text" class="d-block w-100 py-1" id=""
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671);">
-
-                                                            </div>
-                                                            <div class="mb-2 col-3">
-                                                                <label for="vehicleType" class="form-label"
-                                                                    style="font-size: 13px; font-weight: 600;">DL
-                                                                    State</label>
                                                                 <select class="col-12 py-1" style="font-size: 12px;"
                                                                     id="vehicleType">
-                                                                    <option>All</option>
-                                                                    <option>Locked</option>
+                                                                    <option value=""></option>
+
+                                                                    <option value="Acura">Acura</option>
+
+                                                                    <option value="Alfa Romeo">Alfa Romeo</option>
+
+                                                                    <option value="AM General">AM General</option>
+
+                                                                    <option value="AMC">AMC</option>
+
+                                                                    <option value="Amtrans">Amtrans</option>
+
+                                                                    <option value="Aston Martin">Aston Martin</option>
+
+                                                                    <option value="Audi">Audi</option>
+
+                                                                    <option value="BCI">BCI</option>
+
+                                                                    <option value="Bentley">Bentley</option>
+
+                                                                    <option value="BMW">BMW</option>
+
+                                                                    <option value="Buick">Buick</option>
+
+                                                                    <option value="Cadillac">Cadillac</option>
+
+                                                                    <option value="Chevrolet">Chevrolet</option>
+
+                                                                    <option value="Chrysler">Chrysler</option>
+
+                                                                    <option value="Citroen">Citroen</option>
+
+                                                                    <option value="Daewoo">Daewoo</option>
+
+                                                                    <option value="Daihatsu">Daihatsu</option>
+
+                                                                    <option value="Datsun">Datsun</option>
+
+                                                                    <option value="Dodge">Dodge</option>
+
+                                                                    <option value="Eagle">Eagle</option>
+
+                                                                    <option value="Eurotrans">Eurotrans</option>
+
+                                                                    <option value="Ferrari">Ferrari</option>
+
+                                                                    <option value="FIAT">FIAT</option>
+
+                                                                    <option value="Fisker">Fisker</option>
+
+                                                                    <option value="Ford">Ford</option>
+
+                                                                    <option value="Freight Liner">Freight Liner</option>
+
+                                                                    <option value="Genesis">Genesis</option>
+
+                                                                    <option value="Geo">Geo</option>
+
+                                                                    <option value="GMC">GMC</option>
+
+                                                                    <option value="Holden">Holden</option>
+
+                                                                    <option value="Honda">Honda</option>
+
+                                                                    <option value="HUMMER">HUMMER</option>
+
+                                                                    <option value="Hyundai">Hyundai</option>
+
+                                                                    <option value="IC Bus">IC Bus</option>
+
+                                                                    <option value="Icon">Icon</option>
+
+                                                                    <option value="Infiniti">Infiniti</option>
+
+                                                                    <option value="Isuzu">Isuzu</option>
+
+                                                                    <option value="Iveco">Iveco</option>
+
+                                                                    <option value="Jaguar">Jaguar</option>
+
+                                                                    <option value="Jeep">Jeep</option>
+
+                                                                    <option value="Kia">Kia</option>
+
+                                                                    <option value="Lamborghini">Lamborghini</option>
+
+                                                                    <option value="Land Rover">Land Rover</option>
+
+                                                                    <option value="Lexus">Lexus</option>
+
+                                                                    <option value="Lincoln">Lincoln</option>
+
+                                                                    <option value="Lotus">Lotus</option>
+
+                                                                    <option value="Lucid">Lucid</option>
+
+                                                                    <option value="Maserati">Maserati</option>
+
+                                                                    <option value="Maybach">Maybach</option>
+
+                                                                    <option value="Mazda">Mazda</option>
+
+                                                                    <option value="MCI">MCI</option>
+
+                                                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+
+                                                                    <option value="Mercury">Mercury</option>
+
+                                                                    <option value="Merkur">Merkur</option>
+
+                                                                    <option value="MINI">MINI</option>
+
+                                                                    <option value="Mitsubishi">Mitsubishi</option>
+
+                                                                    <option value="Neoplan">Neoplan</option>
+
+                                                                    <option value="Nissan">Nissan</option>
+
+                                                                    <option value="Oldsmobile">Oldsmobile</option>
+
+                                                                    <option value="Opel">Opel</option>
+
+                                                                    <option value="Panoz">Panoz</option>
+
+                                                                    <option value="Peugeot">Peugeot</option>
+
+                                                                    <option value="Plymouth">Plymouth</option>
+
+                                                                    <option value="Pontiac">Pontiac</option>
+
+                                                                    <option value="Porsche">Porsche</option>
+
+                                                                    <option value="Prevost">Prevost</option>
+
+                                                                    <option value="Renault">Renault</option>
+
+                                                                    <option value="Rolls-Royce">Rolls-Royce</option>
+
+                                                                    <option value="Saab">Saab</option>
+
+                                                                    <option value="Saturn">Saturn</option>
+
+                                                                    <option value="Scion">Scion</option>
+
+                                                                    <option value="Setra">Setra</option>
+
+                                                                    <option value="Skoda">Skoda</option>
+
+                                                                    <option value="Smart">Smart</option>
+
+                                                                    <option value="Sterling">Sterling</option>
+
+                                                                    <option value="Subaru">Subaru</option>
+
+                                                                    <option value="Suzuki">Suzuki</option>
+
+                                                                    <option value="Temsa">Temsa</option>
+
+                                                                    <option value="Tesla">Tesla</option>
+
+                                                                    <option value="Thomas">Thomas</option>
+
+                                                                    <option value="Toyota">Toyota</option>
+
+                                                                    <option value="Van Hool">Van Hool</option>
+
+                                                                    <option value="Volkswagen">Volkswagen</option>
+
+                                                                    <option value="Volvo">Volvo</option>
+
+                                                                    <option value="Yugo">Yugo</option>
+
+                                                                    <option value="Yutong Bus">Yutong Bus</option>
+
                                                                 </select>
                                                             </div>
                                                             <div class="mb-2 col-3">
                                                                 <label for="Driver" class="form-label"
-                                                                    style="font-size: 11px; font-weight: 600;">Exp
-                                                                    Date</label>
-                                                                <input type="date" class="d-block w-100 py-1" id="     "
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
-                                                            </div>
-
-                                                            <div class="mb-2  col-9">
-                                                                <label for="    " class="form-label  "
-                                                                    style="font-size: 11px; font-weight: 600;">
-                                                                    Badge#/Other ID</label>
+                                                                    style="font-size: 11px; font-weight: 600;">Car Model
+                                                                    <span class="text-danger">*</span></label>
                                                                 <input type="text" class="d-block w-100 py-1" id="     "
                                                                     style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
                                                             </div>
                                                             <div class="mb-2 col-3">
                                                                 <label for="Driver" class="form-label"
-                                                                    style="font-size: 11px; font-weight: 600;">Exp
-                                                                    Date</label>
-                                                                <input type="text" class="d-block w-100 py-1" id="     "
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
-                                                            </div>
-                                                            <div class="mb-2 col-8">
-                                                                <label for="Car" class="form-label"
-                                                                    style="font-size: 13px; font-weight: 600;">Social
-                                                                    Security</label>
-                                                                <input type="text" class="d-block w-100 py-1" id="     "
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
-                                                            </div>
-
-                                                            <div class="mb-2 col-4">
-                                                                <label for="Driver" class="form-label"
-                                                                    style="font-size: 11px; font-weight: 600;">DOB</label>
-                                                                <input type="date" class="d-block w-100 py-1" id="     "
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row  pickup-dropoff mt-2  bill-pay w-100">
-
-                                                            <div class="mb-2  col-8">
-                                                                <label for="" class="form-label "
                                                                     style="font-size: 11px; font-weight: 600;">
-                                                                    TLC Drivers License
+                                                                    Year <span class="text-danger">*</span></label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Color</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Capacity <span class="text-danger">*</span></label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Plate Number<span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+
+                                                            <div class="mb-2 col-3">
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">State
+                                                                    Registered
                                                                 </label>
-                                                                <input type="text" class="d-block w-100 py-1" id=""
-                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671);">
+                                                                <select class="col-12 py-1" style="font-size: 12px;"
+                                                                    id="vehicleType">
+                                                                    <option value="">--Not Set--</option>
 
+                                                                    <option value="675001">AB</option>
+
+                                                                    <option value="674952">AK</option>
+
+                                                                    <option value="674951">AL</option>
+
+                                                                    <option value="674954">AR</option>
+
+                                                                    <option value="674953">AZ</option>
+
+                                                                    <option value="675002">BC</option>
+
+                                                                    <option value="674955">CA</option>
+
+                                                                    <option value="674956">CO</option>
+
+                                                                    <option value="674957">CT</option>
+
+                                                                    <option value="674958">DC</option>
+
+                                                                    <option value="675014">DE</option>
+
+                                                                    <option value="674959">FL</option>
+
+                                                                    <option value="674960">GA</option>
+
+                                                                    <option value="674961">HI</option>
+
+                                                                    <option value="674965">IA</option>
+
+                                                                    <option value="674962">ID</option>
+
+                                                                    <option value="674963">IL</option>
+
+                                                                    <option value="674964">IN</option>
+
+                                                                    <option value="674966">KS</option>
+
+                                                                    <option value="674967">KY</option>
+
+                                                                    <option value="674968">LA</option>
+
+                                                                    <option value="674971">MA</option>
+
+                                                                    <option value="675003">MB</option>
+
+                                                                    <option value="674970">MD</option>
+
+                                                                    <option value="674969">ME</option>
+
+                                                                    <option value="674972">MI</option>
+
+                                                                    <option value="674973">MN</option>
+
+                                                                    <option value="674975">MO</option>
+
+                                                                    <option value="674974">MS</option>
+
+                                                                    <option value="674976">MT</option>
+
+                                                                    <option value="675004">NB</option>
+
+                                                                    <option value="674983">NC</option>
+
+                                                                    <option value="674984">ND</option>
+
+                                                                    <option value="674977">NE</option>
+
+                                                                    <option value="674979">NH</option>
+
+                                                                    <option value="674980">NJ</option>
+
+                                                                    <option value="675005">NL</option>
+
+                                                                    <option value="674981">NM</option>
+
+                                                                    <option value="675007">NS</option>
+
+                                                                    <option value="675006">NT</option>
+
+                                                                    <option value="675008">NU</option>
+
+                                                                    <option value="674978">NV</option>
+
+                                                                    <option value="674982">NY</option>
+
+                                                                    <option value="674985">OH</option>
+
+                                                                    <option value="674986">OK</option>
+
+                                                                    <option value="675009">ON</option>
+
+                                                                    <option value="674987">OR</option>
+
+                                                                    <option value="674988">PA</option>
+
+                                                                    <option value="675010">PE</option>
+
+                                                                    <option value="675011">QC</option>
+
+                                                                    <option value="674989">RI</option>
+
+                                                                    <option value="674990">SC</option>
+
+                                                                    <option value="674991">SD</option>
+
+                                                                    <option value="675012">SK</option>
+
+                                                                    <option value="674992">TN</option>
+
+                                                                    <option value="674993">TX</option>
+
+                                                                    <option value="674994">UT</option>
+
+                                                                    <option value="674996">VA</option>
+
+                                                                    <option value="674995">VT</option>
+
+                                                                    <option value="674997">WA</option>
+
+                                                                    <option value="674999">WI</option>
+
+                                                                    <option value="674998">WV</option>
+
+                                                                    <option value="675000">WY</option>
+
+                                                                    <option value="675013">YT</option>
+
+
+                                                                </select>
                                                             </div>
 
-                                                            <div class="mb-2 col-4">
+                                                            <div class="mb-2 col-3">
                                                                 <label for="Driver" class="form-label"
-                                                                    style="font-size: 11px; font-weight: 600;">Exp
-                                                                    Date</label>
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Affiliated Base Number</label>
+                                                                <input type="number" class="d-block w-100 py-1"
+                                                                    id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Exp Date</label>
                                                                 <input type="date" class="d-block w-100 py-1" id="     "
                                                                     style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
                                                             </div>
-
-                                                            <div class="mb-2  col-12">
-                                                                <label for="   " class="form-label  "
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
                                                                     style="font-size: 11px; font-weight: 600;">
-                                                                    Driver PayRoll ID</label>
-                                                                <input type="text" class="d-block w-100 py-1" id=""
+                                                                    VIN</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Odometer (miles or kilometers)</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
                                                                     style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
                                                             </div>
 
+                                                            <div class="mb-2 col-3">
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">Link Car
+                                                                    with Driver
+                                                                </label>
+                                                                <select class="col-12 py-1" style="font-size: 12px;"
+                                                                    id="vehicleType">
+                                                                    <option value="0">- Not Assigned -</option>
+
+                                                                    <option value="21">Waqas Ajmal</option>
+
+                                                                    <option value="19">Jean Alysee</option>
+
+                                                                    <option value="31">Ana Barbosa</option>
+
+                                                                    <option value="2">Erick Barrios</option>
+
+                                                                    <option value="14">Randolph Benjamin</option>
+
+                                                                    <option value="27">Frandy Boyer</option>
+
+                                                                    <option value="10">Jean Cantave</option>
+
+                                                                    <option value="45">Frantz Carmant</option>
+
+                                                                    <option value="51">Levelt Charles</option>
+
+                                                                    <option value="32">Manoach Charles</option>
+
+                                                                    <option value="54">Clement Collegue</option>
+
+                                                                    <option value="56">Luis De Leon</option>
+
+                                                                    <option value="15">Manny Depina</option>
+
+                                                                    <option value="48">Valguens Desvalons</option>
+
+                                                                    <option value="38">Jude Dorvil</option>
+
+                                                                    <option value="44">Paterson Dumerzil</option>
+
+                                                                    <option value="46">Jean Edouard</option>
+
+                                                                    <option value="6">Kery Eloi</option>
+
+                                                                    <option value="41">Micles Elysee</option>
+
+                                                                    <option value="22">Darrell Ferdinand</option>
+
+                                                                    <option value="11">Jean Fontilus</option>
+
+                                                                    <option value="25">Jermaine Gilmore</option>
+
+                                                                    <option value="16">Gardy Herard</option>
+
+                                                                    <option value="47">Asgher Hussain</option>
+
+                                                                    <option value="8">Ruby Jean</option>
+
+                                                                    <option value="23">Fitzgerald Jeudy</option>
+
+                                                                    <option value="24">Fitzgerald Jeudy</option>
+
+                                                                    <option value="52">Evens Jn Baptiste</option>
+
+                                                                    <option value="5">Justin Jones</option>
+
+                                                                    <option value="55">Eugene Joseph</option>
+
+                                                                    <option value="7">Keith Kuzmin</option>
+
+                                                                    <option value="37">Roland Langlois</option>
+
+                                                                    <option value="36">Edrwes Michaud</option>
+
+                                                                    <option value="17">Jean Myrill</option>
+
+                                                                    <option value="30">Mujahid Nawaz</option>
+
+                                                                    <option value="3">Fritz M Noel</option>
+
+                                                                    <option value="9">Jean Robert Obas Paul</option>
+
+                                                                    <option value="20">Joshua Ortiz</option>
+
+                                                                    <option value="12">Jean Paul</option>
+
+                                                                    <option value="33">Marcio Pereira</option>
+
+                                                                    <option value="26">Jean Plaisir</option>
+
+                                                                    <option value="13">Stephen Pryor</option>
+
+                                                                    <option value="53">Richard Rakobane</option>
+
+                                                                    <option value="42">Ricot Rejouis</option>
+
+                                                                    <option value="39">Kamlesh Sah</option>
+
+                                                                    <option value="40">Kamlesh Sah</option>
+
+                                                                    <option value="4">Marc Saint Clair</option>
+
+                                                                    <option value="28">Syed Sherazi</option>
+
+                                                                    <option value="35">Syed Sherazi</option>
+
+                                                                    <option value="34">Epsone St Norice</option>
+
+                                                                    <option value="18">Farooq Tahir</option>
+
+                                                                    <option value="29">Tenzin Tsering</option>
+
+                                                                    <option value="50">Joel Valcin</option>
+
+                                                                    <option value="1">Richardson Victor</option>
+
+                                                                    <option value="43">Lale Wharton</option>
+
+                                                                    <option value="49">Shijin You</option>
+
+
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-6">
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">Status
+                                                                </label>
+                                                                <select class="col-12 py-1" style="font-size: 12px;"
+                                                                    id="vehicleType">
+                                                                    <option value="">Active</option>
+                                                                    <option value="">In Active</option>
+
+                                                                </select>
+                                                            </div>
                                                         </div>
 
                                                         <div
@@ -616,27 +892,336 @@ Add New Vehicle</h5>
                                                                 Hourly Pay Rates <a href="#"
                                                                     class="text-decoration-none">Help</a></span>
                                                             <div class="mb-2 col-4">
-                                                                <label for="Driver" class="form-label ps-1"
-                                                                    style="font-size: 11px; font-weight: 600;">
-                                                                    Regular</label>
-                                                                <div class="d-flex justify-content-center ms-3 gap-1">
-                                                                    <input type="text" class=" py-1 col-12" id=""
-                                                                        value="0.00"
-                                                                        style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
-                                                                    <span class="col" style="font-size: 12px;">
-                                                                        $/hr</span>
+                                                                <div class="col-sm-6 ">
+                                                                    <label class="" style="font-size: 12px;"
+                                                                        for="CellularPhone">
+                                                                        Cellular Phone
+                                                                    </label>
+                                                                    <div class="col-12">
+                                                                        <input id="
+                                                                        CellularPhone" type="tel" name="CellularPhone"
+                                                                            class="ps-5 pe-0"
+                                                                            style="font-size: 11.7px; padding: 5px; width: 350px;">
+                                                                    </div>
                                                                 </div>
-
                                                             </div>
-                                     </div>
-                                </div>
 
-                                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                <script
-                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                                <script src="./script.js"></script>
-                                <!-- SWiper Link -->
-                                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                                                            <div class="mb-2 col-7 ms-5">
+                                                                <label for="driverProvider" class="ms-5"
+                                                                    style="font-size: 13px; font-weight: 600;">Provider</label>
+                                                                <select class="col-12 py-1 ms-5"
+                                                                    style="font-size: 12px;  width: 350px;"
+                                                                    id="driverProvider">
+                                                                    <option value="0">-- SELECT --</option>
+
+                                                                    <option value="msg.acsalaska.com">Alaska
+                                                                        Communications (ACS)</option>
+
+                                                                    <option value="message.alltel.com">Alltel</option>
+
+                                                                    <option value="paging.acswireless.com">Ameritech
+                                                                        (ACSWireless)</option>
+
+                                                                    <option value="txt.att.net">AT&amp;T Wireless
+                                                                    </option>
+
+                                                                    <option value="page.att.net">ATT Business Messaging
+                                                                        (US)</option>
+
+                                                                    <option value="txt.bell.ca">Bell Canada</option>
+
+                                                                    <option value="txt.bellmobility.ca">Bell Mobility
+                                                                        Canada</option>
+
+                                                                    <option value="blsdcs.net">BellSouth Mobility
+                                                                    </option>
+
+                                                                    <option value="blueskyfrog.com">Blue Sky Frog
+                                                                    </option>
+
+                                                                    <option value="myboostmobile.com">Boost Mobile
+                                                                    </option>
+
+                                                                    <option value="sms-c1.bm">Cellone - Bermuda</option>
+
+                                                                    <option value="csouth1.com">Cellular South</option>
+
+                                                                    <option value="mobile.celloneusa.com">CellularOne
+                                                                        (Dobson)</option>
+
+                                                                    <option value="cwemail.com">Centennial Wireless
+                                                                    </option>
+
+                                                                    <option value="cingularme.com">Cingular</option>
+
+                                                                    <option value="mobile.mycingular.com">Cingular
+                                                                    </option>
+
+                                                                    <option value="imcingular.com">Cingular IM
+                                                                        Plus/Bellsouth IPS</option>
+
+                                                                    <option value="sms.ctimovil.com.ar">Claro Argentina
+                                                                    </option>
+
+                                                                    <option value="mms.cricketwireless.net">Cricket
+                                                                    </option>
+
+                                                                    <option value="digitextbm.com">Digicel Bermuda
+                                                                    </option>
+
+                                                                    <option value="digitextjm.com">Digicel Jamaica
+                                                                    </option>
+
+                                                                    <option value="mms.eastlink.ca">Eastlink Wireless
+                                                                    </option>
+
+                                                                    <option value="sms.edgewireless.com">Edge Wireless
+                                                                    </option>
+
+                                                                    <option value="fido.ca">Fido Canada</option>
+
+                                                                    <option value="mobile.gci.net">General
+                                                                        Communications Inc.</option>
+
+                                                                    <option value="sms.goldentele.com">Golden Telecom
+                                                                    </option>
+
+                                                                    <option value="msg.fi.google.com">Google Project Fi
+                                                                    </option>
+
+                                                                    <option value="ideacellular.net">Idea Cellular
+                                                                    </option>
+
+                                                                    <option value="text.mtsmobility.com">Manitoba
+                                                                        Telecom Systems</option>
+
+                                                                    <option value="pcsms.com.au">Message Media (AU)
+                                                                    </option>
+
+                                                                    <option value="sms.messagebird.com">MessageBird
+                                                                    </option>
+
+                                                                    <option value="mymetropcs.com">Metro PCS</option>
+
+                                                                    <option value="page.metrocall.com">Metrocall Pager
+                                                                    </option>
+
+                                                                    <option value="page.mobilfone.com">Mobilfone
+                                                                    </option>
+
+                                                                    <option value="sms.co.za">MTN (South Africa)
+                                                                    </option>
+
+                                                                    <option value="wirefree.informe.ca">NBTel</option>
+
+                                                                    <option value="messaging.nextel.com">Nextel</option>
+
+                                                                    <option value="npiwireless.com">NPI Wireless
+                                                                    </option>
+
+                                                                    <option value="pcs.ntelos.com">NTELOS</option>
+
+                                                                    <option value="mmail.co.uk">O2 (UK)</option>
+
+                                                                    <option value="optusmobile.com.au">Optus (Australia)
+                                                                    </option>
+
+                                                                    <option value="orange-gsm.ro">Orange (Romania)
+                                                                    </option>
+
+                                                                    <option value="orange.net">Orange (UK)</option>
+
+                                                                    <option value="pagenet.net">Pagenet</option>
+
+                                                                    <option value="pcs.rogers.com">PCS Rogers AT&amp;T
+                                                                        Wireless</option>
+
+                                                                    <option value="ptel.net">Powertel</option>
+
+                                                                    <option value="sms.pscel.com">PSC Wireless</option>
+
+                                                                    <option value="pager.qualcomm.com">Qualcomm</option>
+
+                                                                    <option value="qwestmp.com">Qwest</option>
+
+                                                                    <option value="sms.rogers.com">Rogers Wireless
+                                                                    </option>
+
+                                                                    <option value="smtext.com">Simple Mobile</option>
+
+                                                                    <option value="skytel.com">Skytel - Alphanumeric
+                                                                    </option>
+
+                                                                    <option value="sms.smsglobal.com.au">SMS Global
+                                                                    </option>
+
+                                                                    <option value="tmomail.net">Solavei</option>
+
+                                                                    <option value="messaging.sprintpcs.com">Sprint PCS
+                                                                    </option>
+
+                                                                    <option value="tms.suncom.com">SunCom</option>
+
+                                                                    <option value="mobile.surewest.com">SureWest
+                                                                        Communications</option>
+
+                                                                    <option value="movistar.net">Telefonica Movistar
+                                                                    </option>
+
+                                                                    <option value="online.telstra.com.au">Telstra
+                                                                    </option>
+
+                                                                    <option value="msg.telus.com">Telus Mobility
+                                                                    </option>
+
+                                                                    <option value="t-mobile.uk.net">T-Mobile (UK)
+                                                                    </option>
+
+                                                                    <option value="tmomail.net">T-Mobile USA</option>
+
+                                                                    <option value="email.uscc.net">US Cellular</option>
+
+                                                                    <option value="vtext.com">Verizon Wireless</option>
+
+                                                                    <option value="airtouchpaging.com">Verizon Wireless
+                                                                        (formerly Airtouch)</option>
+
+                                                                    <option value="myairmail.com">Verizon Wireless
+                                                                        (myairmail.com)</option>
+
+                                                                    <option value="vmobile.ca">Virgin (Canada)</option>
+
+                                                                    <option value="vxtras.com">Virgin Mobile (UK)
+                                                                    </option>
+
+                                                                    <option value="vmobl.com">Virgin Mobile USA</option>
+
+                                                                    <option value="voda.co.za">Vodacom (South Africa)
+                                                                    </option>
+
+                                                                    <option value="vodafone.net.au">Vodafone (AUS)
+                                                                    </option>
+
+                                                                    <option value="vodafone.ro">Vodafone (Romania)
+                                                                    </option>
+
+                                                                    <option value="vodafone.net">Vodafone (UK)</option>
+
+                                                                    <option value="airmessage.net">Weblink Wireless
+                                                                    </option>
+
+                                                                    <option value="wyndtell.com">WyndTell</option>
+
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-6">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Email Address</label>
+                                                                <input type="email" class="d-block w-100 py-1"
+                                                                    id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-6">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Two Way Radio ID</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="text-start">
+                                                                <input type="checkbox" name="" id="">
+                                                                <span style="font-size: 11px; font-weight: 500;">Display
+                                                                    Contact Info On T/S</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div
+                                                                class="row position-relative pickup-dropoff mt-3 p-2 bill-pay w-100">
+                                                                <span class="mt-2 position-absolute"
+                                                                    style=" top: -20px;left: 7px; width: 169px; z-index: 23; font-weight: 500; background-color: white; font-size: 13px; color: rgb(57, 57, 116);">Insurance
+                                                                    Information
+                                                                </span>
+                                                                <div class="mb-2 col-4">
+                                                                    <label for="Driver" class="form-label"
+                                                                        style="font-size: 11px; font-weight: 600;">
+                                                                        Insured By</label>
+                                                                    <input type="text" class="d-block w-100 py-1"
+                                                                        id="     "
+                                                                        style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                                </div>
+                                                                <div class="mb-2 col-4">
+                                                                    <label for="Driver" class="form-label"
+                                                                        style="font-size: 11px; font-weight: 600;">
+                                                                        Policy No.</label>
+                                                                    <input type="text" class="d-block w-100 py-1"
+                                                                        id="     "
+                                                                        style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                                </div>
+                                                                <div class="mb-2 col-4">
+                                                                    <label for="Driver" class="form-label"
+                                                                        style="font-size: 11px; font-weight: 600;">
+                                                                        Policy Expiration Date</label>
+                                                                    <input type="date" class="d-block w-100 py-1"
+                                                                        id="     "
+                                                                        style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div
+                                                                    class="row position-relative pickup-dropoff mt-3 p-2 bill-pay w-100">
+                                                                    <span class="mt-2 position-absolute"
+                                                                        style=" top: -20px;left: 7px; width: 169px; z-index: 23; font-weight: 500; background-color: white; font-size: 13px; color: rgb(57, 57, 116);">Dispatch
+                                                                        Identification
+                                                                    </span>
+                                                                    <div class="mb-2 col-6">
+                                                                        <label for="Driver" class="form-label"
+                                                                            style="font-size: 11px; font-weight: 600;">
+                                                                            Color Code</label>
+                                                                        <input type="color" class="d-block w-100 py-1"
+                                                                            id="     "
+                                                                            style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                                    </div>
+                                                                    <div class="mb-2 col-6">
+                                                                        <label for="Driver" class="form-label"
+                                                                            style="font-size: 11px; font-weight: 600;">
+                                                                            Nickname</label>
+                                                                        <input type="text" class="d-block w-100 py-1"
+                                                                            id="     "
+                                                                            style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="row position-relative pickup-dropoff mt-3 p-2 bill-pay w-100">
+                                                                    <span class="mt-2 position-absolute"
+                                                                        style=" top: -20px;left: 7px; width: 169px; z-index: 23; font-weight: 500; background-color: white; font-size: 13px; color: rgb(57, 57, 116);">Notes
+                                                                    </span>
+                                                                    <textarea name="" id="" cols="10"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            </form>
+                                                            <div
+                                                                class=" mt-3 row align-items-center justify-content-end me-3">
+                                                                <button type="submit"
+                                                                    class="py-1 px-5 webAccessBtn ms-2 text-right"
+                                                                    style="width: 50%;">Add New Vehicle</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="./script.js"></script>
+                    <!-- SWiper Link -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
