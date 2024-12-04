@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Intel country link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <!-- Inter Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="w-100">
+        <div class="header row">
+            <div class="col img-fluid ms-md-0 ms-2">
+                <a href="./index.html"><img src="./Assets/logo-Black.png"></a>
+            </div>
+            <div class="col search-bar">
+                <form class="d-flex search-form" role="search">
+                    <input class="form-control bg-transparent" type="search" placeholder="Search" aria-label="Search">
+                    <span class="search-icon"><i class="fa fa-magnifying-glass"></i></span>
+
+                </form>
+            </div>
+            <div class="links col text-end">
+                <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reservations"><i
+                            class="fa fa-car"></i></a></button>
+                <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="More"><i
+                            class="fa fa-ellipsis-vertical"></i></a></button>
+                <button><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="User Profile"><i
+                            class="fa fa-user"></i></a></button>
+            </div>
+        </div>
+        <div class="bg-color nav-images slider-wrapper swiper ">
+            <nav class="row text-white gap-0 p-0 pe-0 ps-0 card-list swiper-wrapper">
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="./MyOffice.html">
+                        <img src="./Assets/skyscraper.png" alt="">
+                        <p>office</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="./Accounts.html">
+                        <img src="./Assets/accounting-book_6439007.png" alt="">
+                        <p>Account</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/dollar_12254418.png" alt="">
+                        <p>Quotes</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/calendar_14316759.png" alt="">
+                        <p>Calender</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/contract_975384.png" alt="">
+                        <p>Reserveins</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/car_13300807.png" alt="">
+                        <p>Dispatch</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/social-network_12665069.png" alt="">
+                        <p>Network</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/yen_12097384.png" alt="">
+                        <p>Settle</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/income_5812859.png" alt="">
+                        <p>Receiveable</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/data_14962024.png" alt="">
+                        <p>Reports</p>
+                    </a>
+                </div>
+                <div class="col pe-0 ps-0 text-center card-item swiper-slide">
+                    <a href="#">
+                        <img src="./Assets/folder_3767084.png" alt="">
+                        <p>Files</p>
+                    </a>
+                </div>
+            </nav>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </header>
+
+    <div class="row w-100">
+        <div class="col-12">
+            <div>
+                <ul class="nav nav-tabs ms-2">
+                    <li class="nav-item">
+                        <a href="./MyOffice.html" class="nav-link company-parent-tabs">Company Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./company-settings1.html" class="nav-link company-parent-tabs">Company
+                            Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Rate-Managment.html" class="nav-link company-parent-tabs">Rate
+                            Managment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company-settings3" class="nav-link company-parent-tabs" data-bs-toggle="tab">List
+                            Managment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company-settings4" class="nav-link company-parent-tabs" data-bs-toggle="tab">Custom
+                            Forms</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="active fade all show on tab-pane" id="company-settings">
+                        <div class="d-flex">
+                            <div class="col-2 bg-red">
+                                <ul class="nav nav-links mt-1 ms-1" style="width: 300px;">
+                                    <li class="nav-item col-7">
+                                        <a href="./company-settings1.html" class="nav-link contact-information-child-tabs active"
+                                           >Drivers</a>
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#company-preferences" class="nav-link contact-information-child-tabs"
+                                            data-bs-toggle="tab">Affiliates</a>
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#SystemUsers" class="nav-link contact-information-child-tabs"
+                                            data-bs-toggle="tab">Agents</a>
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#policy" class="nav-link contact-information-child-tabs"
+                                            data-bs-toggle="tab">Vehicle Types</a>
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#iCalender" class="nav-link contact-information-child-tabs"
+                                            data-bs-toggle="tab">Fleet</a>
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#onlineReservation"
+                                            class="nav-link contact-information-child-tabs  active"
+                                            data-bs-toggle="tab">Airports</a>
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#paymentGateway" class="nav-link contact-information-child-tabs "
+                                            data-bs-toggle="tab">Airlines</a>
+                                    </li>
+                                    <li class="nav-item dropdown col-7">
+                                        <a href="#"
+                                            class="nav-link dropdown-toggle systemSettings contact-information-child-tabs"
+                                            data-bs-toggle="dropdown" role="button" aria-expanded="true"
+                                            id="systemSettingsToggle">Seaports</a>
+                                        <ul class="dropdown-menu position-relative text-black" id="serviceTypeTab"
+                                            style="position: relative !important;
+        top: -35px;  ">
+                                            <li><a href="#serviceTypes" class="nav-link py-1 text-black"
+                                                    data-bs-toggle="tab">Private Airlines (FBO)</a></li>
+                                        </ul>
+
+
+                                    </li>
+                                    <li class="nav-item col-7">
+                                        <a href="#limoAnywherePay" class="nav-link contact-information-child-tabs"
+                                            data-bs-toggle="tab">Points of Interest (POI)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content col-9 mt-2" style="width:  85%;">
+                                <div class="tab-pane fade show on active d-flex justify-content-between" id="drivers">
+                                    <div class=" p-2 col-3" style="border: 1px solid rgba(211, 211, 211, 0.801); ">
+                                        <div
+                                            class="usersHeading pb-1 d-flex justify-content-between align-items-center">
+                                            <div class="user-head ">
+                                                <span class="fw-bold">Fleet</span>
+                                            </div>
+                                            <div class="showUsers pe-1">
+                                                <span class="fw-bold">show all</span>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                        </div>
+
+                                        <div class="p-2 pb-2"
+                                            style="overflow-y: scroll; border: 1px solid black; font-size: 13px; height: 200px;">
+                                            <a href="#" class="list-group-item list-group-item-action">Epson St
+                                                Notice (myadmin)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Hussain
+                                                Akhtar (hussain.akhtar)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Kyle
+                                                Robert (kylerobert1)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">MaCarmela
+                                                Dabon (carmela.dabon)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Nardgelde
+                                                Jacques (reloaded24)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Taris
+                                                Aqdas (aqdas.taris)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Waqas
+                                                Zafar (waqas.zafar)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Epson St
+                                                Notice (myadmin)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Hussain
+                                                Akhtar (hussain.akhtar)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Kyle
+                                                Robert (kylerobert1)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">MaCarmela
+                                                Dabon (carmela.dabon)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Nardgelde
+                                                Jacques (reloaded24)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Taris
+                                                Aqdas (aqdas.taris)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Waqas
+                                                Zafar (waqas.zafar)</a>
+                                        </div>
+                                        <div class="text-end mt-2 row align-items-center">
+                                            <button type="submit" class="py-1 px-5 webAccessBtn ms-2" style="width: 94%;">Add new Vehicle</button>
+                                            <button type="submit" class="py-1 px-5 webAccessBtn ms-2 mt-1" style="width: 94%;">Edit Vehicle</button>
+                                        </div>
+                                    </div>
+                                    <div class="col ms-3" style="border: 1px solid rgba(211, 211, 211, 0.801);">
+                                        <div class=" col-9 ">
+                                            <h5 class="ps-3 "
+                                                style="font-size: 14px ; font-weight: 700; margin-top: 10px; color: rgba(3, 3, 2, 0.678);">
+                                                	
+Add New Vehicle</h5>
+                                            <div class="userContainer" style="width: 820px;">
+                                                <div class="p-3 pt-0 ">
+                                                    <form class="" style="margin-left: 12px; margin-right: -10px;">
+
+                                                        <div
+                                                            class="row position-relative pickup-dropoff mt-2 bill-pay w-100">
+                                                            <span class="mt-2 position-absolute"
+                                                                style=" top: -20px;left: 7px; width: 135px; z-index: 23; font-weight: 500; background-color: white; font-size: 12px; color: rgb(57, 57, 116);">Vehicle Information</span>
+                                                            <div class="mb-2  col-6">
+                                                                <label for="" class="form-label "
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Code 
+                                                                    <span class="text-danger">*</span></label>
+                                                                <input type="number" class="d-block w-100 py-1" id=""
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671);">
+
+                                                            </div>
+                                                            <div class="mb-2  col-6">
+                                                                <label for="    " class="form-label  "
+                                                                    style="font-size: 11px; font-weight: 600;">Description
+                                                                    <span class="text-danger">*</span></label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-7">
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">Vehicle Type</label>
+                                                                <select class="col-12 py-1" style="font-size: 12px;"
+                                                                    id="vehicleType">
+												
+                                                                        <option value="BCR10STRETCH">10 Pax Stretch Limo (BCR10STRETCH)</option>
+                                                                        
+                                                                        <option value="WBCSTRETCH10">10 Pax Stretch Limo Wolrdwide (WBCSTRETCH10)</option>
+                                                                        
+                                                                        <option value="BCR28PAXBUS">28 Pax Bus (BCR28PAXBUS)</option>
+                                                                        
+                                                                        <option value="WBC28PAXBUS">28 Pax Bus Worldwide (WBC28PAXBUS)</option>
+                                                                        
+                                                                        <option value="WBC36PAXBUS">36 Pax Bus Worldwide (WBC36PAXBUS)</option>
+                                                                        
+                                                                        <option value="37PAXBUS-BCR">37 Passengers  BUS (37PAXBUS-BCR)</option>
+                                                                        
+                                                                        <option value="WBC37PAXBUS" style="color: #FF0000">37 Pax Bus Worldwide (WBC37PAXBUS)</option>
+                                                                        
+                                                                        <option value="WBC55PAXBUS">55 Pax Bus Worldwide (WBC55PAXBUS)</option>
+                                                                        
+                                                                        <option value="56 PAXBUS-BCR">56 Passengers  BUS (56 PAXBUS-BCR)</option>
+                                                                        
+                                                                        <option value="WBC8PAXLIMO">8 Pax Limo Worldwide (WBC8PAXLIMO)</option>
+                                                                        
+                                                                        <option value="BCRECOSED" style="color: #FF0000">Economy SEDAN (BCRECOSED)</option>
+                                                                        
+                                                                        <option value="SED">Economy Sedan (SED)</option>
+                                                                        
+                                                                        <option value="WBCECOSED">Economy Sedan Worldwide (WBCECOSED)</option>
+                                                                        
+                                                                        <option value="BCREXESED">Executive SEDAN (BCREXESED)</option>
+                                                                        
+                                                                        <option value="WBCEXESED">Executive Sedan Worldwide (WBCEXESED)</option>
+                                                                        
+                                                                        <option value="BCREXESUV">Executive SUV (BCREXESUV)</option>
+                                                                        
+                                                                        <option value="WBCEXESUV">Executive SUV Worldwide (WBCEXESUV)</option>
+                                                                        
+                                                                        <option value="LUX">Luxury Sedan (LUX)</option>
+                                                                        
+                                                                        <option value="SUV">Luxury SUV (SUV)</option>
+                                                                        
+                                                                        <option value="BCRPAXVAN">Passenger Van (14 Pax) (BCRPAXVAN)</option>
+                                                                        
+                                                                        <option value="WBCPAXVAN">Passenger Van Worldwide (WBCPAXVAN)</option>
+                                                                        
+                                                                        <option value="BCRPREMSED">Premium Sedan (BCRPREMSED)</option>
+                                                                        
+                                                                        <option value="WBCPREMSED">Premium Sedan Worldwide (WBCPREMSED)</option>
+                                                                        
+                                                                        <option value="BCRPREMSUV">Premium SUV (BCRPREMSUV)</option>
+                                                                        
+                                                                        <option value="WBCPREMSUV">Premium SUV Worldwide (WBCPREMSUV)</option>
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-5">
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">Car Make <span class="text-danger">*</span></label>
+                                                                <select class="col-12 py-1" style="font-size: 12px;"
+                                                                    id="vehicleType">
+                                                                        <option value=""></option>
+                                                                        
+                                                                        <option value="Acura">Acura</option>
+                                                                        
+                                                                        <option value="Alfa Romeo">Alfa Romeo</option>
+                                                                        
+                                                                        <option value="AM General">AM General</option>
+                                                                        
+                                                                        <option value="AMC">AMC</option>
+                                                                        
+                                                                        <option value="Amtrans">Amtrans</option>
+                                                                        
+                                                                        <option value="Aston Martin">Aston Martin</option>
+                                                                        
+                                                                        <option value="Audi">Audi</option>
+                                                                        
+                                                                        <option value="BCI">BCI</option>
+                                                                        
+                                                                        <option value="Bentley">Bentley</option>
+                                                                        
+                                                                        <option value="BMW">BMW</option>
+                                                                        
+                                                                        <option value="Buick">Buick</option>
+                                                                        
+                                                                        <option value="Cadillac">Cadillac</option>
+                                                                        
+                                                                        <option value="Chevrolet">Chevrolet</option>
+                                                                        
+                                                                        <option value="Chrysler">Chrysler</option>
+                                                                        
+                                                                        <option value="Citroen">Citroen</option>
+                                                                        
+                                                                        <option value="Daewoo">Daewoo</option>
+                                                                        
+                                                                        <option value="Daihatsu">Daihatsu</option>
+                                                                        
+                                                                        <option value="Datsun">Datsun</option>
+                                                                        
+                                                                        <option value="Dodge">Dodge</option>
+                                                                        
+                                                                        <option value="Eagle">Eagle</option>
+                                                                        
+                                                                        <option value="Eurotrans">Eurotrans</option>
+                                                                        
+                                                                        <option value="Ferrari">Ferrari</option>
+                                                                        
+                                                                        <option value="FIAT">FIAT</option>
+                                                                        
+                                                                        <option value="Fisker">Fisker</option>
+                                                                        
+                                                                        <option value="Ford">Ford</option>
+                                                                        
+                                                                        <option value="Freight Liner">Freight Liner</option>
+                                                                        
+                                                                        <option value="Genesis">Genesis</option>
+                                                                        
+                                                                        <option value="Geo">Geo</option>
+                                                                        
+                                                                        <option value="GMC">GMC</option>
+                                                                        
+                                                                        <option value="Holden">Holden</option>
+                                                                        
+                                                                        <option value="Honda">Honda</option>
+                                                                        
+                                                                        <option value="HUMMER">HUMMER</option>
+                                                                        
+                                                                        <option value="Hyundai">Hyundai</option>
+                                                                        
+                                                                        <option value="IC Bus">IC Bus</option>
+                                                                        
+                                                                        <option value="Icon">Icon</option>
+                                                                        
+                                                                        <option value="Infiniti">Infiniti</option>
+                                                                        
+                                                                        <option value="Isuzu">Isuzu</option>
+                                                                        
+                                                                        <option value="Iveco">Iveco</option>
+                                                                        
+                                                                        <option value="Jaguar">Jaguar</option>
+                                                                        
+                                                                        <option value="Jeep">Jeep</option>
+                                                                        
+                                                                        <option value="Kia">Kia</option>
+                                                                        
+                                                                        <option value="Lamborghini">Lamborghini</option>
+                                                                        
+                                                                        <option value="Land Rover">Land Rover</option>
+                                                                        
+                                                                        <option value="Lexus">Lexus</option>
+                                                                        
+                                                                        <option value="Lincoln">Lincoln</option>
+                                                                        
+                                                                        <option value="Lotus">Lotus</option>
+                                                                        
+                                                                        <option value="Lucid">Lucid</option>
+                                                                        
+                                                                        <option value="Maserati">Maserati</option>
+                                                                        
+                                                                        <option value="Maybach">Maybach</option>
+                                                                        
+                                                                        <option value="Mazda">Mazda</option>
+                                                                        
+                                                                        <option value="MCI">MCI</option>
+                                                                        
+                                                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                                                        
+                                                                        <option value="Mercury">Mercury</option>
+                                                                        
+                                                                        <option value="Merkur">Merkur</option>
+                                                                        
+                                                                        <option value="MINI">MINI</option>
+                                                                        
+                                                                        <option value="Mitsubishi">Mitsubishi</option>
+                                                                        
+                                                                        <option value="Neoplan">Neoplan</option>
+                                                                        
+                                                                        <option value="Nissan">Nissan</option>
+                                                                        
+                                                                        <option value="Oldsmobile">Oldsmobile</option>
+                                                                        
+                                                                        <option value="Opel">Opel</option>
+                                                                        
+                                                                        <option value="Panoz">Panoz</option>
+                                                                        
+                                                                        <option value="Peugeot">Peugeot</option>
+                                                                        
+                                                                        <option value="Plymouth">Plymouth</option>
+                                                                        
+                                                                        <option value="Pontiac">Pontiac</option>
+                                                                        
+                                                                        <option value="Porsche">Porsche</option>
+                                                                        
+                                                                        <option value="Prevost">Prevost</option>
+                                                                        
+                                                                        <option value="Renault">Renault</option>
+                                                                        
+                                                                        <option value="Rolls-Royce">Rolls-Royce</option>
+                                                                        
+                                                                        <option value="Saab">Saab</option>
+                                                                        
+                                                                        <option value="Saturn">Saturn</option>
+                                                                        
+                                                                        <option value="Scion">Scion</option>
+                                                                        
+                                                                        <option value="Setra">Setra</option>
+                                                                        
+                                                                        <option value="Skoda">Skoda</option>
+                                                                        
+                                                                        <option value="Smart">Smart</option>
+                                                                        
+                                                                        <option value="Sterling">Sterling</option>
+                                                                        
+                                                                        <option value="Subaru">Subaru</option>
+                                                                        
+                                                                        <option value="Suzuki">Suzuki</option>
+                                                                        
+                                                                        <option value="Temsa">Temsa</option>
+                                                                        
+                                                                        <option value="Tesla">Tesla</option>
+                                                                        
+                                                                        <option value="Thomas">Thomas</option>
+                                                                        
+                                                                        <option value="Toyota">Toyota</option>
+                                                                        
+                                                                        <option value="Van Hool">Van Hool</option>
+                                                                        
+                                                                        <option value="Volkswagen">Volkswagen</option>
+                                                                        
+                                                                        <option value="Volvo">Volvo</option>
+                                                                        
+                                                                        <option value="Yugo">Yugo</option>
+                                                                        
+                                                                        <option value="Yutong Bus">Yutong Bus</option>
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">Zip/Post</label>
+                                                                <input type="number" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="row position-relative pickup-dropoff mt-2  bill-pay w-100">
+
+                                                            <div class="mb-2  col-6">
+                                                                <label for="" class="form-label "
+                                                                    style="font-size: 11px; font-weight: 600;">Driver's
+                                                                    License#
+                                                                    <span class="text-danger">*</span></label>
+                                                                <input type="text" class="d-block w-100 py-1" id=""
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671);">
+
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="vehicleType" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">DL
+                                                                    State</label>
+                                                                <select class="col-12 py-1" style="font-size: 12px;"
+                                                                    id="vehicleType">
+                                                                    <option>All</option>
+                                                                    <option>Locked</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">Exp
+                                                                    Date</label>
+                                                                <input type="date" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+
+                                                            <div class="mb-2  col-9">
+                                                                <label for="    " class="form-label  "
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Badge#/Other ID</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-3">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">Exp
+                                                                    Date</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                            <div class="mb-2 col-8">
+                                                                <label for="Car" class="form-label"
+                                                                    style="font-size: 13px; font-weight: 600;">Social
+                                                                    Security</label>
+                                                                <input type="text" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+
+                                                            <div class="mb-2 col-4">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">DOB</label>
+                                                                <input type="date" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row  pickup-dropoff mt-2  bill-pay w-100">
+
+                                                            <div class="mb-2  col-8">
+                                                                <label for="" class="form-label "
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    TLC Drivers License
+                                                                </label>
+                                                                <input type="text" class="d-block w-100 py-1" id=""
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671);">
+
+                                                            </div>
+
+                                                            <div class="mb-2 col-4">
+                                                                <label for="Driver" class="form-label"
+                                                                    style="font-size: 11px; font-weight: 600;">Exp
+                                                                    Date</label>
+                                                                <input type="date" class="d-block w-100 py-1" id="     "
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+
+                                                            <div class="mb-2  col-12">
+                                                                <label for="   " class="form-label  "
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Driver PayRoll ID</label>
+                                                                <input type="text" class="d-block w-100 py-1" id=""
+                                                                    style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div
+                                                            class="row position-relative pickup-dropoff mt-3  bill-pay w-100">
+                                                            <span class="mt-2 position-absolute"
+                                                                style=" top: -20px;left: 7px; width: 169px; z-index: 23; font-weight: 500; background-color: white; font-size: 12px; color: rgb(57, 57, 116);">Trip
+                                                                Hourly Pay Rates <a href="#"
+                                                                    class="text-decoration-none">Help</a></span>
+                                                            <div class="mb-2 col-4">
+                                                                <label for="Driver" class="form-label ps-1"
+                                                                    style="font-size: 11px; font-weight: 600;">
+                                                                    Regular</label>
+                                                                <div class="d-flex justify-content-center ms-3 gap-1">
+                                                                    <input type="text" class=" py-1 col-12" id=""
+                                                                        value="0.00"
+                                                                        style="font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.671); ">
+                                                                    <span class="col" style="font-size: 12px;">
+                                                                        $/hr</span>
+                                                                </div>
+
+                                                            </div>
+                                     </div>
+                                </div>
+
+                                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                                <script src="./script.js"></script>
+                                <!-- SWiper Link -->
+                                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
